@@ -1,0 +1,8 @@
+{
+    "domains": [
+        "apvisit.com",
+        "publisher1.com",
+        "blog-site.net",
+        "*.subdomain.com"
+    ]
+}
