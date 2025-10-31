@@ -1,8 +1,10 @@
 {
     "domains": [
         "apvisit.com",
-        "publisher1.com",
-        "blog-site.net",
+        "vertigrowhub.com",
+        "3eshqtr.net",
+        "al-bayan.news",
+        "turkeylife.news",
         "*.subdomain.com"
     ]
 }
