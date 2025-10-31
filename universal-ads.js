@@ -2,7 +2,7 @@
   'use strict';
 
   // ==================== CONSTANTS ====================
-  const SCRIPT_VERSION = '4.0.0';
+  const SCRIPT_VERSION = '4.0.1';
   const CONSENT_TIMEOUT = 1000; // 1 second timeout for CMP detection
   const GPT_LIBRARY_URL = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
   const GA_LIBRARY_URL = 'https://www.googletagmanager.com/gtag/js?id=G-Z0B4ZBF7XH';
@@ -534,29 +534,30 @@
     log('Setting up ad slots with default configuration');
     
     // Hardcoded ad unit configurations
+    // Sizes ordered by priority for best fill rate (most common sizes first)
     const adUnits = [
       {
         id: 'ua-placement-1',
         path: '/23272458704/Nasrev.com/Display',
-        sizes: [[300, 250], [300, 100], [320, 100], [320, 50]],
+        sizes: [[300, 250], [336, 280], [320, 100], [300, 100], [320, 50]],
         refresh: true
       },
       {
         id: 'ua-placement-2',
         path: '/23272458704/Nasrev.com/Display',
-        sizes: [[336, 280], [300, 250], [300, 100], [320, 100], [320, 50]],
+        sizes: [[300, 250], [336, 280], [300, 600], [320, 100], [300, 100], [320, 50]],
         refresh: false
       },
       {
         id: 'ua-placement-3',
         path: '/23272458704/Nasrev.com/Display',
-        sizes: [[300, 250], [300, 100], [320, 100], [320, 50]],
+        sizes: [[300, 250], [336, 280], [300, 600], [320, 100], [300, 100], [320, 50]],
         refresh: true
       },
       {
         id: 'ua-placement-4',
         path: '/23272458704/Nasrev.com/Display',
-        sizes: [[336, 280], [300, 250], [300, 100], [320, 100], [320, 50]],
+        sizes: [[300, 250], [336, 280], [300, 600], [320, 100], [300, 100], [320, 50]],
         refresh: false
       }
     ];
