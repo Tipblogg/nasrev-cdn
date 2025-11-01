@@ -1,1 +1,748 @@
-function _0x36ad(_0x316912,_0x30945d){const _0x197486=_0x1974();return _0x36ad=function(_0x36adb7,_0x577f2e){_0x36adb7=_0x36adb7-0x118;let _0x3f3b34=_0x197486[_0x36adb7];return _0x3f3b34;},_0x36ad(_0x316912,_0x30945d);}function _0x1974(){const _0x4ae057=['(Attempt\x20','DOMContentLoaded','🔄\x20Retrying\x20ad\x20request\x20(','✅\x20Ad\x20loaded\x20successfully','checkViewport','userInteracted','getSchainObject','FIRST_QUARTILE','__tcfapi','adContainer','undefined','google','🗑\x20AdsManager\x20destroyed','togglePlay','AdsLoader','enterFloating','ms...','hidden','isAdPlaying','setAdWillAutoPlay','readyState','Error\x20calling\x20contentComplete:','wrapper','querySelectorAll','8631ZMxRJX','video','Error\x20resuming\x20ad:','SELLER_JSON_URL','PAUSED','adsLoader','RESUMED','✅\x20AdsLoader.contentComplete()\x20called\x20after\x20error','1837488UVTRhs','nv-btn\x20nv-play','link[rel=\x22canonical\x22]','width','adsManager','playBtn','⏭\x20Ad\x20skipped','exitFloating','enablePreloading','✗\x20Could\x20not\x20fetch\x20or\x20parse\x20sellers.json','container','onload','now','play','npa','keywords','nv-click-overlay','Powered\x20by\x20<strong>Nasrev</strong>','imaSDKLoaded','resizeHandler','https://nasrev.com/sellers.json','setDisableCustomPlaybackForIOS10Plus','autoplayAllowed','badge','stopPropagation','gdpr','onerror','observe','clickOverlay','\x22],\x20meta[property=\x22','destroy','pendingAdRequest','resize','closeBtn','VAST_TAG','bottom','isInViewport','category','11uZMFhh','✅\x20IMA\x20SDK\x20loaded\x20successfully','setupIMA','log','parentNode','⛶\x20Exited\x20fullscreen\x20mode','getError','handleVisibilityChange','setVpaidMode','AdDisplayContainer','button','fullscreenBtn','_blank','json','Error\x20setting\x20ad\x20volume:','toggleFullscreen','build','resizeTimeout','✅\x20Ad\x20request\x20sent\x20to\x20IMA\x20SDK','requestAds','🛑\x20Domain\x20not\x20authorized,\x20aborting\x20ad\x20request','adsPaused','s\x20(refresh\x20','innerWidth','VpaidMode','nv-wrapper','backoffMs','visibilitychange','rel','STARTED','NORMAL','retryCount','54BfaGjV','min','getMetaContent','initialize','src','append','📐\x20Resized\x20ad\x20for\x20normal\x20mode:\x20','sellerDataCache','message','MIN_REFRESH_INTERVAL','forEach','🗑\x20Destroying\x20player','Unknown\x20error','getErrorCode','📍\x20Player\x20exited\x20floating\x20mode','🔥\x20FIRST\x20AD','info','FORCE_AUTOPLAY','📐\x20Resized\x20ad\x20for\x20floating\x20mode','HTTP\x20error!\x20status:\x20','showClickOverlay','requestFullscreen','VIDEO_LOAD_TIMEOUT','muteBtn','correlator=','join','style','🎬\x20Background\x20video\x20playing','remove','autoAlign','__gpp','length','toggleMute','init','getCanonicalUrl','head','publisher','innerHeight','FLOATING_HEIGHT','MIDPOINT','\x20attempts\x20(','FIRST_AD_MAX_RETRIES','Type','MAX_BACKOFF','exitFullscreen','querySelector','6858210yxQswg','pause','🚀\x20DOM\x20Ready\x20-\x20Initializing\x20NasVideo\x20Players','tcString','warn','className','getInfo','🔥\x20FIRST\x20AD\x20-\x20Aggressive\x20retry\x20',')\x20reached,\x20skipping\x20request','settings','AdEvent','contentId','1758aAQidl','paused','COMPLETE','🗑\x20AdsManager\x20destroyed\x20after\x20error',')\x20in\x20','Error\x20pausing\x20ad:','✅\x20AdsManager\x20loaded','nv-btn\x20nv-mute','setProperty','Error\x20toggling\x20ad\x20playback:','createBadge','⚠\x20Background\x20video\x20autoplay\x20blocked\x20(expected)','contentComplete','click','NasVideo:','checkAutoplaySupport','📍\x20Player\x20entered\x20floating\x20mode\x20(top-right)','handleFullscreenChange','AD_ERROR','\x27\x20NOT\x20in\x20sellers.json.\x20Ad\x20requests\x20will\x20be\x20blocked.','find','scrollHandler','true','LOADED','📐\x20Resized\x20ad\x20for\x20floating\x20mode:\x20','[cust_params_placeholder]','script','getConsentParams','⏰\x20Scheduling\x20next\x20ad\x20in\x20','loadIMA','nv-close','setAttribute','floor','INITIAL_BACKOFF','▶\x20Ad\x20resumed\x20-\x20player\x20in\x20viewport','fullscreenElement','muted','⚠\x20Max\x20retries\x20(','🎉\x20First\x20ad\x20filled\x20successfully!\x20Switching\x20to\x20normal\x20retry\x20mode.','title','function','isFloating','getTCData','loading','ImaSdkSettings','gdpr_consent','addEventListener','FIRST_AD_RETRY_DELAYS','reduce','__nasVideoInitialized','❌\x20IMA\x20SDK\x20failed\x20to\x20load:','👆\x20Click\x20overlay\x20shown\x20-\x20waiting\x20for\x20user\x20interaction','appendChild','scheduleRefresh','SKIPPED','⚠\x20Autoplay\x20blocked\x20by\x20browser\x20-\x20user\x20interaction\x20required','top','--spacer-height','purpose','linearAdSlotHeight','nv-controls','\x20request\x20','📋\x20Ad\x20request\x20config:\x20autoplay=','async','contentKeywords','BG_VIDEOS','status','onAdError','getSettings','firstAdFilled','setVolume','nasvideo-styles','catch','handleUserInteraction','▶\x20Ad\x20started\x20playing','nv-badge','location','innerHTML','✅\x20Ad\x20display\x20container\x20initialized\x20on\x20user\x20interaction','MAX_RETRIES','916obggVn','MAX_REFRESHES','dataset','ima','getBoundingClientRect','entries','createElement','setupDOM','handleResize','THIRD_QUARTILE','ViewMode','.nasvideo','px\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20','ADS_MANAGER_LOADED','loadBackgroundVideo','resume','2855CYkuwq','N/A','⚠\x20Could\x20not\x20auto-initialize:','nv-btn\x20nv-fullscreen','setupEventListeners','classList','33QZXpVn','controlsBar','📐\x20Resized\x20ad\x20for\x20normal\x20mode\x20to\x20','1067368jNmCQG','createControls','autoplayRequiresMuted','Script\x20load\x20timeout','❌\x20Failed\x20to\x20start\x20AdsManager:','📡\x20Ad','consents','IMA_SDK_LOAD_TIMEOUT','FLOATING_WIDTH','domain','🎯\x20NasVideo\x20Auto-Loader\x20initialized','div','map','ENABLED','Fullscreen\x20failed:\x20','scroll','fullscreenchange','content','Consent\x20API\x20error:','floating','max','✅\x20IMA\x20SDK\x20configured','onAdsManagerLoaded','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nasvideo-player\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20640px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x2016/9;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#000;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x20auto;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.3s\x20cubic-bezier(0.4,\x200,\x200.2,\x201);\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x202px\x208px\x20rgba(0,0,0,0.1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-wrapper\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-spacer\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-video,\x20.nv-ad-container\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-height:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20object-fit:\x20cover\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-video\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-ad-container\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x202;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-ad-container\x20>\x20div\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-ad-container\x20video\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20object-fit:\x20cover\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-click-overlay\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x203;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(0,0,0,0.3);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20opacity\x200.3s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-click-overlay.hidden\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-click-overlay::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27▶\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2064px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-shadow:\x200\x202px\x208px\x20rgba(0,0,0,0.5);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.9;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.3s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-click-overlay:hover::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1.1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-controls\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x200;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x200;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(transparent,\x20rgba(0,0,0,0.7));\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2010px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20opacity\x200.3s;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x2010;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20all;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nasvideo-player:hover\x20.nv-controls\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-controls.hidden\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-btn\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20transparent;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2020px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20transform\x200.2s;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x205px\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-btn:hover\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1.1);\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-badge\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x2010px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2010px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(0,0,0,0.7);\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x204px\x208px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2011px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-decoration:\x20none;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x2011;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20opacity\x200.3s;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20all;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-badge\x20strong\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#4CAF50;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nasvideo-player:hover\x20.nv-badge\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-close\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x208px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x208px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2030px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2030px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2050%;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(0,0,0,0.8);\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x202px\x20solid\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2018px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x2012;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20all;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.2s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x2026px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nv-close:hover\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(255,0,0,0.8);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1.1)\x20rotate(90deg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nasvideo-player.floating\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20fixed\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x2020px\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x2020px\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20','1988466qcagMS','replace','error','vastLoadTimeout','add','removeEventListener','href','▶\x20Ad\x20resumed','1278rKqkll','FULLSCREEN','autoplay','noopener','https://imasdk.googleapis.com/js/sdkloader/ima3.js','nasvideoInitialized','seller_id','restoreCustomPlaybackStateOnAdBreakComplete','isFirstAdRequest','toLowerCase','linearAdSlotWidth','adDisplayContainer','🚀\x20Ad\x20container\x20initialized\x20(autoplay\x20supported)','\x20-\x20Refresh\x20#','adDisplayContainerInitialized','spacer','getMessage','resizeObserver','refreshCount','🔍\x20Checking\x20autoplay\x20support...','url','setupStyles','clientHeight','AdErrorEvent','isDestroyed','📊\x20Ad:\x2025%\x20complete','📦\x20Loading\x20IMA\x20SDK...','onAllAdsCompleted','preventDefault','✅\x20Domain\x20\x27','https://nasrev.com','height'];_0x1974=function(){return _0x4ae057;};return _0x1974();}(function(_0x452c48,_0x208fd0){const _0xac411a=_0x36ad,_0x1701db=_0x452c48();while(!![]){try{const _0x5af28c=-parseInt(_0xac411a(0x243))/0x1*(-parseInt(_0xac411a(0x11d))/0x2)+parseInt(_0xac411a(0x25e))/0x3+parseInt(_0xac411a(0x22d))/0x4*(parseInt(_0xac411a(0x23d))/0x5)+-parseInt(_0xac411a(0x1dd))/0x6*(parseInt(_0xac411a(0x155))/0x7)+-parseInt(_0xac411a(0x246))/0x8*(-parseInt(_0xac411a(0x1a3))/0x9)+-parseInt(_0xac411a(0x1d1))/0xa*(parseInt(_0xac411a(0x183))/0xb)+-parseInt(_0xac411a(0x15d))/0xc;if(_0x5af28c===_0x208fd0)break;else _0x1701db['push'](_0x1701db['shift']());}catch(_0x1ddb5b){_0x1701db['push'](_0x1701db['shift']());}}}(_0x1974,0x65504),(function(){'use strict';const _0xd65333=_0x36ad;const _0x49dfd7={'VAST_TAG':'https://pubads.g.doubleclick.net/gampad/ads?iu=/23272458704/Nasrev.com/Video&description_url=[placeholder]&tfcd=0&npa=0&sz=400x300%7C640x480&ciu_szs=300x250%2C336x280%2C728x90&gdfp_req=1&unviewed_position_start=1&output=vast&env=vp&impl=s&correlator=&vpmute=1&cust_params=[cust_params_placeholder]','SELLER_JSON_URL':_0xd65333(0x171),'MAX_REDIRECTS':0xa,'VAST_LOAD_TIMEOUT':0x1f40,'VIDEO_LOAD_TIMEOUT':0x3a98,'IMA_SDK_LOAD_TIMEOUT':0x1770,'FIRST_AD_MAX_RETRIES':0x5,'FIRST_AD_RETRY_DELAYS':[0x7d0,0xbb8,0x1388,0x1f40,0x32c8],'MAX_RETRIES':0x3,'INITIAL_BACKOFF':0x3e8,'MAX_BACKOFF':0x2710,'MIN_REFRESH_INTERVAL':0x7530,'MAX_REFRESHES':0x32,'FLOATING_WIDTH':0x12c,'FLOATING_HEIGHT':0xa9,'FLOATING_POSITION':'top-right','BG_VIDEOS':['https://github.com/Tipblogg/nasrev-cdn/raw/refs/heads/main/nas.mp4'],'ENABLE_DEBUG_LOGGING':!![],'FORCE_AUTOPLAY':!![],'VIEWPORT_THRESHOLD':0.5};function _0x3a3e1e(_0x3ad353){const _0xdd6e3a=_0xd65333;document[_0xdd6e3a(0x151)]===_0xdd6e3a(0x208)?document[_0xdd6e3a(0x20b)](_0xdd6e3a(0x13e),_0x3ad353):_0x3ad353();}function _0x3d0560(_0x32c108,_0x171756){return new Promise((_0x4a5e18,_0x5d3528)=>{const _0x2c7333=_0x36ad,_0x4f15cc=document['createElement'](_0x2c7333(0x1f7));_0x4f15cc[_0x2c7333(0x1a7)]=_0x32c108,_0x4f15cc[_0x2c7333(0x21c)]=!![];let _0x549491;_0x171756&&(_0x549491=setTimeout(()=>{const _0x4c4ac1=_0x2c7333;_0x5d3528(new Error(_0x4c4ac1(0x249)));},_0x171756)),_0x4f15cc[_0x2c7333(0x168)]=()=>{if(_0x549491)clearTimeout(_0x549491);_0x4a5e18(!![]);},_0x4f15cc[_0x2c7333(0x177)]=()=>{if(_0x549491)clearTimeout(_0x549491);_0x5d3528(new Error('Script\x20load\x20error'));},document[_0x2c7333(0x1c6)][_0x2c7333(0x211)](_0x4f15cc);});}function _0xb73c6e(_0x136d2e,..._0x4e7531){const _0x398ee1=_0xd65333;_0x49dfd7['ENABLE_DEBUG_LOGGING']&&console[_0x136d2e](_0x398ee1(0x1eb),..._0x4e7531);}class _0x5908ce{static [_0xd65333(0x1aa)]=null;static async[_0xd65333(0x143)](_0x31fa17){const _0x19602d=_0xd65333;if(!_0x49dfd7[_0x19602d(0x158)])return null;try{if(!this['sellerDataCache']){const _0x480d60=await fetch(_0x49dfd7['SELLER_JSON_URL']);if(!_0x480d60['ok'])throw new Error(_0x19602d(0x1b6)+_0x480d60[_0x19602d(0x21f)]);this['sellerDataCache']=await _0x480d60[_0x19602d(0x190)]();}const _0x23b8b6=this[_0x19602d(0x1aa)]['sellers'][_0x19602d(0x1f1)](_0x344618=>_0x344618['domain'][_0x19602d(0x126)]()===_0x31fa17['toLowerCase']());return _0x23b8b6?(_0xb73c6e(_0x19602d(0x1b3),_0x19602d(0x13a)+_0x31fa17+'\x27\x20is\x20AUTHORIZED.'),{'ver':'1.0','complete':0x1,'nodes':[{'sid':_0x23b8b6[_0x19602d(0x123)],'name':_0x23b8b6['name'],'domain':_0x23b8b6[_0x19602d(0x24f)],'hp':0x1}]}):(_0xb73c6e(_0x19602d(0x260),'🛑\x20Domain\x20\x27'+_0x31fa17+_0x19602d(0x1f0)),null);}catch(_0x488627){return _0xb73c6e(_0x19602d(0x260),_0x19602d(0x166),_0x488627),null;}}}class _0xb0ce29{static['getInfo'](){const _0x83f118=_0xd65333;return{'domain':window['location']['hostname'],'url':window[_0x83f118(0x229)][_0x83f118(0x11b)],'title':document[_0x83f118(0x204)]||'','keywords':this[_0x83f118(0x1a5)](_0x83f118(0x16c)),'category':this[_0x83f118(0x1a5)]('article:section')||this['getMetaContent']('category'),'contentId':this['getCanonicalUrl']()};}static['getMetaContent'](_0x244629){const _0x4362be=_0xd65333,_0x30cb41=document[_0x4362be(0x1d0)]('meta[name=\x22'+_0x244629+_0x4362be(0x17a)+_0x244629+'\x22]');return _0x30cb41?_0x30cb41[_0x4362be(0x257)]:'';}static[_0xd65333(0x1c5)](){const _0x43e9dc=_0xd65333,_0x3f3722=document[_0x43e9dc(0x1d0)](_0x43e9dc(0x15f));return _0x3f3722?_0x3f3722['href']:window[_0x43e9dc(0x229)][_0x43e9dc(0x11b)];}}class _0x4fd208{static async[_0xd65333(0x193)](_0x4d5f66,_0x5977c6){const _0x32db22=_0xd65333;let _0x2707f3=_0x4d5f66[_0x32db22(0x25f)]('[placeholder]',encodeURIComponent(_0x5977c6[_0x32db22(0x131)]))['replace'](_0x32db22(0x1bb),_0x32db22(0x1bb)+Date[_0x32db22(0x169)]());const _0x182a14=await this['getConsentParams'](),_0x4b47b3=await _0x5908ce['getSchainObject'](_0x5977c6[_0x32db22(0x24f)]);if(!_0x4b47b3)return null;const _0x302340={'title':_0x5977c6['title'],'keywords':_0x5977c6[_0x32db22(0x16c)],'category':_0x5977c6[_0x32db22(0x182)],'content_id':_0x5977c6[_0x32db22(0x1dc)],'domain':_0x5977c6[_0x32db22(0x24f)],..._0x182a14,'schain':JSON['stringify'](_0x4b47b3)},_0x8739fa=Object[_0x32db22(0x232)](_0x302340)['filter'](([_0x554c3a,_0x279e97])=>_0x279e97)[_0x32db22(0x252)](([_0x2dece1,_0x48c7bf])=>encodeURIComponent(_0x2dece1)+'='+encodeURIComponent(_0x48c7bf))[_0x32db22(0x1bc)]('&');return _0x2707f3[_0x32db22(0x25f)](_0x32db22(0x1f6),_0x8739fa);}static async[_0xd65333(0x1f8)](){const _0x588819=_0xd65333,_0x337bed={'gdpr':0x0,'gdpr_consent':'','us_privacy':'','ltd':'0'};try{if(typeof window[_0x588819(0x145)]===_0x588819(0x205)){const _0x1aa9be=await new Promise(_0xe5afcc=>{const _0x4e0116=_0x588819;window[_0x4e0116(0x145)](_0x4e0116(0x207),0x2,(_0x3283bf,_0xef4e11)=>_0xe5afcc(_0xef4e11?_0x3283bf:null));});if(_0x1aa9be){_0x337bed['gdpr']=_0x1aa9be['gdprApplies']?0x1:0x0,_0x337bed[_0x588819(0x20a)]=_0x1aa9be[_0x588819(0x1d4)]||'';const _0x2a7e8b=_0x1aa9be['purpose']?.['consents']?.[0x1]&&_0x1aa9be['purpose']?.[_0x588819(0x24c)]?.[0x3]&&_0x1aa9be[_0x588819(0x217)]?.[_0x588819(0x24c)]?.[0x4];_0x337bed[_0x588819(0x176)]===0x1&&!_0x2a7e8b&&(_0x337bed[_0x588819(0x16b)]=0x1,_0x337bed['ltd']='1');}}typeof window[_0x588819(0x1c1)]==='function'&&(_0x337bed['rdp']='1');}catch(_0x596a68){_0xb73c6e(_0x588819(0x1d5),_0x588819(0x258),_0x596a68);}return _0x337bed;}}class _0x2ee5be{constructor(_0x120553){const _0x701b46=_0xd65333;this[_0x701b46(0x167)]=_0x120553,this[_0x701b46(0x1c7)]=_0xb0ce29[_0x701b46(0x1d7)](),this['isInitialized']=![],this['isFloating']=![],this[_0x701b46(0x14f)]=![],this[_0x701b46(0x135)]=![],this[_0x701b46(0x15a)]=null,this[_0x701b46(0x161)]=null,this['adsPaused']=![],this[_0x701b46(0x1a2)]=0x0,this[_0x701b46(0x19d)]=_0x49dfd7[_0x701b46(0x1fe)],this['refreshCount']=0x0,this['resizeObserver']=null,this[_0x701b46(0x181)]=![],this[_0x701b46(0x142)]=![],this[_0x701b46(0x12b)]=![],this[_0x701b46(0x16f)]=![],this[_0x701b46(0x17c)]=![],this[_0x701b46(0x173)]=undefined,this['autoplayRequiresMuted']=undefined,this[_0x701b46(0x125)]=!![],this[_0x701b46(0x222)]=![],this[_0x701b46(0x1c4)]();}[_0xd65333(0x1c4)](){const _0x3af1da=_0xd65333;_0xb73c6e(_0x3af1da(0x186),'🚀\x20Initializing\x20NasVideo\x20Player\x20v2.0\x20for',this[_0x3af1da(0x1c7)][_0x3af1da(0x24f)]),this[_0x3af1da(0x234)](),this['setupStyles'](),this['setupEventListeners'](),this[_0x3af1da(0x23b)](),this['loadIMA']();}[_0xd65333(0x234)](){const _0x145bb3=_0xd65333;this[_0x145bb3(0x167)]['classList'][_0x145bb3(0x119)]('nasvideo-player');const _0x3a03f6=this[_0x145bb3(0x167)][_0x145bb3(0x231)]();_0x3a03f6[_0x145bb3(0x160)]>0x0&&(this[_0x145bb3(0x167)][_0x145bb3(0x1fc)](_0x145bb3(0x160),Math[_0x145bb3(0x1fd)](_0x3a03f6[_0x145bb3(0x160)])),this[_0x145bb3(0x167)][_0x145bb3(0x1fc)](_0x145bb3(0x13c),Math[_0x145bb3(0x1fd)](_0x3a03f6[_0x145bb3(0x13c)]))),this[_0x145bb3(0x153)]=document[_0x145bb3(0x233)](_0x145bb3(0x251)),this[_0x145bb3(0x153)][_0x145bb3(0x1d6)]=_0x145bb3(0x19c),this[_0x145bb3(0x167)][_0x145bb3(0x187)]['insertBefore'](this[_0x145bb3(0x153)],this[_0x145bb3(0x167)]),this[_0x145bb3(0x153)][_0x145bb3(0x211)](this[_0x145bb3(0x167)]),this[_0x145bb3(0x12c)]=document[_0x145bb3(0x233)]('div'),this[_0x145bb3(0x12c)][_0x145bb3(0x1d6)]='nv-spacer',this[_0x145bb3(0x153)][_0x145bb3(0x211)](this['spacer']),this[_0x145bb3(0x156)]=document[_0x145bb3(0x233)](_0x145bb3(0x156)),this['video'][_0x145bb3(0x1d6)]='nv-video',this[_0x145bb3(0x156)]['setAttribute']('playsinline',''),this[_0x145bb3(0x156)][_0x145bb3(0x201)]=!![],this[_0x145bb3(0x156)][_0x145bb3(0x11f)]=!![],this['video']['loop']=!![],this[_0x145bb3(0x167)][_0x145bb3(0x211)](this[_0x145bb3(0x156)]),this[_0x145bb3(0x146)]=document[_0x145bb3(0x233)](_0x145bb3(0x251)),this['adContainer'][_0x145bb3(0x1d6)]='nv-ad-container',this['container'][_0x145bb3(0x211)](this[_0x145bb3(0x146)]),this[_0x145bb3(0x179)]=document['createElement']('div'),this['clickOverlay'][_0x145bb3(0x1d6)]=_0x145bb3(0x16d),this[_0x145bb3(0x167)][_0x145bb3(0x211)](this['clickOverlay']),this[_0x145bb3(0x247)](),this[_0x145bb3(0x1e7)](),this['closeBtn']=document[_0x145bb3(0x233)](_0x145bb3(0x18d)),this[_0x145bb3(0x17e)]['className']=_0x145bb3(0x1fb),this['closeBtn'][_0x145bb3(0x22a)]='✕',this[_0x145bb3(0x17e)][_0x145bb3(0x20b)](_0x145bb3(0x1ea),()=>this[_0x145bb3(0x17b)]()),this[_0x145bb3(0x167)][_0x145bb3(0x211)](this[_0x145bb3(0x17e)]);}[_0xd65333(0x1e7)](){const _0x342f41=_0xd65333;this[_0x342f41(0x174)]=document[_0x342f41(0x233)]('a'),this[_0x342f41(0x174)][_0x342f41(0x1d6)]=_0x342f41(0x228),this[_0x342f41(0x174)][_0x342f41(0x11b)]=_0x342f41(0x13b),this['badge']['target']=_0x342f41(0x18f),this[_0x342f41(0x174)][_0x342f41(0x19f)]=_0x342f41(0x120),this['badge'][_0x342f41(0x22a)]=_0x342f41(0x16e),this[_0x342f41(0x167)][_0x342f41(0x211)](this[_0x342f41(0x174)]);}[_0xd65333(0x247)](){const _0x26dc7f=_0xd65333;this[_0x26dc7f(0x244)]=document[_0x26dc7f(0x233)]('div'),this['controlsBar'][_0x26dc7f(0x1d6)]=_0x26dc7f(0x219),this[_0x26dc7f(0x162)]=document[_0x26dc7f(0x233)](_0x26dc7f(0x18d)),this['playBtn'][_0x26dc7f(0x1d6)]=_0x26dc7f(0x15e),this['playBtn'][_0x26dc7f(0x22a)]='❚❚',this['playBtn'][_0x26dc7f(0x20b)](_0x26dc7f(0x1ea),()=>this[_0x26dc7f(0x14a)]()),this[_0x26dc7f(0x1ba)]=document[_0x26dc7f(0x233)](_0x26dc7f(0x18d)),this[_0x26dc7f(0x1ba)][_0x26dc7f(0x1d6)]=_0x26dc7f(0x1e4),this[_0x26dc7f(0x1ba)][_0x26dc7f(0x22a)]='🔇',this['muteBtn'][_0x26dc7f(0x20b)]('click',()=>this[_0x26dc7f(0x1c3)]()),this['fullscreenBtn']=document[_0x26dc7f(0x233)]('button'),this['fullscreenBtn']['className']=_0x26dc7f(0x240),this[_0x26dc7f(0x18e)][_0x26dc7f(0x22a)]='⛶',this[_0x26dc7f(0x18e)][_0x26dc7f(0x20b)](_0x26dc7f(0x1ea),()=>this['toggleFullscreen']()),this['controlsBar'][_0x26dc7f(0x1a8)](this[_0x26dc7f(0x162)],this['muteBtn'],this[_0x26dc7f(0x18e)]),this['container'][_0x26dc7f(0x211)](this[_0x26dc7f(0x244)]);}[_0xd65333(0x132)](){const _0x2deaf3=_0xd65333;if(document['getElementById']('nasvideo-styles'))return;const _0x7b5fe4=document[_0x2deaf3(0x233)](_0x2deaf3(0x1bd));_0x7b5fe4['id']=_0x2deaf3(0x224),_0x7b5fe4['textContent']=_0x2deaf3(0x25d)+_0x49dfd7[_0x2deaf3(0x24e)]+_0x2deaf3(0x239)+_0x49dfd7[_0x2deaf3(0x1c9)]+'px\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x20999999\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x208px\x2032px\x20rgba(0,0,0,0.6)\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20default\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2012px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20floatIn\x200.3s\x20cubic-bezier(0.4,\x200,\x200.2,\x201);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20floatIn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20from\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateY(-20px)\x20scale(0.9);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20to\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateY(0)\x20scale(1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nasvideo-player.floating\x20.nv-close\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nasvideo-player.floating\x20~\x20.nv-spacer\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20var(--spacer-height,\x200);\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20@media\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.nasvideo-player.floating\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20180px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20101px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x2060px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x2010px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',document['head'][_0x2deaf3(0x211)](_0x7b5fe4);}[_0xd65333(0x241)](){const _0x19132d=_0xd65333;let _0x124a60;this[_0x19132d(0x1f2)]=()=>{if(_0x124a60)return;_0x124a60=setTimeout(()=>{const _0x24af40=_0x36ad;this[_0x24af40(0x141)](),this['checkFloating'](),_0x124a60=null;},0x64);},window[_0x19132d(0x20b)](_0x19132d(0x255),this[_0x19132d(0x1f2)],{'passive':!![]}),this[_0x19132d(0x170)]=()=>{const _0x318398=_0x19132d;if(this[_0x318398(0x194)])clearTimeout(this[_0x318398(0x194)]);this[_0x318398(0x194)]=setTimeout(()=>this[_0x318398(0x235)](),0xc8);},window[_0x19132d(0x20b)]('resize',this['resizeHandler'],{'passive':!![]}),typeof ResizeObserver!==_0x19132d(0x147)&&(this[_0x19132d(0x12e)]=new ResizeObserver(()=>this[_0x19132d(0x235)]()),this[_0x19132d(0x12e)][_0x19132d(0x178)](this[_0x19132d(0x167)])),document[_0x19132d(0x20b)](_0x19132d(0x256),()=>this['handleFullscreenChange']()),this[_0x19132d(0x179)][_0x19132d(0x20b)]('click',_0x376f61=>this[_0x19132d(0x226)](_0x376f61)),document['addEventListener'](_0x19132d(0x19e),()=>this[_0x19132d(0x18a)]()),setTimeout(()=>this[_0x19132d(0x141)](),0x64);}[_0xd65333(0x226)](_0x58cb73){const _0x4566ac=_0xd65333;_0x58cb73[_0x4566ac(0x139)](),_0x58cb73[_0x4566ac(0x175)](),_0xb73c6e(_0x4566ac(0x1b3),'👆\x20User\x20interaction\x20detected'),this[_0x4566ac(0x142)]=!![],this[_0x4566ac(0x179)][_0x4566ac(0x242)][_0x4566ac(0x119)](_0x4566ac(0x14e));if(this[_0x4566ac(0x128)]&&!this['adDisplayContainerInitialized'])try{this[_0x4566ac(0x128)][_0x4566ac(0x1a6)](),this[_0x4566ac(0x12b)]=!![],_0xb73c6e(_0x4566ac(0x1b3),_0x4566ac(0x22b));}catch(_0x161e47){_0xb73c6e('error','Failed\x20to\x20initialize\x20ad\x20container:',_0x161e47);}this[_0x4566ac(0x16f)]&&!this['pendingAdRequest']&&!this['isAdPlaying']&&this['requestAds']();}[_0xd65333(0x18a)](){const _0x4656fb=_0xd65333;if(document[_0x4656fb(0x14e)]&&this['isAdPlaying']&&this[_0x4656fb(0x161)])try{this[_0x4656fb(0x161)][_0x4656fb(0x1d2)](),this['adsPaused']=!![],_0xb73c6e(_0x4656fb(0x1b3),'Ad\x20paused\x20-\x20tab\x20hidden');}catch(_0x5aa56e){_0xb73c6e(_0x4656fb(0x1d5),_0x4656fb(0x1e2),_0x5aa56e);}else{if(!document[_0x4656fb(0x14e)]&&this[_0x4656fb(0x14f)]&&this['adsManager']&&this[_0x4656fb(0x198)])try{this[_0x4656fb(0x161)][_0x4656fb(0x23c)](),this[_0x4656fb(0x198)]=![],_0xb73c6e(_0x4656fb(0x1b3),'Ad\x20resumed\x20-\x20tab\x20visible');}catch(_0x326b97){_0xb73c6e('warn','Error\x20resuming\x20ad:',_0x326b97);}}}[_0xd65333(0x141)](){const _0x3ade6a=_0xd65333,_0x5c27ad=this[_0x3ade6a(0x153)]['getBoundingClientRect'](),_0x1053fd=window[_0x3ade6a(0x1c8)]||document['documentElement'][_0x3ade6a(0x133)],_0x391524=this['isInViewport'],_0x575022=Math[_0x3ade6a(0x25a)](0x0,Math['min'](_0x5c27ad[_0x3ade6a(0x180)],_0x1053fd)-Math[_0x3ade6a(0x25a)](_0x5c27ad[_0x3ade6a(0x215)],0x0)),_0x2bc67f=_0x575022/_0x5c27ad[_0x3ade6a(0x13c)];this[_0x3ade6a(0x181)]=_0x2bc67f>=_0x49dfd7['VIEWPORT_THRESHOLD'];if(this[_0x3ade6a(0x181)]&&!_0x391524&&this[_0x3ade6a(0x14f)]&&this['adsManager']&&this[_0x3ade6a(0x198)])try{this[_0x3ade6a(0x161)]['resume'](),this[_0x3ade6a(0x198)]=![],_0xb73c6e(_0x3ade6a(0x1b3),_0x3ade6a(0x1ff));}catch(_0xca9f81){_0xb73c6e(_0x3ade6a(0x1d5),_0x3ade6a(0x157),_0xca9f81);}}[_0xd65333(0x235)](){const _0x5eb1d0=_0xd65333;if(this[_0x5eb1d0(0x135)]||!this['adsManager'])return;const _0x3fa18a=document[_0x5eb1d0(0x200)]?google[_0x5eb1d0(0x230)][_0x5eb1d0(0x237)][_0x5eb1d0(0x11e)]:google[_0x5eb1d0(0x230)]['ViewMode']['NORMAL'];if(this[_0x5eb1d0(0x206)]){const _0x5c48f1=window[_0x5eb1d0(0x19a)]<=0x300?0xb4:_0x49dfd7[_0x5eb1d0(0x24e)],_0x3667d8=window[_0x5eb1d0(0x19a)]<=0x300?0x65:_0x49dfd7[_0x5eb1d0(0x1c9)];this[_0x5eb1d0(0x161)][_0x5eb1d0(0x17d)](_0x5c48f1,_0x3667d8,_0x3fa18a),_0xb73c6e(_0x5eb1d0(0x186),_0x5eb1d0(0x1f5)+_0x5c48f1+'x'+_0x3667d8);}else{const _0x432af6=this[_0x5eb1d0(0x167)][_0x5eb1d0(0x231)]();_0x432af6[_0x5eb1d0(0x160)]>0x0&&_0x432af6[_0x5eb1d0(0x13c)]>0x0&&(this[_0x5eb1d0(0x161)][_0x5eb1d0(0x17d)](_0x432af6[_0x5eb1d0(0x160)],_0x432af6['height'],_0x3fa18a),_0xb73c6e(_0x5eb1d0(0x186),_0x5eb1d0(0x1a9)+_0x432af6[_0x5eb1d0(0x160)]+'x'+_0x432af6[_0x5eb1d0(0x13c)]));}}[_0xd65333(0x1ee)](){const _0x1b340a=_0xd65333;document[_0x1b340a(0x200)]?this[_0x1b340a(0x161)]&&(this[_0x1b340a(0x161)][_0x1b340a(0x17d)](window['screen']['width'],window['screen']['height'],google[_0x1b340a(0x230)]['ViewMode'][_0x1b340a(0x11e)]),_0xb73c6e(_0x1b340a(0x186),'⛶\x20Entered\x20fullscreen\x20mode')):(this[_0x1b340a(0x235)](),_0xb73c6e(_0x1b340a(0x186),_0x1b340a(0x188)));}['checkFloating'](){const _0xfd9c22=_0xd65333;if(this[_0xfd9c22(0x135)]||!this['isAdPlaying'])return;const _0x3977ee=this[_0xfd9c22(0x153)][_0xfd9c22(0x231)](),_0x36e63d=!this[_0xfd9c22(0x206)]&&_0x3977ee[_0xfd9c22(0x180)]<0x0,_0x37d22f=this[_0xfd9c22(0x206)]&&_0x3977ee[_0xfd9c22(0x215)]>=-0x32;if(_0x36e63d)this['enterFloating']();else _0x37d22f&&this[_0xfd9c22(0x164)]();}[_0xd65333(0x14c)](){const _0x183084=_0xd65333;if(this[_0x183084(0x206)])return;this[_0x183084(0x206)]=!![];const _0x12bcfd=this[_0x183084(0x167)]['getBoundingClientRect']();this[_0x183084(0x12c)][_0x183084(0x1bd)][_0x183084(0x1e5)](_0x183084(0x216),_0x12bcfd[_0x183084(0x13c)]+'px'),this[_0x183084(0x167)][_0x183084(0x242)][_0x183084(0x119)]('floating'),_0xb73c6e(_0x183084(0x1b3),_0x183084(0x1ed)),setTimeout(()=>{const _0xc7902a=_0x183084;if(this[_0xc7902a(0x161)]&&!this['isDestroyed']){const _0x2d0f0f=window[_0xc7902a(0x19a)]<=0x300?0xb4:_0x49dfd7[_0xc7902a(0x24e)],_0x14d447=window['innerWidth']<=0x300?0x65:_0x49dfd7[_0xc7902a(0x1c9)];this[_0xc7902a(0x161)][_0xc7902a(0x17d)](_0x2d0f0f,_0x14d447,google[_0xc7902a(0x230)][_0xc7902a(0x237)][_0xc7902a(0x1a1)]),_0xb73c6e(_0xc7902a(0x186),_0xc7902a(0x1b5));}},0x15e);}[_0xd65333(0x164)](){const _0x295f74=_0xd65333;if(!this[_0x295f74(0x206)])return;this[_0x295f74(0x206)]=![],this[_0x295f74(0x167)][_0x295f74(0x242)][_0x295f74(0x1bf)](_0x295f74(0x259)),this['spacer'][_0x295f74(0x1bd)][_0x295f74(0x1e5)]('--spacer-height','0'),_0xb73c6e(_0x295f74(0x1b3),_0x295f74(0x1b1)),setTimeout(()=>{const _0x4f895b=_0x295f74;if(this[_0x4f895b(0x161)]&&!this[_0x4f895b(0x135)]){const _0x4ef503=this[_0x4f895b(0x167)][_0x4f895b(0x231)]();_0x4ef503['width']>0x0&&_0x4ef503[_0x4f895b(0x13c)]>0x0&&(this[_0x4f895b(0x161)][_0x4f895b(0x17d)](_0x4ef503[_0x4f895b(0x160)],_0x4ef503[_0x4f895b(0x13c)],google[_0x4f895b(0x230)][_0x4f895b(0x237)][_0x4f895b(0x1a1)]),_0xb73c6e(_0x4f895b(0x186),_0x4f895b(0x245)+_0x4ef503[_0x4f895b(0x160)]+'x'+_0x4ef503['height']));}},0x15e);}async[_0xd65333(0x23b)](){const _0x862652=_0xd65333;this['video'][_0x862652(0x1a7)]=_0x49dfd7[_0x862652(0x21e)][0x0];try{await this['video'][_0x862652(0x16a)](),_0xb73c6e(_0x862652(0x1b3),_0x862652(0x1be));}catch(_0x366305){_0xb73c6e(_0x862652(0x1d5),_0x862652(0x1e8));}}async[_0xd65333(0x1fa)](){const _0x3c7d19=_0xd65333;try{_0xb73c6e(_0x3c7d19(0x1b3),_0x3c7d19(0x137)),await _0x3d0560(_0x3c7d19(0x121),_0x49dfd7[_0x3c7d19(0x24d)]),this[_0x3c7d19(0x16f)]=!![],_0xb73c6e('info',_0x3c7d19(0x184)),this[_0x3c7d19(0x185)]();}catch(_0x575b25){_0xb73c6e('error',_0x3c7d19(0x20f),_0x575b25),this[_0x3c7d19(0x16f)]=![],this[_0x3c7d19(0x179)]['classList'][_0x3c7d19(0x119)]('hidden');}}[_0xd65333(0x185)](){const _0x280a6f=_0xd65333;if(!window[_0x280a6f(0x148)]||!window[_0x280a6f(0x148)][_0x280a6f(0x230)]){_0xb73c6e(_0x280a6f(0x260),'❌\x20Google\x20IMA\x20not\x20available');return;}google[_0x280a6f(0x230)][_0x280a6f(0x1da)][_0x280a6f(0x18b)](google[_0x280a6f(0x230)][_0x280a6f(0x209)]['VpaidMode'][_0x280a6f(0x253)]),google[_0x280a6f(0x230)]['settings']['setDisableCustomPlaybackForIOS10Plus'](!![]),this[_0x280a6f(0x128)]=new google[(_0x280a6f(0x230))][(_0x280a6f(0x18c))](this['adContainer'],this[_0x280a6f(0x156)]),this[_0x280a6f(0x15a)]=new google[(_0x280a6f(0x230))][(_0x280a6f(0x14b))](this[_0x280a6f(0x128)]),this[_0x280a6f(0x15a)][_0x280a6f(0x221)]()['setNumRedirects'](_0x49dfd7['MAX_REDIRECTS']),this['adsLoader'][_0x280a6f(0x221)]()['setVpaidMode'](google['ima'][_0x280a6f(0x209)][_0x280a6f(0x19b)][_0x280a6f(0x253)]),this[_0x280a6f(0x15a)][_0x280a6f(0x221)]()[_0x280a6f(0x172)](!![]),this['adsLoader'][_0x280a6f(0x20b)](google[_0x280a6f(0x230)]['AdsManagerLoadedEvent']['Type'][_0x280a6f(0x23a)],_0x31397d=>this['onAdsManagerLoaded'](_0x31397d),![]),this[_0x280a6f(0x15a)][_0x280a6f(0x20b)](google[_0x280a6f(0x230)][_0x280a6f(0x134)][_0x280a6f(0x1cd)][_0x280a6f(0x1ef)],_0x1321b7=>this[_0x280a6f(0x220)](_0x1321b7),![]),_0xb73c6e(_0x280a6f(0x1b3),_0x280a6f(0x25b)),this[_0x280a6f(0x1ec)]();}async['checkAutoplaySupport'](){const _0x768e08=_0xd65333;_0xb73c6e(_0x768e08(0x1b3),_0x768e08(0x130));try{const _0x52f890=this[_0x768e08(0x156)][_0x768e08(0x16a)]();if(_0x52f890!==undefined){await _0x52f890,this[_0x768e08(0x173)]=!![],this[_0x768e08(0x248)]=this['video'][_0x768e08(0x201)],_0xb73c6e('info','✅\x20Autoplay\x20supported\x20(muted:\x20'+this[_0x768e08(0x248)]+')');if(_0x49dfd7[_0x768e08(0x1b4)])try{this[_0x768e08(0x128)][_0x768e08(0x1a6)](),this[_0x768e08(0x12b)]=!![],this[_0x768e08(0x179)][_0x768e08(0x242)][_0x768e08(0x119)](_0x768e08(0x14e)),_0xb73c6e(_0x768e08(0x1b3),_0x768e08(0x129)),this[_0x768e08(0x196)]();}catch(_0x2e48ba){_0xb73c6e(_0x768e08(0x1d5),_0x768e08(0x23f),_0x2e48ba),this[_0x768e08(0x1b7)]();}}else this['autoplayAllowed']=!![],this[_0x768e08(0x248)]=!![],_0x49dfd7[_0x768e08(0x1b4)]&&(this['adDisplayContainer'][_0x768e08(0x1a6)](),this[_0x768e08(0x12b)]=!![],this[_0x768e08(0x179)][_0x768e08(0x242)][_0x768e08(0x119)](_0x768e08(0x14e)),this[_0x768e08(0x196)]());}catch(_0x26e11f){this[_0x768e08(0x173)]=![],this[_0x768e08(0x248)]=![],_0xb73c6e('warn',_0x768e08(0x214)),this[_0x768e08(0x1b7)]();}}[_0xd65333(0x1b7)](){const _0x1859a9=_0xd65333;this[_0x1859a9(0x179)][_0x1859a9(0x242)]['remove'](_0x1859a9(0x14e)),_0xb73c6e('info',_0x1859a9(0x210));}async[_0xd65333(0x196)](){const _0x21365e=_0xd65333;if(this[_0x21365e(0x135)]||this[_0x21365e(0x17c)])return;const _0x2c40c7=this[_0x21365e(0x125)]&&!this['firstAdFilled'],_0x304258=_0x2c40c7?_0x49dfd7[_0x21365e(0x1cc)]:_0x49dfd7[_0x21365e(0x22c)];if(this['retryCount']>=_0x304258){_0xb73c6e(_0x21365e(0x1d5),_0x21365e(0x202)+_0x304258+_0x21365e(0x1d9));return;}const _0x2d5b22=this[_0x21365e(0x167)][_0x21365e(0x231)]();if(_0x2d5b22[_0x21365e(0x160)]<0x1){setTimeout(()=>this[_0x21365e(0x196)](),0x1f4);return;}this['pendingAdRequest']=!![];try{const _0x472a1e=await _0x4fd208[_0x21365e(0x193)](_0x49dfd7[_0x21365e(0x17f)],this[_0x21365e(0x1c7)]);if(!_0x472a1e){_0xb73c6e('error',_0x21365e(0x197)),this[_0x21365e(0x17c)]=![];return;}const _0x450ed3=_0x2c40c7?_0x21365e(0x1b2):_0x21365e(0x24b),_0x5631a9=_0x21365e(0x13d)+(this[_0x21365e(0x1a2)]+0x1)+'/'+_0x304258+')';_0xb73c6e(_0x21365e(0x1b3),_0x450ed3+_0x21365e(0x21a)+_0x5631a9+_0x21365e(0x12a)+(this['refreshCount']+0x1));const _0x5936ae=new google[(_0x21365e(0x230))]['AdsRequest']();_0x5936ae['adTagUrl']=_0x472a1e,_0x5936ae[_0x21365e(0x127)]=Math[_0x21365e(0x1fd)](_0x2d5b22[_0x21365e(0x160)]),_0x5936ae[_0x21365e(0x218)]=Math[_0x21365e(0x1fd)](_0x2d5b22[_0x21365e(0x13c)]),_0x5936ae[_0x21365e(0x118)]=_0x49dfd7['VAST_LOAD_TIMEOUT'];const _0x52145f=this['autoplayAllowed']!==undefined?this[_0x21365e(0x173)]:!![],_0xb2c8eb=this['autoplayRequiresMuted']!==undefined?this[_0x21365e(0x248)]:!![];_0x5936ae[_0x21365e(0x150)](_0x52145f),_0x5936ae['setAdWillPlayMuted'](_0xb2c8eb),_0xb73c6e(_0x21365e(0x186),_0x21365e(0x21b)+_0x52145f+',\x20muted='+_0xb2c8eb),_0x5936ae['contentTitle']=this[_0x21365e(0x1c7)]['title'],_0x5936ae[_0x21365e(0x21d)]=this[_0x21365e(0x1c7)][_0x21365e(0x16c)]?.['split'](',')||[],this['adsLoader'][_0x21365e(0x196)](_0x5936ae),_0xb73c6e(_0x21365e(0x186),_0x21365e(0x195));}catch(_0x2cb873){this[_0x21365e(0x17c)]=![],this['onAdError']({'getError':()=>_0x2cb873});}}[_0xd65333(0x25c)](_0x5a3020){const _0x258760=_0xd65333;_0xb73c6e(_0x258760(0x1b3),_0x258760(0x1e3)),this[_0x258760(0x17c)]=![];this[_0x258760(0x125)]&&(this[_0x258760(0x222)]=!![],this[_0x258760(0x125)]=![],_0xb73c6e('info',_0x258760(0x203)));const _0x1a6502=new google[(_0x258760(0x230))]['AdsRenderingSettings']();_0x1a6502['loadVideoTimeout']=_0x49dfd7[_0x258760(0x1b9)],_0x1a6502[_0x258760(0x124)]=![],_0x1a6502[_0x258760(0x165)]=!![],_0x1a6502[_0x258760(0x1c0)]=![],this['adsManager']=_0x5a3020['getAdsManager'](this[_0x258760(0x156)],_0x1a6502),this[_0x258760(0x161)][_0x258760(0x20b)](google[_0x258760(0x230)][_0x258760(0x1db)][_0x258760(0x1cd)][_0x258760(0x1f4)],()=>{const _0x277ea8=_0x258760;_0xb73c6e(_0x277ea8(0x1b3),_0x277ea8(0x140));}),this[_0x258760(0x161)][_0x258760(0x20b)](google['ima'][_0x258760(0x1db)][_0x258760(0x1cd)][_0x258760(0x1a0)],()=>{const _0x1e5cab=_0x258760;this['isAdPlaying']=!![],this[_0x1e5cab(0x198)]=![],this[_0x1e5cab(0x156)]['pause'](),this[_0x1e5cab(0x244)][_0x1e5cab(0x242)]['add'](_0x1e5cab(0x14e)),_0xb73c6e(_0x1e5cab(0x1b3),_0x1e5cab(0x227));}),this[_0x258760(0x161)][_0x258760(0x20b)](google[_0x258760(0x230)][_0x258760(0x1db)]['Type'][_0x258760(0x144)],()=>{const _0x3b14d0=_0x258760;_0xb73c6e(_0x3b14d0(0x1b3),_0x3b14d0(0x136));}),this[_0x258760(0x161)][_0x258760(0x20b)](google[_0x258760(0x230)]['AdEvent'][_0x258760(0x1cd)][_0x258760(0x1ca)],()=>{const _0x46447b=_0x258760;_0xb73c6e(_0x46447b(0x1b3),'📊\x20Ad:\x2050%\x20complete');}),this[_0x258760(0x161)][_0x258760(0x20b)](google[_0x258760(0x230)][_0x258760(0x1db)][_0x258760(0x1cd)][_0x258760(0x236)],()=>{const _0x513241=_0x258760;_0xb73c6e(_0x513241(0x1b3),'📊\x20Ad:\x2075%\x20complete');}),this[_0x258760(0x161)]['addEventListener'](google['ima']['AdEvent'][_0x258760(0x1cd)][_0x258760(0x1df)],()=>{const _0x3f0fa2=_0x258760;_0xb73c6e(_0x3f0fa2(0x1b3),'✅\x20Ad\x20completed');}),this[_0x258760(0x161)][_0x258760(0x20b)](google[_0x258760(0x230)][_0x258760(0x1db)][_0x258760(0x1cd)][_0x258760(0x159)],()=>{const _0x48de7f=_0x258760;this[_0x48de7f(0x198)]=!![],this[_0x48de7f(0x162)]['innerHTML']='▶',_0xb73c6e('info','⏸\x20Ad\x20paused');}),this[_0x258760(0x161)]['addEventListener'](google[_0x258760(0x230)][_0x258760(0x1db)][_0x258760(0x1cd)][_0x258760(0x15b)],()=>{const _0x1a041c=_0x258760;this[_0x1a041c(0x198)]=![],this['playBtn']['innerHTML']='❚❚',_0xb73c6e(_0x1a041c(0x1b3),_0x1a041c(0x11c));}),this[_0x258760(0x161)][_0x258760(0x20b)](google['ima'][_0x258760(0x1db)][_0x258760(0x1cd)][_0x258760(0x213)],()=>{const _0x1ccfeb=_0x258760;_0xb73c6e(_0x1ccfeb(0x1b3),_0x1ccfeb(0x163));}),this['adsManager'][_0x258760(0x20b)](google['ima']['AdEvent'][_0x258760(0x1cd)]['ALL_ADS_COMPLETED'],()=>this[_0x258760(0x138)]()),this[_0x258760(0x161)]['addEventListener'](google[_0x258760(0x230)]['AdErrorEvent']['Type'][_0x258760(0x1ef)],_0x285802=>this['onAdError'](_0x285802));try{const _0x2ff929=this[_0x258760(0x167)][_0x258760(0x231)]();this[_0x258760(0x161)]['init'](_0x2ff929[_0x258760(0x160)],_0x2ff929[_0x258760(0x13c)],google[_0x258760(0x230)][_0x258760(0x237)][_0x258760(0x1a1)]),this['adsManager']['start'](),this[_0x258760(0x1a2)]=0x0,this[_0x258760(0x19d)]=_0x49dfd7[_0x258760(0x1fe)],_0xb73c6e('info','🚀\x20AdsManager\x20started');}catch(_0x452b29){_0xb73c6e(_0x258760(0x260),_0x258760(0x24a),_0x452b29),this[_0x258760(0x220)]({'getError':()=>_0x452b29});}}[_0xd65333(0x138)](){const _0x224d2f=_0xd65333;_0xb73c6e('info','✅\x20All\x20ads\x20completed'),this[_0x224d2f(0x14f)]=![],this[_0x224d2f(0x198)]=![],this[_0x224d2f(0x244)][_0x224d2f(0x242)][_0x224d2f(0x1bf)]('hidden'),this[_0x224d2f(0x162)][_0x224d2f(0x22a)]='❚❚';this['isFloating']&&this[_0x224d2f(0x164)]();if(this[_0x224d2f(0x161)]){try{this[_0x224d2f(0x161)][_0x224d2f(0x17b)](),_0xb73c6e(_0x224d2f(0x186),_0x224d2f(0x149));}catch(_0x586eff){_0xb73c6e('warn','Error\x20destroying\x20adsManager:',_0x586eff);}this[_0x224d2f(0x161)]=null;}if(this[_0x224d2f(0x15a)])try{this[_0x224d2f(0x15a)][_0x224d2f(0x1e9)](),_0xb73c6e(_0x224d2f(0x1b3),'✅\x20AdsLoader.contentComplete()\x20called\x20-\x20Ready\x20for\x20next\x20ad\x20request');}catch(_0x2cdc92){_0xb73c6e(_0x224d2f(0x1d5),_0x224d2f(0x152),_0x2cdc92);}this[_0x224d2f(0x156)][_0x224d2f(0x16a)]()[_0x224d2f(0x225)](()=>{}),this[_0x224d2f(0x212)]();}['onAdError'](_0x2dbda3){const _0x1a2279=_0xd65333,_0x4ec6a6=_0x2dbda3['getError']?_0x2dbda3[_0x1a2279(0x189)]():_0x2dbda3,_0x1b60b0=_0x4ec6a6&&_0x4ec6a6['getErrorCode']?_0x4ec6a6[_0x1a2279(0x1b0)]():_0x1a2279(0x23e),_0x10059d=_0x4ec6a6&&_0x4ec6a6[_0x1a2279(0x12d)]?_0x4ec6a6[_0x1a2279(0x12d)]():_0x4ec6a6['message']||_0x1a2279(0x1af);_0xb73c6e(_0x1a2279(0x1d5),'⚠\x20VAST\x20Error\x20'+_0x1b60b0+':\x20'+_0x10059d),this[_0x1a2279(0x14f)]=![],this[_0x1a2279(0x17c)]=![],this[_0x1a2279(0x244)][_0x1a2279(0x242)][_0x1a2279(0x1bf)](_0x1a2279(0x14e));if(this[_0x1a2279(0x161)]){try{this[_0x1a2279(0x161)][_0x1a2279(0x17b)](),_0xb73c6e(_0x1a2279(0x186),_0x1a2279(0x1e0));}catch(_0x58e073){}this[_0x1a2279(0x161)]=null;}if(this[_0x1a2279(0x15a)])try{this[_0x1a2279(0x15a)]['contentComplete'](),_0xb73c6e('info',_0x1a2279(0x15c));}catch(_0xf63456){_0xb73c6e(_0x1a2279(0x1d5),_0x1a2279(0x152),_0xf63456);}this['video']['play']()[_0x1a2279(0x225)](()=>{});const _0x432c29=this[_0x1a2279(0x125)]&&!this[_0x1a2279(0x222)],_0x18bdd6=_0x432c29?_0x49dfd7[_0x1a2279(0x1cc)]:_0x49dfd7['MAX_RETRIES'];this[_0x1a2279(0x1a2)]++;if(this[_0x1a2279(0x1a2)]<=_0x18bdd6){let _0x331fd;_0x432c29?(_0x331fd=_0x49dfd7['FIRST_AD_RETRY_DELAYS'][this['retryCount']-0x1]||_0x49dfd7[_0x1a2279(0x20c)][_0x49dfd7[_0x1a2279(0x20c)][_0x1a2279(0x1c2)]-0x1],_0xb73c6e('log',_0x1a2279(0x1d8)+this['retryCount']+'/'+_0x18bdd6+'\x20in\x20'+_0x331fd+_0x1a2279(0x14d))):(_0x331fd=this[_0x1a2279(0x19d)],this[_0x1a2279(0x19d)]=Math[_0x1a2279(0x1a4)](this['backoffMs']*1.5,_0x49dfd7[_0x1a2279(0x1ce)]),_0xb73c6e(_0x1a2279(0x186),_0x1a2279(0x13f)+this[_0x1a2279(0x1a2)]+'/'+_0x18bdd6+_0x1a2279(0x1e1)+_0x331fd+_0x1a2279(0x14d))),setTimeout(()=>this[_0x1a2279(0x196)](),_0x331fd);}else _0x432c29?(_0xb73c6e(_0x1a2279(0x260),'❌\x20First\x20ad\x20failed\x20after\x20'+_0x18bdd6+_0x1a2279(0x1cb)+_0x49dfd7[_0x1a2279(0x20c)][_0x1a2279(0x20d)]((_0x3fcccb,_0x167e76)=>_0x3fcccb+_0x167e76,0x0)/0x3e8+'s\x20total).\x20Scheduling\x20refresh.'),this[_0x1a2279(0x125)]=![]):_0xb73c6e(_0x1a2279(0x260),'❌\x20Max\x20retries\x20reached.\x20Scheduling\x20a\x20refresh.'),this['scheduleRefresh']();}[_0xd65333(0x212)](){const _0x435f25=_0xd65333;if(this[_0x435f25(0x135)]||this[_0x435f25(0x12f)]>=_0x49dfd7['MAX_REFRESHES'])return;_0xb73c6e('log',_0x435f25(0x1f9)+_0x49dfd7[_0x435f25(0x1ac)]/0x3e8+_0x435f25(0x199)+(this[_0x435f25(0x12f)]+0x1)+'/'+_0x49dfd7[_0x435f25(0x22e)]+')'),setTimeout(()=>{const _0x9f5360=_0x435f25;this['refreshCount']++,this[_0x9f5360(0x1a2)]=0x0,this[_0x9f5360(0x19d)]=_0x49dfd7[_0x9f5360(0x1fe)],this[_0x9f5360(0x196)]();},_0x49dfd7[_0x435f25(0x1ac)]);}[_0xd65333(0x14a)](){const _0x45fc40=_0xd65333;if(this[_0x45fc40(0x14f)]&&this[_0x45fc40(0x161)])try{this['adsPaused']?(this['adsManager']['resume'](),this[_0x45fc40(0x162)][_0x45fc40(0x22a)]='❚❚'):(this['adsManager'][_0x45fc40(0x1d2)](),this['playBtn'][_0x45fc40(0x22a)]='▶');}catch(_0xd1a630){_0xb73c6e(_0x45fc40(0x1d5),_0x45fc40(0x1e6),_0xd1a630);}else this[_0x45fc40(0x156)][_0x45fc40(0x1de)]?(this[_0x45fc40(0x156)][_0x45fc40(0x16a)](),this['playBtn'][_0x45fc40(0x22a)]='❚❚'):(this['video'][_0x45fc40(0x1d2)](),this['playBtn']['innerHTML']='▶');}[_0xd65333(0x1c3)](){const _0x3dd771=_0xd65333,_0x1e5d57=this[_0x3dd771(0x156)][_0x3dd771(0x201)];this[_0x3dd771(0x156)][_0x3dd771(0x201)]=!_0x1e5d57,this[_0x3dd771(0x1ba)][_0x3dd771(0x22a)]=!_0x1e5d57?'🔇':'🔊';if(this[_0x3dd771(0x161)])try{this[_0x3dd771(0x161)][_0x3dd771(0x223)](_0x1e5d57?0x1:0x0);}catch(_0x26d734){_0xb73c6e(_0x3dd771(0x1d5),_0x3dd771(0x191),_0x26d734);}}[_0xd65333(0x192)](){const _0x4171f6=_0xd65333;!document[_0x4171f6(0x200)]?this[_0x4171f6(0x167)][_0x4171f6(0x1b8)]()[_0x4171f6(0x225)](_0x10c3cd=>_0xb73c6e(_0x4171f6(0x260),_0x4171f6(0x254)+_0x10c3cd[_0x4171f6(0x1ab)])):document[_0x4171f6(0x1cf)]();}['destroy'](){const _0x332e73=_0xd65333;if(this[_0x332e73(0x135)])return;this[_0x332e73(0x135)]=!![],_0xb73c6e(_0x332e73(0x186),_0x332e73(0x1ae)),window[_0x332e73(0x11a)](_0x332e73(0x255),this[_0x332e73(0x1f2)]),window['removeEventListener'](_0x332e73(0x17d),this[_0x332e73(0x170)]),document[_0x332e73(0x11a)]('fullscreenchange',this['handleFullscreenChange']),document[_0x332e73(0x11a)]('visibilitychange',this['handleVisibilityChange']);this[_0x332e73(0x12e)]&&(this[_0x332e73(0x12e)]['disconnect'](),this[_0x332e73(0x12e)]=null);this[_0x332e73(0x194)]&&clearTimeout(this[_0x332e73(0x194)]);if(this[_0x332e73(0x161)])try{this[_0x332e73(0x161)][_0x332e73(0x17b)]();}catch(_0x18a330){}if(this['adsLoader'])try{this[_0x332e73(0x15a)][_0x332e73(0x17b)]();}catch(_0x101c47){}this[_0x332e73(0x153)]['remove'](),_0xb73c6e(_0x332e73(0x186),'✅\x20Player\x20destroyed\x20successfully');}}class _0x3434b8{static[_0xd65333(0x1c4)](){const _0x12dd03=_0xd65333;if(window[_0x12dd03(0x20e)])return;window[_0x12dd03(0x20e)]=!![],_0xb73c6e(_0x12dd03(0x1b3),_0x12dd03(0x250)),document[_0x12dd03(0x154)](_0x12dd03(0x238))[_0x12dd03(0x1ad)](_0x311a73=>{const _0x3d4554=_0x12dd03;!_0x311a73[_0x3d4554(0x22f)]['nasvideoInitialized']&&(_0x311a73[_0x3d4554(0x22f)][_0x3d4554(0x122)]=_0x3d4554(0x1f3),new _0x2ee5be(_0x311a73));});}}_0x3a3e1e(()=>{const _0x2a7b3f=_0xd65333;_0xb73c6e(_0x2a7b3f(0x1b3),_0x2a7b3f(0x1d3)),_0x3434b8['init']();});}()));
+(function () {
+    "use strict";
+
+    // ========== FULL-FEATURED CONFIGURATION ==========
+    const CONFIG = {
+        VAST_TAG: 'https://pubads.g.doubleclick.net/gampad/ads?iu=/23272458704/Nasrev.com/Video&description_url=[placeholder]&tfcd=0&npa=0&sz=400x300%7C640x480&ciu_szs=300x250%2C336x280%2C728x90&gdfp_req=1&unviewed_position_start=1&output=vast&env=vp&impl=s&correlator=&vpmute=1&cust_params=[cust_params_placeholder]',
+        SELLER_JSON_URL: 'https://nasrev.com/sellers.json',
+        MAX_REDIRECTS: 10, VAST_LOAD_TIMEOUT: 8000, VIDEO_LOAD_TIMEOUT: 15000,
+        MAX_RETRIES: 3, INITIAL_BACKOFF: 1000, MAX_BACKOFF: 10000,
+        MIN_REFRESH_INTERVAL: 30000, MAX_REFRESHES: 50,
+        FLOATING_WIDTH: 300, FLOATING_HEIGHT: 169,
+        BG_VIDEOS: ['https://github.com/Tipblogg/nasrev-cdn/raw/refs/heads/main/nas.mp4'],
+        ENABLE_DEBUG_LOGGING: true,
+    };
+
+    // ========== UTILITIES ==========
+    function domReady(fn) { document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', fn) : fn(); }
+    function loadScript(src) { return new Promise((resolve, reject) => { const s = document.createElement('script'); s.src = src; s.async = true; s.onload = resolve; s.onerror = reject; document.head.appendChild(s); }); }
+    function log(level, ...args) { if (CONFIG.ENABLE_DEBUG_LOGGING) { console[level]('NasVideo:', ...args); } }
+
+    // ========== DOMAIN AUTHORIZATION & SUPPLY CHAIN MANAGER ==========
+    class SchainManager {
+        static sellerDataCache = null;
+        static async getSchainObject(currentDomain) {
+            if (!CONFIG.SELLER_JSON_URL) return null;
+            try {
+                if (!this.sellerDataCache) {
+                    const response = await fetch(CONFIG.SELLER_JSON_URL);
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    this.sellerDataCache = await response.json();
+                }
+                const authorizedSeller = this.sellerDataCache.sellers.find(s => s.domain.toLowerCase() === currentDomain.toLowerCase());
+                if (authorizedSeller) {
+                    log('info', `✅ Domain '${currentDomain}' is AUTHORIZED.`);
+                    return { ver: '1.0', complete: 1, nodes: [{ sid: authorizedSeller.seller_id, name: authorizedSeller.name, domain: authorizedSeller.domain, hp: 1 }] };
+                } else {
+                    log('error', `🛑 Domain '${currentDomain}' NOT in sellers.json. Ad requests will be blocked.`);
+                    return null;
+                }
+            } catch (e) { log('error', '✗ Could not fetch or parse sellers.json', e); return null; }
+        }
+    }
+
+    // ========== AUTOMATIC PUBLISHER DATA DETECTOR ==========
+    class PublisherDetector {
+        static getInfo() { return { domain: window.location.hostname, url: window.location.href, title: document.title || '', keywords: this.getMetaContent('keywords'), category: this.getMetaContent('article:section') || this.getMetaContent('category'), contentId: this.getCanonicalUrl() }; }
+        static getMetaContent(name) { const meta = document.querySelector(`meta[name="${name}"], meta[property="${name}"]`); return meta ? meta.content : ''; }
+        static getCanonicalUrl() { const link = document.querySelector('link[rel="canonical"]'); return link ? link.href : window.location.href; }
+    }
+
+    // ========== VAST URL BUILDER ==========
+    class VastUrlBuilder {
+        static async build(baseTag, publisher) {
+            let url = baseTag.replace('[placeholder]', encodeURIComponent(publisher.url)).replace('correlator=', 'correlator=' + Date.now());
+            const consentParams = await this.getConsentParams();
+            const schainObject = await SchainManager.getSchainObject(publisher.domain);
+            if (!schainObject) return null;
+            const allParams = { title: publisher.title, keywords: publisher.keywords, category: publisher.category, content_id: publisher.contentId, domain: publisher.domain, ...consentParams, schain: JSON.stringify(schainObject) };
+            const encodedParams = Object.entries(allParams).filter(([_, v]) => v).map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`).join('&');
+            return url.replace('[cust_params_placeholder]', encodedParams);
+        }
+        static async getConsentParams() {
+            const params = {
+                gdpr: 0,
+                gdpr_consent: '',
+                us_privacy: '',
+                ltd: '0'
+            };
+
+            try {
+                if (typeof window.__tcfapi === 'function') {
+                    const tcData = await new Promise(r => window.__tcfapi('getTCData', 2, (d, s) => r(s ? d : null)));
+                    if (tcData) {
+                        params.gdpr = tcData.gdprApplies ? 1 : 0;
+                        params.gdpr_consent = tcData.tcString || '';
+
+                        const hasPersonalizationConsent =
+                            tcData.purpose?.consents?.[1] &&
+                            tcData.purpose?.consents?.[3] &&
+                            tcData.purpose?.consents?.[4];
+
+                        if (params.gdpr === 1 && !hasPersonalizationConsent) {
+                            params.npa = 1;
+                            params.ltd = '1';
+                        }
+                    }
+                }
+
+                if (typeof window.__gpp === 'function') {
+                    params.rdp = '1';
+                }
+
+            } catch (e) {
+                log('warn', 'Consent API error:', e);
+            }
+
+            return params;
+        }
+    }
+
+    // ========== MAIN VIDEO PLAYER CLASS ==========
+    class NasVideoPlayer {
+        constructor(container) {
+            this.container = container;
+            this.publisher = PublisherDetector.getInfo();
+            this.isInitialized = false; this.isFloating = false; this.isAdPlaying = false; this.isDestroyed = false;
+            this.adsLoader = null; this.adsManager = null; this.adsPaused = false;
+            this.retryCount = 0; this.backoffMs = CONFIG.INITIAL_BACKOFF; this.refreshCount = 0;
+            this.resizeObserver = null;
+            this.isInViewport = false;
+            this.init();
+        }
+
+        init() {
+            log('log', 'Initializing player for', this.publisher.domain);
+            this.setupDOM(); this.setupStyles(); this.setupEventListeners();
+            this.loadBackgroundVideo(); this.loadIMA();
+        }
+
+        setupDOM() {
+            this.container.classList.add('nasvideo-player');
+
+            const rect = this.container.getBoundingClientRect();
+            if (rect.width > 0) {
+                this.container.setAttribute('width', Math.floor(rect.width));
+                this.container.setAttribute('height', Math.floor(rect.height));
+            }
+
+            this.wrapper = document.createElement('div');
+            this.wrapper.className = 'nv-wrapper';
+            this.container.parentNode.insertBefore(this.wrapper, this.container);
+            this.wrapper.appendChild(this.container);
+
+            this.spacer = document.createElement('div');
+            this.spacer.className = 'nv-spacer';
+            this.wrapper.appendChild(this.spacer);
+
+            this.video = document.createElement('video');
+            this.video.className = 'nv-video';
+            this.video.setAttribute('playsinline', '');
+            this.video.muted = true;
+            this.video.autoplay = true;
+            this.video.loop = true;
+            this.container.appendChild(this.video);
+
+            this.adContainer = document.createElement('div');
+            this.adContainer.className = 'nv-ad-container';
+            this.container.appendChild(this.adContainer);
+
+            this.createControls();
+            this.createBadge();
+
+            this.closeBtn = document.createElement('button');
+            this.closeBtn.className = 'nv-close';
+            this.closeBtn.innerHTML = '✕';
+            this.closeBtn.addEventListener('click', () => this.destroy());
+            this.container.appendChild(this.closeBtn);
+        }
+
+        createBadge() {
+            this.badge = document.createElement('a');
+            this.badge.className = 'nv-badge';
+            this.badge.href = 'https://nasrev.com';
+            this.badge.target = '_blank';
+            this.badge.innerHTML = 'Powered by <strong>Nasrev</strong>';
+            this.container.appendChild(this.badge);
+        }
+
+        createControls() {
+            this.controlsBar = document.createElement('div');
+            this.controlsBar.className = 'nv-controls';
+
+            this.playBtn = document.createElement('button');
+            this.playBtn.className = 'nv-btn nv-play';
+            this.playBtn.innerHTML = '❚❚';
+            this.playBtn.addEventListener('click', () => this.togglePlay());
+
+            this.muteBtn = document.createElement('button');
+            this.muteBtn.className = 'nv-btn nv-mute';
+            this.muteBtn.innerHTML = '🔇';
+            this.muteBtn.addEventListener('click', () => this.toggleMute());
+
+            this.fullscreenBtn = document.createElement('button');
+            this.fullscreenBtn.className = 'nv-btn nv-fullscreen';
+            this.fullscreenBtn.innerHTML = '⛶';
+            this.fullscreenBtn.addEventListener('click', () => this.toggleFullscreen());
+
+            this.controlsBar.append(this.playBtn, this.muteBtn, this.fullscreenBtn);
+            this.container.appendChild(this.controlsBar);
+        }
+
+        setupStyles() {
+            if (document.getElementById('nasvideo-styles')) return;
+            const styles = document.createElement('style');
+            styles.id = 'nasvideo-styles';
+            styles.textContent = `
+                .nasvideo-player { 
+                    position: relative !important; 
+                    width: 100% !important; 
+                    max-width: 640px; 
+                    aspect-ratio: 16/9; 
+                    background: #000; 
+                    border-radius: 8px; 
+                    overflow: hidden !important; 
+                    margin: auto; 
+                    cursor: pointer; 
+                    transition: all 0.3s ease; 
+                }
+                .nv-wrapper { 
+                    position: relative; 
+                    width: 100%; 
+                } 
+                .nv-spacer { 
+                    display: none; 
+                }
+                .nv-video, .nv-ad-container { 
+                    position: absolute !important; 
+                    top: 0 !important; 
+                    left: 0 !important; 
+                    width: 100% !important; 
+                    height: 100% !important;
+                    max-width: none !important;
+                    max-height: none !important;
+                    object-fit: cover !important;
+                }
+                .nv-video { 
+                    pointer-events: none; 
+                    z-index: 1;
+                }
+                .nv-ad-container { 
+                    pointer-events: auto;
+                    z-index: 2;
+                }
+                .nv-ad-container > div {
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+                .nv-ad-container video {
+                    width: 100% !important;
+                    height: 100% !important;
+                    object-fit: cover !important;
+                }
+                .nv-controls { 
+                    position: absolute; 
+                    bottom: 0; 
+                    left: 0; 
+                    right: 0; 
+                    padding: 10px; 
+                    background: linear-gradient(transparent, rgba(0,0,0,0.7)); 
+                    display: flex; 
+                    gap: 10px; 
+                    opacity: 0; 
+                    transition: opacity 0.3s; 
+                    z-index: 10; 
+                    pointer-events: all; 
+                }
+                .nasvideo-player:hover .nv-controls { 
+                    opacity: 1; 
+                }
+                .nv-controls.hidden { 
+                    display: none !important; 
+                }
+                .nv-btn { 
+                    background: transparent; 
+                    color: white; 
+                    border: none; 
+                    font-size: 20px; 
+                    cursor: pointer; 
+                    transition: transform 0.2s; 
+                }
+                .nv-btn:hover { 
+                    transform: scale(1.1); 
+                }
+                .nv-badge { 
+                    position: absolute; 
+                    top: 10px; 
+                    left: 10px; 
+                    background: rgba(0,0,0,0.6); 
+                    color: white; 
+                    padding: 4px 8px; 
+                    border-radius: 4px; 
+                    font-size: 11px; 
+                    text-decoration: none; 
+                    z-index: 11; 
+                    opacity: 0; 
+                    transition: opacity 0.3s; 
+                    pointer-events: all; 
+                }
+                .nv-badge strong { 
+                    color: #4CAF50; 
+                }
+                .nasvideo-player:hover .nv-badge { 
+                    opacity: 1; 
+                }
+                .nv-close { 
+                    position: absolute; 
+                    top: 8px; 
+                    right: 8px; 
+                    width: 30px; 
+                    height: 30px; 
+                    border-radius: 50%; 
+                    background: rgba(0,0,0,0.8); 
+                    color: white; 
+                    border: 2px solid white;
+                    cursor: pointer; 
+                    font-size: 18px; 
+                    display: none; 
+                    z-index: 12; 
+                    pointer-events: all; 
+                    transition: all 0.2s;
+                    line-height: 26px;
+                    padding: 0;
+                }
+                .nv-close:hover { 
+                    background: rgba(255,255,255,0.2);
+                    transform: scale(1.1);
+                }
+                .nasvideo-player.floating { 
+                    position: fixed !important; 
+                    bottom: 20px !important; 
+                    right: 20px !important; 
+                    width: ${CONFIG.FLOATING_WIDTH}px !important; 
+                    height: ${CONFIG.FLOATING_HEIGHT}px !important; 
+                    z-index: 999999 !important; 
+                    box-shadow: 0 8px 32px rgba(0,0,0,0.6) !important; 
+                    cursor: default !important; 
+                    max-width: none !important;
+                    border-radius: 12px !important;
+                }
+                .nasvideo-player.floating .nv-close { 
+                    display: block !important; 
+                }
+                .nasvideo-player.floating ~ .nv-spacer { 
+                    display: block; 
+                    height: var(--spacer-height, 0); 
+                }
+                
+                @media (max-width: 768px) {
+                    .nasvideo-player.floating {
+                        width: 180px !important;
+                        height: 101px !important;
+                        bottom: 60px !important;
+                        right: 10px !important;
+                    }
+                }
+            `;
+            document.head.appendChild(styles);
+        }
+
+        setupEventListeners() {
+            this.scrollHandler = () => {
+                this.checkViewport();
+                this.checkFloating();
+            };
+            window.addEventListener('scroll', this.scrollHandler, { passive: true });
+
+            this.resizeHandler = () => {
+                if (this.resizeTimeout) clearTimeout(this.resizeTimeout);
+                this.resizeTimeout = setTimeout(() => this.handleResize(), 200);
+            };
+            window.addEventListener('resize', this.resizeHandler, { passive: true });
+
+            if (typeof ResizeObserver !== 'undefined') {
+                this.resizeObserver = new ResizeObserver(() => this.handleResize());
+                this.resizeObserver.observe(this.container);
+            }
+
+            document.addEventListener('fullscreenchange', () => this.handleFullscreenChange());
+
+            setTimeout(() => this.checkViewport(), 100);
+        }
+
+        checkViewport() {
+            const rect = this.wrapper.getBoundingClientRect();
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+            const wasInViewport = this.isInViewport;
+
+            this.isInViewport = (
+                rect.top <= windowHeight &&
+                rect.bottom >= 0
+            );
+
+            if (this.isInViewport && !wasInViewport && this.isAdPlaying && this.adsManager && this.adsPaused) {
+                try {
+                    this.adsManager.resume();
+                    log('info', 'Ad resumed - player in viewport');
+                } catch (e) {
+                    log('warn', 'Error resuming ad:', e);
+                }
+            }
+        }
+
+        handleResize() {
+            if (this.isDestroyed || !this.adsManager) return;
+
+            const viewMode = document.fullscreenElement ? google.ima.ViewMode.FULLSCREEN : google.ima.ViewMode.NORMAL;
+
+            if (this.isFloating) {
+                const floatingWidth = window.innerWidth <= 768 ? 180 : CONFIG.FLOATING_WIDTH;
+                const floatingHeight = window.innerWidth <= 768 ? 101 : CONFIG.FLOATING_HEIGHT;
+                this.adsManager.resize(floatingWidth, floatingHeight, viewMode);
+                log('log', `Resized ad for floating mode: ${floatingWidth}x${floatingHeight}`);
+            } else {
+                const rect = this.container.getBoundingClientRect();
+                if (rect.width > 0 && rect.height > 0) {
+                    this.adsManager.resize(rect.width, rect.height, viewMode);
+                    log('log', `Resized ad for normal mode: ${rect.width}x${rect.height}`);
+                }
+            }
+        }
+
+        handleFullscreenChange() {
+            if (document.fullscreenElement) {
+                if (this.adsManager) {
+                    this.adsManager.resize(window.screen.width, window.screen.height, google.ima.ViewMode.FULLSCREEN);
+                }
+            } else {
+                this.handleResize();
+            }
+        }
+
+        checkFloating() {
+            if (this.isDestroyed || !this.isAdPlaying) return;
+
+            const wrapperRect = this.wrapper.getBoundingClientRect();
+            const shouldFloat = !this.isFloating && (wrapperRect.bottom < 0 || wrapperRect.top < -100);
+            const shouldUnfloat = this.isFloating && (wrapperRect.top >= -50 && wrapperRect.bottom > 100);
+
+            if (shouldFloat) {
+                this.enterFloating();
+            } else if (shouldUnfloat) {
+                this.exitFloating();
+            }
+        }
+
+        enterFloating() {
+            if (this.isFloating) return;
+            this.isFloating = true;
+
+            const currentRect = this.container.getBoundingClientRect();
+            this.spacer.style.setProperty('--spacer-height', `${currentRect.height}px`);
+            this.container.classList.add('floating');
+
+            log('info', 'Player entered floating mode');
+
+            setTimeout(() => {
+                if (this.adsManager && !this.isDestroyed) {
+                    const floatingWidth = window.innerWidth <= 768 ? 180 : CONFIG.FLOATING_WIDTH;
+                    const floatingHeight = window.innerWidth <= 768 ? 101 : CONFIG.FLOATING_HEIGHT;
+                    this.adsManager.resize(floatingWidth, floatingHeight, google.ima.ViewMode.NORMAL);
+                    log('log', 'Resized ad for floating mode.');
+                }
+            }, 350);
+        }
+
+        exitFloating() {
+            if (!this.isFloating) return;
+            this.isFloating = false;
+            this.container.classList.remove('floating');
+            this.spacer.style.setProperty('--spacer-height', '0');
+
+            log('info', 'Player exited floating mode');
+
+            setTimeout(() => {
+                if (this.adsManager && !this.isDestroyed) {
+                    const rect = this.container.getBoundingClientRect();
+                    if (rect.width > 0 && rect.height > 0) {
+                        this.adsManager.resize(rect.width, rect.height, google.ima.ViewMode.NORMAL);
+                        log('log', `Resized ad for normal mode to ${rect.width}x${rect.height}`);
+                    }
+                }
+            }, 350);
+        }
+
+        async loadBackgroundVideo() {
+            this.video.src = CONFIG.BG_VIDEOS[0];
+            try {
+                await this.video.play();
+            } catch (e) {
+                log('warn', 'Background video autoplay blocked.');
+            }
+        }
+
+        async loadIMA() {
+            try {
+                await loadScript('https://imasdk.googleapis.com/js/sdkloader/ima3.js');
+                this.setupIMA();
+            }
+            catch (e) { log('error', 'IMA SDK failed to load', e); }
+        }
+
+        setupIMA() {
+            this.adDisplayContainer = new google.ima.AdDisplayContainer(this.adContainer, this.video);
+            this.adsLoader = new google.ima.AdsLoader(this.adDisplayContainer);
+            this.adsLoader.getSettings().setNumRedirects(CONFIG.MAX_REDIRECTS);
+            this.adsLoader.getSettings().setDisableCustomPlaybackForIOS10Plus(true);
+            this.adsLoader.getSettings().setVpaidMode(google.ima.ImaSdkSettings.VpaidMode.ENABLED);
+            this.adsLoader.getSettings().setAutoPlayAdBreaks(true);
+
+            this.adsLoader.addEventListener(google.ima.AdsManagerLoadedEvent.Type.ADS_MANAGER_LOADED, e => this.onAdsManagerLoaded(e), false);
+            this.adsLoader.addEventListener(google.ima.AdErrorEvent.Type.AD_ERROR, e => this.onAdError(e), false);
+
+            log('info', 'IMA SDK ready. Initializing ads immediately.');
+            try {
+                this.adDisplayContainer.initialize();
+                this.isInitialized = true;
+                this.requestAds();
+            } catch (e) {
+                log('error', 'Failed to initialize ad container:', e);
+            }
+        }
+
+        async requestAds() {
+            if (this.isDestroyed || !this.isInitialized || this.retryCount >= CONFIG.MAX_RETRIES) return;
+            const rect = this.container.getBoundingClientRect();
+            if (rect.width < 1) { setTimeout(() => this.requestAds(), 500); return; }
+
+            try {
+                const vastUrl = await VastUrlBuilder.build(CONFIG.VAST_TAG, this.publisher);
+                if (!vastUrl) {
+                    log('error', 'Domain not authorized, aborting ad request.');
+                    return;
+                }
+                log('info', '✓ Requesting VAST URL:', vastUrl);
+                const adsRequest = new google.ima.AdsRequest();
+                adsRequest.adTagUrl = vastUrl;
+                adsRequest.linearAdSlotWidth = Math.floor(rect.width);
+                adsRequest.linearAdSlotHeight = Math.floor(rect.height);
+                adsRequest.vastLoadTimeout = CONFIG.VAST_LOAD_TIMEOUT;
+                adsRequest.setAdWillAutoPlay(true);
+                adsRequest.setAdWillPlayMuted(true);
+
+                adsRequest.contentTitle = this.publisher.title;
+                adsRequest.contentKeywords = this.publisher.keywords?.split(',') || [];
+
+                this.adsLoader.requestAds(adsRequest);
+            } catch (e) { this.onAdError({ getError: () => e }); }
+        }
+
+        onAdsManagerLoaded(event) {
+            log('info', '✓ AdsManager loaded.');
+            const settings = new google.ima.AdsRenderingSettings();
+            settings.loadVideoTimeout = CONFIG.VIDEO_LOAD_TIMEOUT;
+            settings.restoreCustomPlaybackStateOnAdBreakComplete = true;
+            settings.enablePreloading = true;
+            settings.autoAlign = false;
+
+            this.adsManager = event.getAdsManager(this.video, settings);
+
+            this.adsManager.addEventListener(google.ima.AdEvent.Type.LOADED, () => {
+                log('info', '✓ Ad loaded successfully.');
+            });
+
+            this.adsManager.addEventListener(google.ima.AdEvent.Type.STARTED, () => {
+                this.isAdPlaying = true;
+                this.adsPaused = false;
+                this.video.pause();
+                this.controlsBar.classList.add('hidden');
+                log('info', '✓ Ad started playing.');
+            });
+
+            this.adsManager.addEventListener(google.ima.AdEvent.Type.COMPLETE, () => {
+                log('info', '✓ Ad completed.');
+            });
+
+            this.adsManager.addEventListener(google.ima.AdEvent.Type.PAUSED, () => {
+                this.adsPaused = true;
+                this.playBtn.innerHTML = '▶';
+            });
+
+            this.adsManager.addEventListener(google.ima.AdEvent.Type.RESUMED, () => {
+                this.adsPaused = false;
+                this.playBtn.innerHTML = '❚❚';
+            });
+
+            this.adsManager.addEventListener(google.ima.AdEvent.Type.ALL_ADS_COMPLETED, () => this.onAllAdsCompleted());
+            this.adsManager.addEventListener(google.ima.AdErrorEvent.Type.AD_ERROR, e => this.onAdError(e));
+
+            try {
+                const rect = this.container.getBoundingClientRect();
+                this.adsManager.init(rect.width, rect.height, google.ima.ViewMode.NORMAL);
+                this.adsManager.start();
+                this.retryCount = 0; this.backoffMs = CONFIG.INITIAL_BACKOFF;
+                log('info', '✓ AdsManager started.');
+            } catch (adError) {
+                log('error', 'Failed to start AdsManager:', adError);
+                this.onAdError({ getError: () => adError });
+            }
+        }
+
+        onAllAdsCompleted() {
+            log('info', '✓ All ads completed.');
+            this.isAdPlaying = false;
+            this.adsPaused = false;
+            this.controlsBar.classList.remove('hidden');
+            this.playBtn.innerHTML = '❚❚';
+
+            if (this.isFloating) {
+                this.exitFloating();
+            }
+
+            if (this.adsManager) {
+                try {
+                    this.adsManager.destroy();
+                } catch (e) {
+                    log('warn', 'Error destroying adsManager:', e);
+                }
+                this.adsManager = null;
+            }
+
+            this.video.play().catch(() => { });
+            this.scheduleRefresh();
+        }
+
+        onAdError(event) {
+            const error = event.getError();
+            const code = error ? error.getErrorCode() : 'N/A';
+            const message = error ? error.getMessage() : 'Unknown error';
+            log('warn', `✗ VAST Error ${code}: ${message}`);
+
+            this.isAdPlaying = false;
+            this.controlsBar.classList.remove('hidden');
+
+            if (this.adsManager) {
+                try {
+                    this.adsManager.destroy();
+                } catch (e) { }
+                this.adsManager = null;
+            }
+
+            this.video.play().catch(() => { });
+
+            this.retryCount++;
+            if (this.retryCount <= CONFIG.MAX_RETRIES) {
+                log('log', `Retrying ad request (${this.retryCount}/${CONFIG.MAX_RETRIES})...`);
+                setTimeout(() => this.requestAds(), this.backoffMs);
+                this.backoffMs = Math.min(this.backoffMs * 1.5, CONFIG.MAX_BACKOFF);
+            } else {
+                log('error', 'Max retries reached. Scheduling a refresh.');
+                this.scheduleRefresh();
+            }
+        }
+
+        scheduleRefresh() {
+            if (this.isDestroyed || this.refreshCount >= CONFIG.MAX_REFRESHES) return;
+            log('log', `Scheduling next ad in ${CONFIG.MIN_REFRESH_INTERVAL / 1000}s.`);
+            setTimeout(() => {
+                this.refreshCount++; this.retryCount = 0; this.backoffMs = CONFIG.INITIAL_BACKOFF;
+                this.requestAds();
+            }, CONFIG.MIN_REFRESH_INTERVAL);
+        }
+
+        togglePlay() {
+            if (this.isAdPlaying && this.adsManager) {
+                try {
+                    if (this.adsPaused) {
+                        this.adsManager.resume();
+                        this.playBtn.innerHTML = '❚❚';
+                    } else {
+                        this.adsManager.pause();
+                        this.playBtn.innerHTML = '▶';
+                    }
+                } catch (e) {
+                    log('warn', 'Error toggling ad playback:', e);
+                }
+            } else {
+                if (this.video.paused) {
+                    this.video.play();
+                    this.playBtn.innerHTML = '❚❚';
+                } else {
+                    this.video.pause();
+                    this.playBtn.innerHTML = '▶';
+                }
+            }
+        }
+
+        toggleMute() {
+            const isMuted = this.video.muted;
+            this.video.muted = !isMuted;
+            this.muteBtn.innerHTML = !isMuted ? '🔇' : '🔊';
+            if (this.adsManager) {
+                try {
+                    this.adsManager.setVolume(isMuted ? 1 : 0);
+                } catch (e) {
+                    log('warn', 'Error setting ad volume:', e);
+                }
+            }
+        }
+
+        toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                this.container.requestFullscreen().catch(err => log('error', `Fullscreen failed: ${err.message}`));
+            } else {
+                document.exitFullscreen();
+            }
+        }
+
+        destroy() {
+            if (this.isDestroyed) return;
+            this.isDestroyed = true;
+
+            window.removeEventListener('scroll', this.scrollHandler);
+            window.removeEventListener('resize', this.resizeHandler);
+            document.removeEventListener('fullscreenchange', this.handleFullscreenChange);
+
+            if (this.resizeObserver) {
+                this.resizeObserver.disconnect();
+                this.resizeObserver = null;
+            }
+
+            if (this.resizeTimeout) {
+                clearTimeout(this.resizeTimeout);
+            }
+
+            if (this.adsManager) {
+                try {
+                    this.adsManager.destroy();
+                } catch (e) { }
+            }
+
+            if (this.adsLoader) {
+                try {
+                    this.adsLoader.destroy();
+                } catch (e) { }
+            }
+
+            this.wrapper.remove();
+            log('log', 'Player destroyed.');
+        }
+    }
+
+    // ========== AUTO-DISCOVERY & INITIALIZATION ==========
+    class NasVideoAutoLoader {
+        static init() {
+            if (window.__nasVideoInitialized) return;
+            window.__nasVideoInitialized = true;
+            document.querySelectorAll('.nasvideo').forEach(container => {
+                if (!container.dataset.nasvideoInitialized) {
+                    container.dataset.nasvideoInitialized = 'true';
+                    new NasVideoPlayer(container);
+                }
+            });
+        }
+    }
+
+    domReady(() => NasVideoAutoLoader.init());
+
+})();
