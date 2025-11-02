@@ -355,7 +355,7 @@
     ];
     
     try {
-      const response = await fetch('https://cdn.jsdelivr.net/gh/Tipblogg/nasrev-cdn/pubs.json', {
+      const response = await fetch('https://raw.githubusercontent.com/Tipblogg/nasrev-cdn/refs/heads/main/pubs.json', {
         method: 'GET',
         cache: 'no-cache'
       });
