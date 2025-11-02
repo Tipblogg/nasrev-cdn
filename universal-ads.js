@@ -2,7 +2,7 @@
   'use strict';
 
   // ==================== CONSTANTS ====================
-  const SCRIPT_VERSION = '4.1.0'; // Major update: Fixed interstitial triggers + proper refresh + side rails
+  const SCRIPT_VERSION = '4.1.1'; // Major update: Fixed interstitial triggers + proper refresh + side rails
   const CONSENT_TIMEOUT = 1000; // 1 second timeout for CMP detection
   const GPT_LIBRARY_URL = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
   const GA_LIBRARY_URL = 'https://www.googletagmanager.com/gtag/js?id=G-Z0B4ZBF7XH';
@@ -405,7 +405,7 @@
       if (isApprovedFallback) {
         log('Domain approved (from embedded fallback list)', currentDomain);
         console.warn('[Nasrev Ads] Using embedded publisher list due to CORS/network error');
-        console.warn('Fix CORS on cdn.jsdelivr.net/gh/Tipblogg/nasrev-cdn/pubs.json for live updates');
+        console.warn('Fix CORS on https://raw.githubusercontent.com/Tipblogg/nasrev-cdn/refs/heads/main/pubs.json for live updates');
         saveValidationCache(true);
         return true;
       } else {
