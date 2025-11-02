@@ -2,12 +2,13 @@
   'use strict';
 
   // ==================== CONSTANTS ====================
-  const SCRIPT_VERSION = '4.0.1';
+  const SCRIPT_VERSION = '4.1.0'; // Major update: Fixed interstitial triggers + proper refresh + side rails
   const CONSENT_TIMEOUT = 1000; // 1 second timeout for CMP detection
   const GPT_LIBRARY_URL = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
   const GA_LIBRARY_URL = 'https://www.googletagmanager.com/gtag/js?id=G-Z0B4ZBF7XH';
   const GAM_NETWORK_ID = '23272458704'; // Hardcoded for all publishers
-  const DEFAULT_REFRESH_INTERVAL = 25000; // 25 seconds - fast refresh for maximum impressions
+  const DEFAULT_REFRESH_INTERVAL = 30000; // 30 seconds - Google minimum recommendation
+  const MIN_VIEWABLE_TIME = 1000; // 1 second - IAB/MRC viewability standard
   
   // ==================== GLOBAL STATE ====================
   window.nasrevAds = window.nasrevAds || {
@@ -22,9 +23,14 @@
     },
     slots: {
       inPage: [],
-      oop: []
+      oop: [],
+      sideRails: {
+        left: null,
+        right: null
+      }
     },
     refreshTimers: new Map(),
+    viewabilityTimers: new Map(), // Track cumulative viewable time
     errors: []
   };
 
@@ -639,6 +645,44 @@
       }
     });
     
+    // ==================== SIDE RAIL ADS ====================
+    // Define left and right side rail ad slots
+    log('Setting up side rail ads');
+    
+    const leftSideRail = googletag.defineOutOfPageSlot(
+      '/23272458704/Nasrev.com/Siderail',
+      googletag.enums.OutOfPageFormat.LEFT_SIDE_RAIL
+    );
+    
+    const rightSideRail = googletag.defineOutOfPageSlot(
+      '/23272458704/Nasrev.com/Siderail',
+      googletag.enums.OutOfPageFormat.RIGHT_SIDE_RAIL
+    );
+    
+    // Side rail slots return null if the page or device does not support side rails
+    if (leftSideRail) {
+      leftSideRail.addService(googletag.pubads());
+      window.nasrevAds.slots.sideRails.left = leftSideRail;
+      window.nasrevAds.slots.oop.push(leftSideRail);
+      log('Left side rail defined');
+    }
+    
+    if (rightSideRail) {
+      rightSideRail.addService(googletag.pubads());
+      window.nasrevAds.slots.sideRails.right = rightSideRail;
+      window.nasrevAds.slots.oop.push(rightSideRail);
+      log('Right side rail defined');
+    }
+    
+    // Log side rail support status
+    if (leftSideRail && rightSideRail) {
+      log('Side rail ads: Both left and right initialized');
+    } else if (leftSideRail || rightSideRail) {
+      log('Side rail ads: Only ' + (leftSideRail ? 'left' : 'right') + ' initialized');
+    } else {
+      log('Side rail ads: Not supported on this page/device');
+    }
+    
     // Define anchor ad (if div exists)
     const anchorDiv = document.getElementById('ua-anchor');
     if (anchorDiv) {
@@ -654,16 +698,32 @@
       }
     }
     
-    // Define interstitial ad (always)
+    // ==================== INTERSTITIAL WITH TRIGGERS ====================
+    // Define interstitial ad with optional triggers enabled
     const interstitialSlot = googletag.defineOutOfPageSlot(
       '/23272458704/Nasrev.com/Interstitial',
       googletag.enums.OutOfPageFormat.INTERSTITIAL
     );
     
     if (interstitialSlot) {
+      // CRITICAL FIX: Enable optional interstitial triggers for better fill rate
+      const enableTriggers = true; // Set to false to disable triggers
+      
+      interstitialSlot.setConfig({
+        interstitial: {
+          triggers: {
+            navBar: enableTriggers,      // Desktop: clicks on browser nav bar
+            unhideWindow: enableTriggers  // Tab/window unhide or maximize
+          }
+        }
+      });
+      
       interstitialSlot.addService(googletag.pubads());
       window.nasrevAds.slots.oop.push(interstitialSlot);
-      log('Interstitial slot defined');
+      log('Interstitial slot defined with triggers enabled', {
+        navBar: enableTriggers,
+        unhideWindow: enableTriggers
+      });
     }
   }
 
@@ -723,6 +783,9 @@
     pubads.setTargeting('domain', window.location.hostname);
     pubads.setTargeting('has-ppid', 'true');
     pubads.setTargeting('ppid-type', config.ppid ? 'custom' : 'auto');
+    pubads.setTargeting('side-rails', 
+      (window.nasrevAds.slots.sideRails.left || window.nasrevAds.slots.sideRails.right) ? 'enabled' : 'disabled'
+    );
     
     if (privacy.gppString) {
       pubads.setTargeting('gpp', 'enabled');
@@ -730,7 +793,7 @@
     
     log('Targeting configured');
     
-    // Setup refresh listeners (fast 25s interval by default)
+    // Setup PROPER viewability-based refresh listeners
     setupAdRefreshListeners();
     
     // Remove placeholder on render
@@ -758,62 +821,82 @@
     log('GPT services enabled');
   }
 
-  // ==================== PHASE 5: AD REFRESH LOGIC ====================
+  // ==================== PHASE 5: AD REFRESH LOGIC (FIXED) ====================
   
   /**
-   * Setup viewability-based refresh listeners (fast 25s for max impressions)
+   * Setup PROPER viewability-based refresh listeners
+   * Google Best Practice: Only refresh viewable ads after 30+ seconds
    */
   function setupAdRefreshListeners() {
     const config = window.universalAdConfig || {};
-    // Fast 25s refresh by default for maximum impressions
-    const minInterval = config.refreshInterval || DEFAULT_REFRESH_INTERVAL;
+    // Google minimum: 30 seconds (not 25s!)
+    const refreshInterval = Math.max(config.refreshInterval || DEFAULT_REFRESH_INTERVAL, 30000);
     
-    log('Setting up FAST ad refresh', { 
-      interval: minInterval + 'ms (' + (minInterval/1000) + 's)',
-      custom: config.refreshInterval ? 'Yes' : 'No (default 25s)'
+    log('Setting up viewability-based ad refresh', { 
+      interval: refreshInterval + 'ms (' + (refreshInterval/1000) + 's)',
+      minViewableTime: MIN_VIEWABLE_TIME + 'ms',
+      googleMinimum: '30s'
     });
     
+    // CRITICAL FIX: Track viewable time per slot (not just simple timer)
     googletag.pubads().addEventListener('impressionViewable', function(event) {
       const slot = event.slot;
       
+      // Skip if refresh not enabled for this slot
       if (!slot.customRefresh) {
         return;
       }
       
       const slotId = slot.getSlotElementId();
       
+      log('Impression viewable - starting refresh timer', slotId);
+      
       // Clear existing timer
       if (window.nasrevAds.refreshTimers.has(slotId)) {
         clearTimeout(window.nasrevAds.refreshTimers.get(slotId));
       }
       
-      // Set new refresh timer
+      // BEST PRACTICE: Wait full interval AFTER viewability, then check if still viewable
       const timer = setTimeout(function() {
-        // Check if slot is still viewable before refresh
+        // Double-check slot is STILL viewable before refresh
         if (isSlotInViewport(slotId)) {
-          log('Refreshing slot', slotId);
+          log('Refreshing slot (still viewable after interval)', slotId);
           googletag.pubads().refresh([slot]);
+        } else {
+          log('Skipping refresh (slot no longer viewable)', slotId);
         }
-      }, minInterval);
+      }, refreshInterval);
       
       window.nasrevAds.refreshTimers.set(slotId, timer);
+    });
+    
+    // Cleanup timers on page unload
+    window.addEventListener('beforeunload', function() {
+      window.nasrevAds.refreshTimers.forEach(function(timer) {
+        clearTimeout(timer);
+      });
     });
   }
 
   /**
-   * Check if slot is in viewport
+   * Check if slot is in viewport (for refresh validation)
    */
   function isSlotInViewport(slotId) {
     const element = document.getElementById(slotId);
     if (!element) return false;
     
     const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+    
+    // Check if at least 50% of ad is visible (IAB/MRC standard)
+    const verticalVisible = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
+    const horizontalVisible = Math.min(rect.right, windowWidth) - Math.max(rect.left, 0);
+    const visibleArea = Math.max(0, verticalVisible) * Math.max(0, horizontalVisible);
+    const totalArea = rect.height * rect.width;
+    const visibilityRatio = totalArea > 0 ? visibleArea / totalArea : 0;
+    
+    return visibilityRatio >= 0.5; // 50% viewability threshold
   }
 
   // ==================== PHASE 6: DISPLAY ADS ====================
@@ -824,19 +907,37 @@
   function displayAds() {
     log('Displaying ads');
     
-    // Display in-page slots
+    // BEST PRACTICE: Display in-page slots FIRST (before OOP slots)
+    // This ensures proper SRA batching and better ad quality signals
     window.nasrevAds.slots.inPage.forEach(function(slot) {
       googletag.display(slot.getSlotElementId());
     });
     
-    // Display OOP slots
+    log('In-page slots displayed', window.nasrevAds.slots.inPage.length);
+    
+    // Display side rail ads (AFTER in-page slots per Google best practice)
+    // Only one display() call needed to trigger both left and right
+    const sideRails = window.nasrevAds.slots.sideRails;
+    if (sideRails.left || sideRails.right) {
+      googletag.display(sideRails.left || sideRails.right);
+      log('Side rail ads displayed');
+    }
+    
+    // Display other OOP slots (anchor, interstitial)
     window.nasrevAds.slots.oop.forEach(function(slot) {
-      googletag.display(slot);
+      // Skip side rails as they're already displayed above
+      if (slot !== sideRails.left && slot !== sideRails.right) {
+        googletag.display(slot);
+      }
     });
     
     log('All ads displayed', {
       inPage: window.nasrevAds.slots.inPage.length,
-      oop: window.nasrevAds.slots.oop.length
+      oop: window.nasrevAds.slots.oop.length,
+      sideRails: {
+        left: !!sideRails.left,
+        right: !!sideRails.right
+      }
     });
   }
 
@@ -847,7 +948,11 @@
    */
   function init() {
     try {
-      log('Script loaded', { version: SCRIPT_VERSION, url: window.location.href });
+      log('Script loaded', { 
+        version: SCRIPT_VERSION, 
+        url: window.location.href,
+        userAgent: navigator.userAgent
+      });
       
       // Wait for DOM to be ready
       if (document.readyState === 'loading') {
