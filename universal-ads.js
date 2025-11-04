@@ -1,1 +1,996 @@
-function _0x3082(_0x9548,_0x2a6af3){const _0x3d1d80=_0x3d1d();return _0x3082=function(_0x3082ce,_0xde0e16){_0x3082ce=_0x3082ce-0xa7;let _0x3f1790=_0x3d1d80[_0x3082ce];return _0x3f1790;},_0x3082(_0x9548,_0x2a6af3);}(function(_0x2bba1d,_0x3169bc){const _0x3c8e10=_0x3082,_0x15c6a0=_0x2bba1d();while(!![]){try{const _0x216937=parseInt(_0x3c8e10(0x129))/0x1+-parseInt(_0x3c8e10(0x13a))/0x2*(-parseInt(_0x3c8e10(0xef))/0x3)+parseInt(_0x3c8e10(0x14b))/0x4+-parseInt(_0x3c8e10(0x197))/0x5+parseInt(_0x3c8e10(0x109))/0x6+-parseInt(_0x3c8e10(0x124))/0x7*(-parseInt(_0x3c8e10(0x10e))/0x8)+-parseInt(_0x3c8e10(0x19e))/0x9;if(_0x216937===_0x3169bc)break;else _0x15c6a0['push'](_0x15c6a0['shift']());}catch(_0x1600db){_0x15c6a0['push'](_0x15c6a0['shift']());}}}(_0x3d1d,0xb06fa),(function(){'use strict';const _0x4729db=_0x3082;const _0x2bd17d=_0x4729db(0xe4),_0x32faad=0x3e8,_0x27fcfb=_0x4729db(0x15b),_0x43c46d=_0x4729db(0xe9),_0x5e4bb2=_0x4729db(0x110),_0x16cef3=0x7530,_0x25d0ce=0x3e8;window[_0x4729db(0x144)]=window['nasrevAds']||{'version':_0x2bd17d,'initialized':![],'privacy':{'hasConsent':![],'npa':![],'rdp':![],'gppSid':[],'gppString':''},'slots':{'inPage':[],'oop':[],'sideRails':{'left':null,'right':null}},'refreshTimers':new Map(),'viewabilityTimers':new Map(),'errors':[]};function _0x11a94b(_0x36d093,_0x16ce4a){const _0x4a7ddf=_0x4729db,_0x1292cc=new URLSearchParams(window['location'][_0x4a7ddf(0x19a)]);_0x1292cc[_0x4a7ddf(0x18d)](_0x4a7ddf(0xf2))==='1'&&console[_0x4a7ddf(0xd1)](_0x4a7ddf(0x18e)+_0x2bd17d+']',_0x36d093,_0x16ce4a||'');}function _0x10b73c(_0x58ed43,_0x330e15){const _0x285d4e=_0x4729db;console[_0x285d4e(0xdf)](_0x285d4e(0x18e)+_0x2bd17d+_0x285d4e(0xd9),_0x58ed43,_0x330e15||''),window[_0x285d4e(0x144)]['errors']['push']({'timestamp':new Date()[_0x285d4e(0x195)](),'message':_0x58ed43,'error':_0x330e15?_0x330e15[_0x285d4e(0x143)]():null});}function _0x2104a2(_0x141fe6,_0x5c7b2d,_0x5d7e3e){const _0x2bd9d0=_0x4729db,_0x2be4bb=document[_0x2bd9d0(0x101)](_0x2bd9d0(0xd2));_0x2be4bb[_0x2bd9d0(0x11b)]=!![],_0x2be4bb['src']=_0x141fe6,_0x2be4bb['crossOrigin']=_0x2bd9d0(0xfd);if(_0x5c7b2d)_0x2be4bb['onload']=_0x5c7b2d;if(_0x5d7e3e)_0x2be4bb[_0x2bd9d0(0xee)]=_0x5d7e3e;document[_0x2bd9d0(0x100)]['appendChild'](_0x2be4bb),_0x11a94b(_0x2bd9d0(0x160),_0x141fe6);}function _0x2bf55a(){const _0x2bc999=_0x4729db;try{window[_0x2bc999(0x140)]=window[_0x2bc999(0x140)]||[];function _0xcb95c1(){const _0x5cb909=_0x2bc999;dataLayer[_0x5cb909(0x179)](arguments);}window['gtag']=_0xcb95c1,_0xcb95c1('js',new Date()),_0xcb95c1('config',_0x2bc999(0x136),{'page_title':document[_0x2bc999(0x180)],'page_location':window[_0x2bc999(0xfb)]['href'],'page_path':window[_0x2bc999(0xfb)][_0x2bc999(0x13e)],'custom_map':{'dimension1':'publisher_domain','dimension2':_0x2bc999(0x176)},'publisher_domain':window[_0x2bc999(0xfb)][_0x2bc999(0x18b)],'script_version':_0x2bd17d}),_0x2104a2(_0x43c46d,function(){const _0x3f9962=_0x2bc999;_0x11a94b(_0x3f9962(0x119));},function(){const _0x5b10aa=_0x2bc999;_0x10b73c(_0x5b10aa(0xbc));}),_0x11a94b(_0x2bc999(0x18c));}catch(_0x118b5e){_0x10b73c(_0x2bc999(0xc3),_0x118b5e);}}function _0x25902c(){const _0x54aeb5=_0x4729db;_0x11a94b(_0x54aeb5(0xc2));if(typeof window[_0x54aeb5(0x181)]===_0x54aeb5(0x145))try{return window[_0x54aeb5(0x181)](_0x54aeb5(0xfc),function(_0xcdcabf,_0x1e8dd9){const _0x2971b8=_0x54aeb5;_0x1e8dd9&&_0xcdcabf&&(_0x11a94b('GPP\x20detected',_0xcdcabf),window[_0x2971b8(0x181)](_0x2971b8(0xa9),function(_0x544da3,_0x5ce875){const _0x499c55=_0x2971b8;if(_0x5ce875&&_0x544da3){window['nasrevAds'][_0x499c55(0xd6)][_0x499c55(0x172)]=_0x544da3[_0x499c55(0x172)]||'',window[_0x499c55(0x144)][_0x499c55(0xd6)]['gppSid']=_0x544da3[_0x499c55(0xc8)]||[],_0x11a94b(_0x499c55(0x131),_0x544da3);if(_0x544da3['parsedSections']&&_0x544da3['parsedSections'][_0x499c55(0xbd)]){const _0x3d7629=_0x544da3['parsedSections'][_0x499c55(0xbd)];(_0x3d7629[_0x499c55(0x116)]===0x1||_0x3d7629[_0x499c55(0xb6)]===0x1||_0x3d7629[_0x499c55(0xa7)]===0x1)&&(window['nasrevAds'][_0x499c55(0xd6)][_0x499c55(0xd7)]=!![],_0x11a94b(_0x499c55(0x190)));}window[_0x499c55(0x144)][_0x499c55(0xd6)]['hasConsent']=!![],_0x40393a();}}));}),!![];}catch(_0x5c039e){_0x10b73c('GPP\x20check\x20failed',_0x5c039e);}return![];}function _0x51fd34(){const _0x250fd1=_0x4729db;_0x11a94b(_0x250fd1(0xc7));if(typeof window[_0x250fd1(0x164)]===_0x250fd1(0x145))return window[_0x250fd1(0x164)](_0x250fd1(0x152),0x2,function(_0x970f26,_0x38bdb8){const _0x1500cc=_0x250fd1;if(_0x38bdb8&&_0x970f26){_0x11a94b(_0x1500cc(0x12f),_0x970f26);if(_0x970f26[_0x1500cc(0x15e)]===_0x1500cc(0x178)||_0x970f26[_0x1500cc(0x15e)]===_0x1500cc(0xcb)){const _0x334b8e=_0x970f26[_0x1500cc(0x12c)]&&_0x970f26[_0x1500cc(0x12c)]['consents']&&_0x970f26[_0x1500cc(0x12c)][_0x1500cc(0x199)][0x2f3],_0xf21299=_0x970f26[_0x1500cc(0x198)]&&_0x970f26[_0x1500cc(0x198)][_0x1500cc(0x199)]&&_0x970f26[_0x1500cc(0x198)][_0x1500cc(0x199)][0x1],_0x369a6d=_0x970f26[_0x1500cc(0x198)]&&_0x970f26[_0x1500cc(0x198)]['consents']&&_0x970f26[_0x1500cc(0x198)][_0x1500cc(0x199)][0x3],_0x3ac4d9=_0x970f26[_0x1500cc(0x198)]&&_0x970f26[_0x1500cc(0x198)][_0x1500cc(0x199)]&&_0x970f26[_0x1500cc(0x198)][_0x1500cc(0x199)][0x4];_0x334b8e&&_0xf21299&&_0x369a6d&&_0x3ac4d9?(window['nasrevAds'][_0x1500cc(0xd6)]['hasConsent']=!![],_0x11a94b(_0x1500cc(0xb7))):(window[_0x1500cc(0x144)][_0x1500cc(0xd6)][_0x1500cc(0x19c)]=!![],_0x11a94b(_0x1500cc(0x126))),_0x40393a();}}}),!![];return![];}function _0x164925(){const _0x53e1ae=_0x4729db;_0x11a94b(_0x53e1ae(0x185));if(typeof window[_0x53e1ae(0x104)]==='function')return window[_0x53e1ae(0x104)]('getUSPData',0x1,function(_0x27009e,_0x4a6847){const _0x2d599b=_0x53e1ae;if(_0x4a6847&&_0x27009e&&_0x27009e[_0x2d599b(0x14a)]){_0x11a94b(_0x2d599b(0x16c),_0x27009e);const _0x4a7adb=_0x27009e[_0x2d599b(0x14a)];return _0x4a7adb['charAt'](0x2)==='Y'&&(window['nasrevAds'][_0x2d599b(0xd6)][_0x2d599b(0xd7)]=!![],_0x11a94b(_0x2d599b(0x190))),window[_0x2d599b(0x144)]['privacy'][_0x2d599b(0x154)]=!![],_0x40393a(),!![];}}),!![];return![];}function _0x52c5d3(){const _0x4a747a=_0x4729db;_0x11a94b(_0x4a747a(0x14c));if(_0x25902c())return;if(_0x51fd34())return;if(_0x164925())return;setTimeout(function(){const _0x330fdc=_0x4a747a;!window[_0x330fdc(0x144)][_0x330fdc(0x117)]&&(_0x11a94b(_0x330fdc(0x107)),window[_0x330fdc(0x144)][_0x330fdc(0xd6)]['hasConsent']=!![],_0x40393a());},_0x32faad);}function _0x565223(){const _0x52a320=_0x4729db,_0x105c49=window[_0x52a320(0xd4)]||{};if(_0x105c49[_0x52a320(0xce)]&&typeof _0x105c49[_0x52a320(0xce)]===_0x52a320(0x15f)&&_0x105c49[_0x52a320(0xce)][_0x52a320(0x12e)]>0x0)return _0x11a94b(_0x52a320(0x16e),_0x105c49[_0x52a320(0xce)]),_0x105c49[_0x52a320(0xce)];try{let _0x5cdc35=localStorage[_0x52a320(0x134)](_0x52a320(0x16d));if(!_0x5cdc35){const _0x1bf4fd=window[_0x52a320(0xfb)][_0x52a320(0x18b)][_0x52a320(0xf3)](/[^a-z0-9]/gi,'_'),_0xb31b1c=Math[_0x52a320(0xb4)]()[_0x52a320(0x143)](0x24)[_0x52a320(0x11e)](0x2,0xc),_0x4b2e6b=Date[_0x52a320(0xad)]()['toString'](0x24);_0x5cdc35=_0x1bf4fd+'_'+_0xb31b1c+'_'+_0x4b2e6b,localStorage['setItem'](_0x52a320(0x16d),_0x5cdc35),_0x11a94b(_0x52a320(0x155),_0x5cdc35);}else _0x11a94b(_0x52a320(0x128),_0x5cdc35);return _0x5cdc35;}catch(_0x29eca3){_0x10b73c('localStorage\x20blocked,\x20using\x20session-only\x20PPID',_0x29eca3);const _0x3d6362=_0x52a320(0x130)+Math['random']()['toString'](0x24)[_0x52a320(0x11e)](0x2,0xf);return _0x3d6362;}}function _0x49a19a(){const _0x1482da=_0x4729db;try{const _0x5b1d39=new URLSearchParams(window['location'][_0x1482da(0x19a)]);if(_0x5b1d39[_0x1482da(0x18d)](_0x1482da(0xb9))==='1')return _0x11a94b(_0x1482da(0x122)),sessionStorage[_0x1482da(0x147)]('ua-domain-valid'),null;const _0x2f0e15=sessionStorage[_0x1482da(0x134)]('ua-domain-valid');if(_0x2f0e15){const _0x30b3f2=JSON[_0x1482da(0x153)](_0x2f0e15),_0x4b108b=Date[_0x1482da(0xad)]();if(_0x4b108b-_0x30b3f2[_0x1482da(0x14f)]<0x5265c00)return _0x11a94b(_0x1482da(0xc4),_0x30b3f2[_0x1482da(0x108)]),_0x30b3f2['valid'];else sessionStorage[_0x1482da(0x147)](_0x1482da(0x17f));}}catch(_0x47f32b){_0x10b73c('Cache\x20check\x20failed',_0x47f32b);}return null;}function _0x776ed1(_0x297143){const _0x9f482b=_0x4729db;try{sessionStorage[_0x9f482b(0xd0)](_0x9f482b(0x17f),JSON[_0x9f482b(0x17c)]({'valid':_0x297143,'timestamp':Date[_0x9f482b(0xad)]()})),_0x11a94b('Validation\x20cached',_0x297143);}catch(_0x143446){_0x10b73c('Cache\x20save\x20failed',_0x143446);}}function _0x99a442(){const _0x539ec7=_0x4729db,_0x76805=window[_0x539ec7(0xfb)][_0x539ec7(0x18b)];_0x11a94b(_0x539ec7(0x13b),_0x76805);const _0x595683=[_0x539ec7(0xba),_0x539ec7(0xcc),_0x539ec7(0x14d)];fetch(_0x539ec7(0x15d),{'method':_0x539ec7(0x187),'cache':_0x539ec7(0x17b)})[_0x539ec7(0xf6)](function(_0x9919b0){const _0xc27fe6=_0x539ec7;if(!_0x9919b0['ok'])throw new Error(_0xc27fe6(0x165)+_0x9919b0[_0xc27fe6(0xe1)]);return _0x9919b0['json']();})[_0x539ec7(0xf6)](function(_0x11145a){const _0x514d00=_0x539ec7;if(!_0x11145a['domains']||!Array['isArray'](_0x11145a[_0x514d00(0xf4)]))throw new Error(_0x514d00(0xf7));const _0x3f76bc=_0x11145a[_0x514d00(0xf4)][_0x514d00(0x171)](function(_0x595248){const _0x483c35=_0x514d00;if(_0x595248[_0x483c35(0xe6)]('*.')){const _0x262854=_0x595248[_0x483c35(0x125)](0x2);return _0x76805[_0x483c35(0xa8)](_0x262854);}return _0x76805===_0x595248;});_0x3f76bc?(_0x11a94b('Domain\x20approved\x20(from\x20pubs.json)',_0x76805),_0x776ed1(!![])):(_0x10b73c(_0x514d00(0x14e),_0x76805),_0x776ed1(![]));})[_0x539ec7(0xd8)](function(_0x3e189f){const _0x524745=_0x539ec7;_0x10b73c(_0x524745(0x11c),_0x3e189f);const _0x3efc13=_0x595683[_0x524745(0x171)](function(_0xbcca5e){const _0x4db9f2=_0x524745;if(_0xbcca5e[_0x4db9f2(0xe6)]('*.')){const _0x54fce2=_0xbcca5e[_0x4db9f2(0x125)](0x2);return _0x76805[_0x4db9f2(0xa8)](_0x54fce2);}return _0x76805===_0xbcca5e;});_0x3efc13?(_0x11a94b('Domain\x20approved\x20(from\x20embedded\x20fallback\x20list)',_0x76805),console[_0x524745(0x13c)]('[Nasrev\x20Ads]\x20Using\x20embedded\x20publisher\x20list\x20due\x20to\x20CORS/network\x20error'),console[_0x524745(0x13c)](_0x524745(0xc1)),_0x776ed1(!![])):(_0x10b73c(_0x524745(0xbe),_0x76805),_0x776ed1(![]));});}function _0x40393a(){const _0x4d51b5=_0x4729db;if(window[_0x4d51b5(0x144)][_0x4d51b5(0x117)]){_0x11a94b(_0x4d51b5(0x10a));return;}_0x11a94b(_0x4d51b5(0x16b));try{const _0x246cac=_0x49a19a();if(_0x246cac===![]){_0x10b73c(_0x4d51b5(0x139)),console['error']('%c[Nasrev\x20Ads]\x20Domain\x20Not\x20Approved',_0x4d51b5(0x169)),console['error'](_0x4d51b5(0x123)),console[_0x4d51b5(0xdf)](_0x4d51b5(0x135)),console[_0x4d51b5(0xdf)]('\x20\x201.\x20Add\x20?nocache=1\x20to\x20URL\x20to\x20retry\x20validation'),console[_0x4d51b5(0xdf)](_0x4d51b5(0x17d)),console[_0x4d51b5(0xdf)]('\x20\x203.\x20Current\x20domain:',window[_0x4d51b5(0xfb)][_0x4d51b5(0x18b)]);return;}window[_0x4d51b5(0x144)]['initialized']=!![],_0x2bf55a(),_0x33290c(),_0x246cac!==!![]&&_0x99a442();}catch(_0x3d0670){_0x10b73c('Initialization\x20failed',_0x3d0670);}}function _0x30b5d7(_0x1df483){const _0x41f3ad=_0x4729db;try{const _0x406606=document['createElement'](_0x41f3ad(0x183));_0x406606['className']=_0x41f3ad(0x18f),_0x406606[_0x41f3ad(0x111)]=_0x41f3ad(0x10f),_0x406606[_0x41f3ad(0x142)][_0x41f3ad(0xf8)]=_0x41f3ad(0x120);const _0xcdc9ed=_0x406606[_0x41f3ad(0x16f)]('a');_0xcdc9ed&&(_0xcdc9ed[_0x41f3ad(0x142)][_0x41f3ad(0xf8)]=_0x41f3ad(0x156)),_0x1df483['appendChild'](_0x406606);}catch(_0x2fb5d8){_0x10b73c(_0x41f3ad(0x19b),_0x2fb5d8);}}function _0x33290c(){const _0x21323d=_0x4729db;_0x11a94b('Proceeding\x20with\x20ad\x20setup'),window[_0x21323d(0x10b)]=window['googletag']||{'cmd':[]},_0x2104a2(_0x27fcfb,function(){_0x11a94b('GPT\x20library\x20loaded');},function(){const _0x391bb0=_0x21323d;_0x10b73c(_0x391bb0(0xaa));}),googletag[_0x21323d(0xaf)][_0x21323d(0x179)](function(){try{_0x174b18(),_0x4e52a3(),_0x58d839();}catch(_0x432cdc){_0x10b73c('Ad\x20setup\x20failed',_0x432cdc);}});}function _0x174b18(){const _0x3c83af=_0x4729db;_0x11a94b(_0x3c83af(0x166));const _0xe29a44=[{'id':_0x3c83af(0xdd),'path':_0x3c83af(0x173),'sizes':[[0x12c,0xfa],[0x150,0x118],[0x140,0x32]],'refresh':!![]},{'id':_0x3c83af(0x182),'path':'/23272458704/Nasrev.com/Display2','sizes':[[0x12c,0xfa],[0x150,0x118],[0x12c,0x258],[0x140,0x32]],'refresh':![]},{'id':_0x3c83af(0xcf),'path':_0x3c83af(0x177),'sizes':[[0x12c,0xfa],[0x150,0x118],[0x12c,0x258],[0x140,0x32]],'refresh':!![]},{'id':_0x3c83af(0xea),'path':_0x3c83af(0xb1),'sizes':[[0x12c,0xfa],[0x150,0x118],[0x12c,0x258],[0x140,0x32]],'refresh':![]}];_0xe29a44['forEach'](function(_0x458b48){const _0x35c6f1=_0x3c83af,_0x399ccd=document[_0x35c6f1(0xd5)](_0x458b48['id']);if(_0x399ccd){const _0x4ba4d2=document[_0x35c6f1(0x101)](_0x35c6f1(0x183));_0x4ba4d2[_0x35c6f1(0x142)]['cssText']=_0x35c6f1(0xdb);const _0x39f7e5=document['createElement'](_0x35c6f1(0x183));_0x39f7e5[_0x35c6f1(0x121)]=_0x35c6f1(0xe3),_0x39f7e5[_0x35c6f1(0x142)][_0x35c6f1(0xf8)]=_0x35c6f1(0x10c),_0x4ba4d2[_0x35c6f1(0x158)](_0x39f7e5),_0x399ccd[_0x35c6f1(0xf1)][_0x35c6f1(0xdc)](_0x4ba4d2,_0x399ccd),_0x4ba4d2[_0x35c6f1(0x158)](_0x399ccd),_0x399ccd[_0x35c6f1(0x142)]['cssText']=_0x35c6f1(0xff);const _0x4be7dd=document['createElement'](_0x35c6f1(0x183));_0x4be7dd[_0x35c6f1(0x137)]=_0x35c6f1(0x12b),_0x4be7dd[_0x35c6f1(0x142)][_0x35c6f1(0xf8)]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#f5f5f5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#999;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20Arial,\x20sans-serif;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20min-height:\x2050px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20dashed\x20#ddd;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20',_0x4be7dd['textContent']='Loading\x20ad...',_0x399ccd[_0x35c6f1(0x158)](_0x4be7dd),_0x30b5d7(_0x4ba4d2);const _0x3c9391=googletag[_0x35c6f1(0xe0)](_0x458b48[_0x35c6f1(0x15a)],_0x458b48[_0x35c6f1(0xfe)],_0x458b48['id']);_0x3c9391&&(_0x3c9391[_0x35c6f1(0x151)](googletag[_0x35c6f1(0x12d)]()),_0x3c9391[_0x35c6f1(0x1a5)]=_0x458b48['refresh'],window[_0x35c6f1(0x144)]['slots'][_0x35c6f1(0x150)][_0x35c6f1(0x179)](_0x3c9391),_0x11a94b('In-page\x20slot\x20defined',_0x458b48['id']));}}),_0x11a94b(_0x3c83af(0x19d));const _0x22d7bf=googletag[_0x3c83af(0x113)](_0x3c83af(0xed),googletag['enums'][_0x3c83af(0x103)]['LEFT_SIDE_RAIL']),_0x57f27a=googletag[_0x3c83af(0x113)](_0x3c83af(0xed),googletag['enums'][_0x3c83af(0x103)][_0x3c83af(0x146)]);_0x22d7bf&&(_0x22d7bf[_0x3c83af(0x151)](googletag[_0x3c83af(0x12d)]()),window['nasrevAds'][_0x3c83af(0x1a0)]['sideRails']['left']=_0x22d7bf,window[_0x3c83af(0x144)][_0x3c83af(0x1a0)][_0x3c83af(0x196)][_0x3c83af(0x179)](_0x22d7bf),_0x11a94b(_0x3c83af(0x114)));_0x57f27a&&(_0x57f27a['addService'](googletag[_0x3c83af(0x12d)]()),window[_0x3c83af(0x144)][_0x3c83af(0x1a0)][_0x3c83af(0x1a7)][_0x3c83af(0x17a)]=_0x57f27a,window['nasrevAds'][_0x3c83af(0x1a0)][_0x3c83af(0x196)]['push'](_0x57f27a),_0x11a94b(_0x3c83af(0xc6)));if(_0x22d7bf&&_0x57f27a)_0x11a94b(_0x3c83af(0xb3));else _0x22d7bf||_0x57f27a?_0x11a94b(_0x3c83af(0x112)+(_0x22d7bf?'left':_0x3c83af(0x17a))+_0x3c83af(0x138)):_0x11a94b(_0x3c83af(0x159));const _0x50d005=document[_0x3c83af(0xd5)]('ua-anchor');if(_0x50d005){const _0x1bd7a4=googletag[_0x3c83af(0x113)](_0x3c83af(0x192),googletag[_0x3c83af(0x1a4)][_0x3c83af(0x103)]['BOTTOM_ANCHOR']);_0x1bd7a4&&(_0x1bd7a4[_0x3c83af(0x151)](googletag[_0x3c83af(0x12d)]()),window[_0x3c83af(0x144)][_0x3c83af(0x1a0)][_0x3c83af(0x196)][_0x3c83af(0x179)](_0x1bd7a4),_0x11a94b(_0x3c83af(0x105)));}const _0x45d5a7=googletag[_0x3c83af(0x113)](_0x3c83af(0x133),googletag['enums'][_0x3c83af(0x103)]['INTERSTITIAL']);if(_0x45d5a7){const _0xcd32c1=!![];_0x45d5a7[_0x3c83af(0xfa)]({'interstitial':{'triggers':{'navBar':_0xcd32c1,'unhideWindow':_0xcd32c1}}}),_0x45d5a7['addService'](googletag[_0x3c83af(0x12d)]()),window[_0x3c83af(0x144)][_0x3c83af(0x1a0)][_0x3c83af(0x196)][_0x3c83af(0x179)](_0x45d5a7),window[_0x3c83af(0x144)][_0x3c83af(0x1a0)][_0x3c83af(0xda)]=_0x45d5a7,_0x11a94b('Interstitial\x20slot\x20defined\x20with\x20triggers\x20enabled',{'navBar':_0xcd32c1,'unhideWindow':_0xcd32c1});}}function _0x4e52a3(){const _0x10c7db=_0x4729db,_0x5f0f75=googletag[_0x10c7db(0x12d)](),_0x40b657=window[_0x10c7db(0xd4)]||{};_0x11a94b(_0x10c7db(0x13f));const _0x17d4ca=_0x565223();_0x5f0f75['enableSingleRequest'](),_0x5f0f75['collapseEmptyDivs'](!![]);const _0x37b11b=window[_0x10c7db(0x144)][_0x10c7db(0xd6)];_0x37b11b[_0x10c7db(0xd7)]===!![]&&(_0x5f0f75[_0x10c7db(0x175)]({'restrictedDataProcessing':!![]}),_0x11a94b(_0x10c7db(0xca)));_0x37b11b[_0x10c7db(0x19c)]===!![]&&(_0x5f0f75['setPrivacySettings']({'nonPersonalizedAds':!![]}),_0x11a94b(_0x10c7db(0x16a)));_0x5f0f75[_0x10c7db(0xd3)](_0x17d4ca),_0x11a94b(_0x10c7db(0xb8),_0x17d4ca),_0x5f0f75[_0x10c7db(0x106)]({'fetchMarginPercent':0x64,'renderMarginPercent':0x32,'mobileScaling':0x2}),_0x11a94b('Lazy\x20loading\x20optimized\x20for\x20performance'),_0x5f0f75['setTargeting']('ua-script','v'+_0x2bd17d),_0x5f0f75[_0x10c7db(0x11d)](_0x10c7db(0x149),window[_0x10c7db(0xfb)][_0x10c7db(0x18b)]),_0x5f0f75[_0x10c7db(0x11d)](_0x10c7db(0xb5),window['location']['pathname']),_0x5f0f75[_0x10c7db(0x11d)]('has-ppid',_0x10c7db(0xc5)),_0x5f0f75[_0x10c7db(0x11d)](_0x10c7db(0x19f),_0x40b657[_0x10c7db(0xce)]?_0x10c7db(0xe8):_0x10c7db(0x170)),_0x5f0f75[_0x10c7db(0x11d)](_0x10c7db(0x193),window[_0x10c7db(0x144)]['slots'][_0x10c7db(0x1a7)][_0x10c7db(0x132)]||window[_0x10c7db(0x144)][_0x10c7db(0x1a0)][_0x10c7db(0x1a7)]['right']?_0x10c7db(0x17e):_0x10c7db(0x162));if(document['referrer'])try{const _0x13caaf=new URL(document[_0x10c7db(0xb0)])[_0x10c7db(0x18b)];_0x5f0f75['setTargeting']('referrer',_0x13caaf);}catch(_0x1c349a){}_0x37b11b[_0x10c7db(0x172)]&&_0x5f0f75[_0x10c7db(0x11d)](_0x10c7db(0x115),_0x10c7db(0x17e)),_0x11a94b(_0x10c7db(0xb2)),_0x2de140(),_0x5f0f75[_0x10c7db(0x152)](_0x10c7db(0x11a),function(_0x41dccc){const _0x22d1ab=_0x10c7db,_0x2db1ba=_0x41dccc[_0x22d1ab(0x1a3)],_0xb8d03a=_0x2db1ba[_0x22d1ab(0xe5)](),_0x384a2c=document[_0x22d1ab(0xd5)](_0xb8d03a);if(_0x384a2c){const _0x33e266=_0x384a2c[_0x22d1ab(0x16f)]('.ua-placeholder');_0x33e266&&_0x33e266[_0x22d1ab(0x191)]();}_0x11a94b(_0x22d1ab(0x174),{'divId':_0xb8d03a,'isEmpty':_0x41dccc['isEmpty'],'size':_0x41dccc['size']}),!_0x41dccc[_0x22d1ab(0xde)]&&_0x2db1ba['customRefresh']&&_0x31c012(_0x2db1ba);}),googletag['enableServices'](),_0x11a94b(_0x10c7db(0x148));}function _0x31c012(_0x1e4ce6){const _0x360454=_0x4729db,_0x420214=window[_0x360454(0xd4)]||{},_0x583491=Math['max'](_0x420214['refreshInterval']||_0x16cef3,0x7530),_0x46edcc=_0x1e4ce6[_0x360454(0xe5)]();window['nasrevAds'][_0x360454(0xf9)][_0x360454(0x184)](_0x46edcc)&&clearTimeout(window[_0x360454(0x144)][_0x360454(0xf9)][_0x360454(0x18d)](_0x46edcc));_0x11a94b(_0x360454(0x141),{'slotId':_0x46edcc,'interval':_0x583491+'ms'});const _0x344bd1=setTimeout(function(){const _0x4530a8=_0x360454;_0x1acd3f(_0x46edcc)?(_0x11a94b(_0x4530a8(0xf0),_0x46edcc),googletag[_0x4530a8(0x12d)]()[_0x4530a8(0xc9)]([_0x1e4ce6]),_0x31c012(_0x1e4ce6)):_0x11a94b(_0x4530a8(0x163),_0x46edcc);},_0x583491);window[_0x360454(0x144)]['refreshTimers'][_0x360454(0x157)](_0x46edcc,_0x344bd1);}function _0x2de140(){const _0x1ea04c=_0x4729db,_0x3da5a8=window['universalAdConfig']||{},_0x168b54=Math[_0x1ea04c(0x189)](_0x3da5a8['refreshInterval']||_0x16cef3,0x7530);_0x11a94b(_0x1ea04c(0x161),{'interval':_0x168b54+_0x1ea04c(0xbf)+_0x168b54/0x3e8+'s)','minViewableTime':_0x25d0ce+'ms','googleMinimum':_0x1ea04c(0xec)}),googletag[_0x1ea04c(0x12d)]()[_0x1ea04c(0x152)](_0x1ea04c(0x10d),function(_0x21f068){const _0x7e6713=_0x1ea04c,_0x38a553=_0x21f068[_0x7e6713(0x1a3)];if(!_0x38a553[_0x7e6713(0x1a5)])return;const _0x196ea3=_0x38a553[_0x7e6713(0xe5)]();_0x11a94b(_0x7e6713(0x18a),_0x196ea3),_0x31c012(_0x38a553);}),window[_0x1ea04c(0x152)](_0x1ea04c(0x168),function(){const _0x53d8e3=_0x1ea04c;window[_0x53d8e3(0x144)]['refreshTimers']['forEach'](function(_0x3220cc){clearTimeout(_0x3220cc);});});}function _0x1acd3f(_0x35e018){const _0x3010a6=_0x4729db,_0x314f2f=document[_0x3010a6(0xd5)](_0x35e018);if(!_0x314f2f)return![];const _0x230016=_0x314f2f['getBoundingClientRect'](),_0x515476=window[_0x3010a6(0xae)]||document[_0x3010a6(0x13d)][_0x3010a6(0x186)],_0x105f1=window[_0x3010a6(0x102)]||document[_0x3010a6(0x13d)][_0x3010a6(0xac)],_0x58ab9c=Math[_0x3010a6(0x15c)](_0x230016[_0x3010a6(0xe2)],_0x515476)-Math[_0x3010a6(0x189)](_0x230016[_0x3010a6(0x11f)],0x0),_0x2b1666=Math[_0x3010a6(0x15c)](_0x230016[_0x3010a6(0x17a)],_0x105f1)-Math[_0x3010a6(0x189)](_0x230016[_0x3010a6(0x132)],0x0),_0x423970=Math[_0x3010a6(0x189)](0x0,_0x58ab9c)*Math[_0x3010a6(0x189)](0x0,_0x2b1666),_0x255776=_0x230016[_0x3010a6(0x188)]*_0x230016[_0x3010a6(0x1a2)],_0x373263=_0x255776>0x0?_0x423970/_0x255776:0x0;return _0x373263>=0.5;}function _0x58d839(){const _0x2db065=_0x4729db;_0x11a94b(_0x2db065(0x118)),window[_0x2db065(0x144)][_0x2db065(0x1a0)][_0x2db065(0x150)][_0x2db065(0xe7)](function(_0x39fe85){const _0x1d20fc=_0x2db065;googletag['display'](_0x39fe85[_0x1d20fc(0xe5)]());}),_0x11a94b(_0x2db065(0x167),window[_0x2db065(0x144)][_0x2db065(0x1a0)][_0x2db065(0x150)]['length']);const _0x1c6431=window['nasrevAds'][_0x2db065(0x1a0)][_0x2db065(0x1a7)];_0x1c6431[_0x2db065(0x132)]&&(googletag['display'](_0x1c6431[_0x2db065(0x132)]),_0x11a94b(_0x2db065(0xcd))),_0x1c6431[_0x2db065(0x17a)]&&(googletag[_0x2db065(0x1a1)](_0x1c6431[_0x2db065(0x17a)]),_0x11a94b(_0x2db065(0xab))),window[_0x2db065(0x144)][_0x2db065(0x1a0)][_0x2db065(0xda)]&&(googletag[_0x2db065(0x1a1)](window[_0x2db065(0x144)][_0x2db065(0x1a0)][_0x2db065(0xda)]),_0x11a94b(_0x2db065(0x1a6))),window[_0x2db065(0x144)][_0x2db065(0x1a0)][_0x2db065(0x196)][_0x2db065(0xe7)](function(_0xad6810){const _0x16b085=_0x2db065;_0xad6810!==_0x1c6431['left']&&_0xad6810!==_0x1c6431[_0x16b085(0x17a)]&&_0xad6810!==window[_0x16b085(0x144)][_0x16b085(0x1a0)][_0x16b085(0xda)]&&googletag[_0x16b085(0x1a1)](_0xad6810);}),_0x11a94b(_0x2db065(0x127),{'inPage':window[_0x2db065(0x144)][_0x2db065(0x1a0)][_0x2db065(0x150)][_0x2db065(0x12e)],'oop':window[_0x2db065(0x144)][_0x2db065(0x1a0)][_0x2db065(0x196)]['length'],'sideRails':{'left':!!_0x1c6431['left'],'right':!!_0x1c6431[_0x2db065(0x17a)]},'interstitial':!!window['nasrevAds'][_0x2db065(0x1a0)][_0x2db065(0xda)]});}function _0x5120fb(){const _0x6d6b16=_0x4729db;try{_0x11a94b(_0x6d6b16(0x194),{'version':_0x2bd17d,'url':window[_0x6d6b16(0xfb)][_0x6d6b16(0xf5)],'userAgent':navigator[_0x6d6b16(0xc0)]}),document['readyState']===_0x6d6b16(0x12a)?document['addEventListener'](_0x6d6b16(0xeb),_0x52c5d3):_0x52c5d3();}catch(_0x18024f){_0x10b73c(_0x6d6b16(0xbb),_0x18024f);}}_0x5120fb();}()));function _0x3d1d(){const _0x628da=['log','script','setPublisherProvidedId','universalAdConfig','getElementById','privacy','rdp','catch',']\x20ERROR:','interstitial','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20','insertBefore','ua-placement-1','isEmpty','error','defineSlot','status','bottom','Advertisement','4.2.0','getSlotElementId','startsWith','forEach','custom','https://www.googletagmanager.com/gtag/js?id=G-Z0B4ZBF7XH','ua-placement-4','DOMContentLoaded','30s','/23272458704/Nasrev.com/Siderail','onerror','1041933oMrVQX','Refreshing\x20slot\x20(viewable)','parentNode','debug','replace','domains','href','then','Invalid\x20pubs.json\x20format','cssText','refreshTimers','setConfig','location','ping','anonymous','sizes','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20','head','createElement','innerWidth','OutOfPageFormat','__uspapi','Anchor\x20slot\x20defined','enableLazyLoad','No\x20CMP\x20detected\x20after\x20timeout\x20-\x20proceeding\x20with\x20default\x20consent','valid','4075680EXDMgw','Already\x20initialized\x20-\x20skipping','googletag','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2011px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#666;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20Arial,\x20sans-serif;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-transform:\x20uppercase;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20letter-spacing:\x200.5px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20','impressionViewable','40XdEusg','ads\x20by\x20<a\x20href=\x22https://nasrev.com\x22\x20target=\x22_blank\x22\x20rel=\x22noopener\x22>nasrev.com</a>','23272458704','innerHTML','Side\x20rail\x20ads:\x20Only\x20','defineOutOfPageSlot','Left\x20side\x20rail\x20defined','gpp','SaleOptOut','initialized','Displaying\x20ads','Google\x20Analytics\x20loaded\x20successfully','slotRenderEnded','async','Validation\x20error\x20(falling\x20back\x20to\x20embedded\x20list)','setTargeting','substr','top','\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#999;\x0a\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20Arial,\x20sans-serif;\x0a\x20\x20\x20\x20\x20\x20\x20\x20letter-spacing:\x200.3px;\x0a\x20\x20\x20\x20\x20\x20','textContent','Cache\x20bypassed\x20via\x20?nocache=1','Your\x20domain\x20is\x20not\x20in\x20the\x20approved\x20publishers\x20list.','1486205qgyRAq','substring','TCF:\x20Limited\x20consent\x20-\x20enabling\x20NPA\x20mode','All\x20ads\x20displayed','Auto-generated\x20PPID\x20(returning\x20user)','712792rGpaLd','loading','ua-placeholder','vendor','pubads','length','TCF\x20detected','session_','GPP\x20data\x20retrieved','left','/23272458704/Nasrev.com/Interstitial','getItem','Solutions:','G-Z0B4ZBF7XH','className','\x20initialized','Domain\x20blocked\x20by\x20cache.\x20To\x20retry:\x20Add\x20?nocache=1\x20to\x20URL\x20or\x20clear\x20browser\x20cache.','8jOsCtW','Validating\x20publisher\x20domain\x20(async)','warn','documentElement','pathname','Configuring\x20publisher\x20ads\x20service','dataLayer','Starting\x20refresh\x20timer\x20for\x20slot','style','toString','nasrevAds','function','RIGHT_SIDE_RAIL','removeItem','GPT\x20services\x20enabled','domain','uspString','3868304HKZxAH','Starting\x20consent\x20detection','127.0.0.1','Domain\x20not\x20approved','timestamp','inPage','addService','addEventListener','parse','hasConsent','Auto-generated\x20PPID\x20(new\x20user)','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#4CAF50;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-decoration:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20','set','appendChild','Side\x20rail\x20ads:\x20Not\x20supported\x20on\x20this\x20page/device','path','https://securepubads.g.doubleclick.net/tag/js/gpt.js','min','https://raw.githubusercontent.com/Tipblogg/nasrev-cdn/refs/heads/main/pubs.json','eventStatus','string','Loading\x20script','Setting\x20up\x20viewability-based\x20ad\x20refresh','disabled','Slot\x20not\x20viewable,\x20waiting\x20for\x20viewability','__tcfapi','Failed\x20to\x20fetch\x20pubs.json:\x20','Setting\x20up\x20ad\x20slots\x20with\x20optimized\x20configuration','In-page\x20slots\x20displayed','beforeunload','color:\x20red;\x20font-weight:\x20bold;','Privacy:\x20NPA\x20enabled','Initializing\x20ad\x20logic','US\x20Privacy\x20detected','nasrev_ppid','Using\x20publisher-provided\x20PPID','querySelector','auto','some','gppString','/23272458704/Nasrev.com/Display','Slot\x20rendered','setPrivacySettings','script_version','/23272458704/Nasrev.com/Display3','tcloaded','push','right','no-cache','stringify','\x20\x202.\x20Contact\x20Nasrev\x20to\x20add\x20your\x20domain\x20to\x20pubs.json','enabled','ua-domain-valid','title','__gpp','ua-placement-2','div','has','Checking\x20for\x20US\x20Privacy\x20String','clientHeight','GET','height','max','Impression\x20viewable\x20-\x20restarting\x20refresh\x20timer','hostname','Google\x20Analytics\x20initialized','get','[Nasrev\x20Ads\x20v','ua-branding','US\x20Privacy:\x20RDP\x20enabled\x20due\x20to\x20opt-out','remove','/23272458704/Nasrev.com/Anchor','side-rails','Script\x20loaded','toISOString','oop','5939565NffNni','purpose','consents','search','Failed\x20to\x20inject\x20ad\x20branding','npa','Setting\x20up\x20side\x20rail\x20ads','26094348QUZLCn','ppid-type','slots','display','width','slot','enums','customRefresh','Interstitial\x20displayed','sideRails','TargetedAdvertisingOptOut','endsWith','getGPPData','Failed\x20to\x20load\x20GPT\x20library','Right\x20side\x20rail\x20displayed','clientWidth','now','innerHeight','cmd','referrer','/23272458704/Nasrev.com/Display4','Enhanced\x20targeting\x20configured\x20with\x20contextual\x20signals','Side\x20rail\x20ads:\x20Both\x20left\x20and\x20right\x20initialized','random','page_url','SharingOptOut','TCF:\x20Full\x20consent\x20granted','PPID\x20set\x20for\x20better\x20targeting','nocache','apvisit.com','Initialization\x20error','Failed\x20to\x20load\x20Google\x20Analytics','usnat','Domain\x20not\x20in\x20fallback\x20list','ms\x20(','userAgent','Fix\x20CORS\x20on\x20https://raw.githubusercontent.com/Tipblogg/nasrev-cdn/refs/heads/main/pubs.json\x20for\x20live\x20updates','Checking\x20for\x20GPP\x20consent\x20framework','Google\x20Analytics\x20initialization\x20failed','Using\x20cached\x20validation','true','Right\x20side\x20rail\x20defined','Checking\x20for\x20TCF\x20consent\x20framework','applicableSections','refresh','Privacy:\x20RDP\x20enabled','useractioncomplete','localhost','Left\x20side\x20rail\x20displayed','ppid','ua-placement-3','setItem'];_0x3d1d=function(){return _0x628da;};return _0x3d1d();}
+(function() {
+  'use strict';
+
+  // ==================== CONSTANTS ====================
+  const SCRIPT_VERSION = '4.2.0'; // FIXED: Low fill rates + performance issues
+  const CONSENT_TIMEOUT = 1000; // 1 second timeout for CMP detection
+  const GPT_LIBRARY_URL = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
+  const GA_LIBRARY_URL = 'https://www.googletagmanager.com/gtag/js?id=G-Z0B4ZBF7XH';
+  const GAM_NETWORK_ID = '23272458704'; // Hardcoded for all publishers
+  const DEFAULT_REFRESH_INTERVAL = 30000; // 30 seconds - Google minimum recommendation
+  const MIN_VIEWABLE_TIME = 1000; // 1 second - IAB/MRC viewability standard
+  
+  // ==================== GLOBAL STATE ====================
+  window.nasrevAds = window.nasrevAds || {
+    version: SCRIPT_VERSION,
+    initialized: false,
+    privacy: {
+      hasConsent: false,
+      npa: false, // Non-Personalized Ads (TCF)
+      rdp: false, // Restricted Data Processing (US Privacy)
+      gppSid: [], // GPP Section IDs
+      gppString: '' // GPP String
+    },
+    slots: {
+      inPage: [],
+      oop: [],
+      sideRails: {
+        left: null,
+        right: null
+      }
+    },
+    refreshTimers: new Map(),
+    viewabilityTimers: new Map(), // Track cumulative viewable time
+    errors: []
+  };
+
+  // ==================== UTILITY FUNCTIONS ====================
+  
+  /**
+   * Debug logger - only logs when debugMode is enabled via URL parameter
+   */
+  function log(message, data) {
+    // Check for ?debug=1 in URL
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('debug') === '1') {
+      console.log(`[Nasrev Ads v${SCRIPT_VERSION}]`, message, data || '');
+    }
+  }
+
+  /**
+   * Error logger - always logs errors
+   */
+  function logError(message, error) {
+    console.error(`[Nasrev Ads v${SCRIPT_VERSION}] ERROR:`, message, error || '');
+    window.nasrevAds.errors.push({
+      timestamp: new Date().toISOString(),
+      message: message,
+      error: error ? error.toString() : null
+    });
+  }
+
+  /**
+   * Load external script asynchronously
+   */
+  function loadScript(url, onLoad, onError) {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = url;
+    script.crossOrigin = 'anonymous';
+    
+    if (onLoad) script.onload = onLoad;
+    if (onError) script.onerror = onError;
+    
+    document.head.appendChild(script);
+    log('Loading script', url);
+  }
+
+  // ==================== GOOGLE ANALYTICS INTEGRATION ====================
+  
+  /**
+   * Initialize Google Analytics for page view tracking
+   */
+  function initGoogleAnalytics() {
+    try {
+      // Initialize dataLayer
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+      
+      // Configure GA
+      gtag('js', new Date());
+      gtag('config', 'G-Z0B4ZBF7XH', {
+        'page_title': document.title,
+        'page_location': window.location.href,
+        'page_path': window.location.pathname,
+        'custom_map': {
+          'dimension1': 'publisher_domain',
+          'dimension2': 'script_version'
+        },
+        'publisher_domain': window.location.hostname,
+        'script_version': SCRIPT_VERSION
+      });
+      
+      // Load GA script
+      loadScript(GA_LIBRARY_URL, function() {
+        log('Google Analytics loaded successfully');
+      }, function() {
+        logError('Failed to load Google Analytics');
+      });
+      
+      log('Google Analytics initialized');
+    } catch (e) {
+      logError('Google Analytics initialization failed', e);
+    }
+  }
+
+  // ==================== PHASE 0: CONSENT MANAGEMENT ====================
+  
+  /**
+   * Check for GPP (Global Privacy Platform) - Latest IAB Standard
+   */
+  function checkGPP() {
+    log('Checking for GPP consent framework');
+    
+    if (typeof window.__gpp === 'function') {
+      try {
+        window.__gpp('ping', function(pingData, success) {
+          if (success && pingData) {
+            log('GPP detected', pingData);
+            
+            // Get GPP string and section IDs
+            window.__gpp('getGPPData', function(gppData, success) {
+              if (success && gppData) {
+                window.nasrevAds.privacy.gppString = gppData.gppString || '';
+                window.nasrevAds.privacy.gppSid = gppData.applicableSections || [];
+                
+                log('GPP data retrieved', gppData);
+                
+                // Check for US Privacy opt-outs
+                if (gppData.parsedSections && gppData.parsedSections.usnat) {
+                  const usnat = gppData.parsedSections.usnat;
+                  if (usnat.SaleOptOut === 1 || usnat.SharingOptOut === 1 || usnat.TargetedAdvertisingOptOut === 1) {
+                    window.nasrevAds.privacy.rdp = true;
+                    log('US Privacy: RDP enabled due to opt-out');
+                  }
+                }
+                
+                window.nasrevAds.privacy.hasConsent = true;
+                initAdLogic();
+              }
+            });
+          }
+        });
+        return true;
+      } catch (e) {
+        logError('GPP check failed', e);
+      }
+    }
+    
+    return false;
+  }
+
+  /**
+   * Check for TCF v2.2 (EU/EEA)
+   */
+  function checkTCF() {
+    log('Checking for TCF consent framework');
+    
+    if (typeof window.__tcfapi === 'function') {
+      window.__tcfapi('addEventListener', 2, function(tcData, success) {
+        if (success && tcData) {
+          log('TCF detected', tcData);
+          
+          if (tcData.eventStatus === 'tcloaded' || tcData.eventStatus === 'useractioncomplete') {
+            // Check for Google (Vendor ID 755) consent
+            const googleConsent = tcData.vendor && tcData.vendor.consents && tcData.vendor.consents[755];
+            
+            // Check for required purposes (1: Storage, 3: Personalized Ads, 4: Content Selection)
+            const purpose1 = tcData.purpose && tcData.purpose.consents && tcData.purpose.consents[1];
+            const purpose3 = tcData.purpose && tcData.purpose.consents && tcData.purpose.consents[3];
+            const purpose4 = tcData.purpose && tcData.purpose.consents && tcData.purpose.consents[4];
+            
+            if (googleConsent && purpose1 && purpose3 && purpose4) {
+              window.nasrevAds.privacy.hasConsent = true;
+              log('TCF: Full consent granted');
+            } else {
+              window.nasrevAds.privacy.npa = true;
+              log('TCF: Limited consent - enabling NPA mode');
+            }
+            
+            initAdLogic();
+          }
+        }
+      });
+      return true;
+    }
+    
+    return false;
+  }
+
+  /**
+   * Check for legacy US Privacy String (CCPA/CPRA)
+   */
+  function checkUSPrivacy() {
+    log('Checking for US Privacy String');
+    
+    if (typeof window.__uspapi === 'function') {
+      window.__uspapi('getUSPData', 1, function(uspData, success) {
+        if (success && uspData && uspData.uspString) {
+          log('US Privacy detected', uspData);
+          
+          // Parse string (e.g., "1YYN" = version 1, explicit yes, explicit yes, notice given)
+          const uspString = uspData.uspString;
+          if (uspString.charAt(2) === 'Y') { // User opted out
+            window.nasrevAds.privacy.rdp = true;
+            log('US Privacy: RDP enabled due to opt-out');
+          }
+          
+          window.nasrevAds.privacy.hasConsent = true;
+          initAdLogic();
+          return true;
+        }
+      });
+      return true;
+    }
+    
+    return false;
+  }
+
+  /**
+   * Main consent detection function
+   */
+  function detectConsent() {
+    log('Starting consent detection');
+    
+    // Priority order: GPP > TCF > US Privacy > Fallback
+    if (checkGPP()) return;
+    if (checkTCF()) return;
+    if (checkUSPrivacy()) return;
+    
+    // No CMP detected - set timeout fallback
+    setTimeout(function() {
+      if (!window.nasrevAds.initialized) {
+        log('No CMP detected after timeout - proceeding with default consent');
+        
+        // Proceed assuming consent (non-regulated geo or publisher's responsibility)
+        window.nasrevAds.privacy.hasConsent = true;
+        initAdLogic();
+      }
+    }, CONSENT_TIMEOUT);
+  }
+
+  /**
+   * Generate automatic PPID if publisher doesn't provide one
+   */
+  function getOrGeneratePPID() {
+    const config = window.universalAdConfig || {};
+    
+    // Check if publisher provided PPID
+    if (config.ppid && typeof config.ppid === 'string' && config.ppid.length > 0) {
+      log('Using publisher-provided PPID', config.ppid);
+      return config.ppid;
+    }
+    
+    // Auto-generate browser-based PPID
+    try {
+      let ppid = localStorage.getItem('nasrev_ppid');
+      
+      if (!ppid) {
+        // Generate new PPID: domain + random + timestamp
+        const domain = window.location.hostname.replace(/[^a-z0-9]/gi, '_');
+        const random = Math.random().toString(36).substr(2, 12);
+        const timestamp = Date.now().toString(36);
+        ppid = domain + '_' + random + '_' + timestamp;
+        
+        // Store for future visits
+        localStorage.setItem('nasrev_ppid', ppid);
+        log('Auto-generated PPID (new user)', ppid);
+      } else {
+        log('Auto-generated PPID (returning user)', ppid);
+      }
+      
+      return ppid;
+      
+    } catch (e) {
+      // Fallback if localStorage blocked
+      logError('localStorage blocked, using session-only PPID', e);
+      const fallback = 'session_' + Math.random().toString(36).substr(2, 15);
+      return fallback;
+    }
+  }
+
+  // ==================== PHASE 1: PUBLISHER VALIDATION ====================
+  
+  /**
+   * Check session cache for validation status
+   */
+  function checkValidationCache() {
+    try {
+      // Allow cache bypass with ?nocache=1
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('nocache') === '1') {
+        log('Cache bypassed via ?nocache=1');
+        sessionStorage.removeItem('ua-domain-valid');
+        return null;
+      }
+      
+      const cached = sessionStorage.getItem('ua-domain-valid');
+      if (cached) {
+        const data = JSON.parse(cached);
+        const now = Date.now();
+        
+        // Cache for 24 hours
+        if (now - data.timestamp < 86400000) {
+          log('Using cached validation', data.valid);
+          return data.valid;
+        } else {
+          sessionStorage.removeItem('ua-domain-valid');
+        }
+      }
+    } catch (e) {
+      logError('Cache check failed', e);
+    }
+    return null;
+  }
+
+  /**
+   * Save validation status to cache
+   */
+  function saveValidationCache(isValid) {
+    try {
+      sessionStorage.setItem('ua-domain-valid', JSON.stringify({
+        valid: isValid,
+        timestamp: Date.now()
+      }));
+      log('Validation cached', isValid);
+    } catch (e) {
+      logError('Cache save failed', e);
+    }
+  }
+
+  /**
+   * Validate publisher domain against approved list (NON-BLOCKING)
+   */
+  function validatePublisherAsync() {
+    const currentDomain = window.location.hostname;
+    
+    log('Validating publisher domain (async)', currentDomain);
+    
+    // Embedded fallback list (updated: 2025-10-31)
+    const fallbackDomains = [
+      'apvisit.com',
+      'localhost',
+      '127.0.0.1'
+    ];
+    
+    fetch('https://raw.githubusercontent.com/Tipblogg/nasrev-cdn/refs/heads/main/pubs.json', {
+      method: 'GET',
+      cache: 'no-cache'
+    })
+    .then(function(response) {
+      if (!response.ok) {
+        throw new Error('Failed to fetch pubs.json: ' + response.status);
+      }
+      return response.json();
+    })
+    .then(function(data) {
+      if (!data.domains || !Array.isArray(data.domains)) {
+        throw new Error('Invalid pubs.json format');
+      }
+      
+      // Check if current domain is in approved list
+      const isApproved = data.domains.some(function(domain) {
+        // Support both exact match and wildcard subdomain
+        if (domain.startsWith('*.')) {
+          const baseDomain = domain.substring(2);
+          return currentDomain.endsWith(baseDomain);
+        }
+        return currentDomain === domain;
+      });
+      
+      if (isApproved) {
+        log('Domain approved (from pubs.json)', currentDomain);
+        saveValidationCache(true);
+      } else {
+        logError('Domain not approved', currentDomain);
+        saveValidationCache(false);
+      }
+    })
+    .catch(function(error) {
+      logError('Validation error (falling back to embedded list)', error);
+      
+      // CORS ERROR or network failure - use embedded fallback list
+      const isApprovedFallback = fallbackDomains.some(function(domain) {
+        if (domain.startsWith('*.')) {
+          const baseDomain = domain.substring(2);
+          return currentDomain.endsWith(baseDomain);
+        }
+        return currentDomain === domain;
+      });
+      
+      if (isApprovedFallback) {
+        log('Domain approved (from embedded fallback list)', currentDomain);
+        console.warn('[Nasrev Ads] Using embedded publisher list due to CORS/network error');
+        console.warn('Fix CORS on https://raw.githubusercontent.com/Tipblogg/nasrev-cdn/refs/heads/main/pubs.json for live updates');
+        saveValidationCache(true);
+      } else {
+        logError('Domain not in fallback list', currentDomain);
+        saveValidationCache(false);
+      }
+    });
+  }
+
+  /**
+   * Initialize ad logic after consent is determined
+   */
+  function initAdLogic() {
+    if (window.nasrevAds.initialized) {
+      log('Already initialized - skipping');
+      return;
+    }
+    
+    log('Initializing ad logic');
+    
+    try {
+      // FIX #8: Check validation cache (non-blocking)
+      const cachedStatus = checkValidationCache();
+      
+      if (cachedStatus === false) {
+        logError('Domain blocked by cache. To retry: Add ?nocache=1 to URL or clear browser cache.');
+        console.error('%c[Nasrev Ads] Domain Not Approved', 'color: red; font-weight: bold;');
+        console.error('Your domain is not in the approved publishers list.');
+        console.error('Solutions:');
+        console.error('  1. Add ?nocache=1 to URL to retry validation');
+        console.error('  2. Contact Nasrev to add your domain to pubs.json');
+        console.error('  3. Current domain:', window.location.hostname);
+        return;
+      }
+      
+      // Mark as initialized IMMEDIATELY
+      window.nasrevAds.initialized = true;
+      
+      // Initialize Google Analytics
+      initGoogleAnalytics();
+      
+      // FIX #8: Start ads immediately, validate in background
+      proceedWithAds();
+      
+      // Run validation asynchronously (won't block ads)
+      if (cachedStatus !== true) {
+        validatePublisherAsync();
+      }
+      
+    } catch (error) {
+      logError('Initialization failed', error);
+    }
+  }
+
+  // ==================== PHASE 2: AD SETUP ====================
+  
+  /**
+   * Inject per-ad branding (centered below each ad)
+   */
+  function injectAdBranding(slotDiv) {
+    try {
+      const branding = document.createElement('div');
+      branding.className = 'ua-branding';
+      branding.innerHTML = 'ads by <a href="https://nasrev.com" target="_blank" rel="noopener">nasrev.com</a>';
+      branding.style.cssText = `
+        font-size: 10px;
+        color: #999;
+        text-align: center;
+        margin-top: 8px;
+        font-family: Arial, sans-serif;
+        letter-spacing: 0.3px;
+      `;
+      const link = branding.querySelector('a');
+      if (link) {
+        link.style.cssText = `
+          color: #4CAF50;
+          text-decoration: none;
+          font-weight: bold;
+        `;
+      }
+      slotDiv.appendChild(branding);
+    } catch (e) {
+      logError('Failed to inject ad branding', e);
+    }
+  }
+
+  /**
+   * Main ad setup function
+   */
+  function proceedWithAds() {
+    log('Proceeding with ad setup');
+    
+    // Initialize googletag
+    window.googletag = window.googletag || {cmd: []};
+    
+    // Load GPT library
+    loadScript(GPT_LIBRARY_URL, function() {
+      log('GPT library loaded');
+    }, function() {
+      logError('Failed to load GPT library');
+    });
+    
+    // Push all setup logic to GPT command queue
+    googletag.cmd.push(function() {
+      try {
+        setupAdSlots();
+        configurePublisherAds();
+        displayAds();
+      } catch (e) {
+        logError('Ad setup failed', e);
+      }
+    });
+  }
+
+  // ==================== PHASE 3: SLOT DETECTION & DEFINITION ====================
+  
+  /**
+   * Setup all ad slots - hardcoded configuration
+   */
+  function setupAdSlots() {
+    log('Setting up ad slots with optimized configuration');
+    
+    // FIX #1: UNIQUE ad unit paths per placement
+    // FIX #2: OPTIMIZED size arrays (removed low-demand 320x100, 300x100)
+    const adUnits = [
+      {
+        id: 'ua-placement-1',
+        path: '/23272458704/Nasrev.com/Display', // Display (main)
+        sizes: [[300, 250], [336, 280], [320, 50]],
+        refresh: true
+      },
+      {
+        id: 'ua-placement-2',
+        path: '/23272458704/Nasrev.com/Display2', // Display2
+        sizes: [[300, 250], [336, 280], [300, 600], [320, 50]],
+        refresh: false
+      },
+      {
+        id: 'ua-placement-3',
+        path: '/23272458704/Nasrev.com/Display3', // Display3
+        sizes: [[300, 250], [336, 280], [300, 600], [320, 50]],
+        refresh: true
+      },
+      {
+        id: 'ua-placement-4',
+        path: '/23272458704/Nasrev.com/Display4', // Display4
+        sizes: [[300, 250], [336, 280], [300, 600], [320, 50]],
+        refresh: false
+      }
+    ];
+    
+    // Define in-page slots
+    adUnits.forEach(function(unit) {
+      const slotDiv = document.getElementById(unit.id);
+      
+      if (slotDiv) {
+        // Create wrapper container for centering everything
+        const wrapper = document.createElement('div');
+        wrapper.style.cssText = `
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          margin: 0 auto;
+        `;
+        
+        // Inject "Advertisement" label (BOLD) - TOP
+        const label = document.createElement('div');
+        label.textContent = 'Advertisement';
+        label.style.cssText = `
+          font-size: 11px;
+          color: #666;
+          text-align: center;
+          margin-bottom: 8px;
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        `;
+        wrapper.appendChild(label);
+        
+        // Move slotDiv into wrapper
+        slotDiv.parentNode.insertBefore(wrapper, slotDiv);
+        wrapper.appendChild(slotDiv);
+        
+        // Style the slotDiv itself
+        slotDiv.style.cssText = `
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        `;
+        
+        // Inject placeholder
+        const placeholder = document.createElement('div');
+        placeholder.className = 'ua-placeholder';
+        placeholder.style.cssText = `
+          background: #f5f5f5;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #999;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          min-height: 50px;
+          border: 1px dashed #ddd;
+          border-radius: 4px;
+        `;
+        placeholder.textContent = 'Loading ad...';
+        slotDiv.appendChild(placeholder);
+        
+        // Inject "ads by nasrev.com" branding - BOTTOM (in wrapper, not slotDiv!)
+        injectAdBranding(wrapper);
+        
+        // Define slot
+        const slot = googletag.defineSlot(unit.path, unit.sizes, unit.id);
+        
+        if (slot) {
+          slot.addService(googletag.pubads());
+          slot.customRefresh = unit.refresh;
+          window.nasrevAds.slots.inPage.push(slot);
+          log('In-page slot defined', unit.id);
+        }
+      }
+    });
+    
+    // ==================== SIDE RAIL ADS ====================
+    // FIX #7: Display both side rails separately
+    log('Setting up side rail ads');
+    
+    const leftSideRail = googletag.defineOutOfPageSlot(
+      '/23272458704/Nasrev.com/Siderail',
+      googletag.enums.OutOfPageFormat.LEFT_SIDE_RAIL
+    );
+    
+    const rightSideRail = googletag.defineOutOfPageSlot(
+      '/23272458704/Nasrev.com/Siderail',
+      googletag.enums.OutOfPageFormat.RIGHT_SIDE_RAIL
+    );
+    
+    // Side rail slots return null if the page or device does not support side rails
+    if (leftSideRail) {
+      leftSideRail.addService(googletag.pubads());
+      window.nasrevAds.slots.sideRails.left = leftSideRail;
+      window.nasrevAds.slots.oop.push(leftSideRail);
+      log('Left side rail defined');
+    }
+    
+    if (rightSideRail) {
+      rightSideRail.addService(googletag.pubads());
+      window.nasrevAds.slots.sideRails.right = rightSideRail;
+      window.nasrevAds.slots.oop.push(rightSideRail);
+      log('Right side rail defined');
+    }
+    
+    // Log side rail support status
+    if (leftSideRail && rightSideRail) {
+      log('Side rail ads: Both left and right initialized');
+    } else if (leftSideRail || rightSideRail) {
+      log('Side rail ads: Only ' + (leftSideRail ? 'left' : 'right') + ' initialized');
+    } else {
+      log('Side rail ads: Not supported on this page/device');
+    }
+    
+    // Define anchor ad (if div exists)
+    const anchorDiv = document.getElementById('ua-anchor');
+    if (anchorDiv) {
+      const anchorSlot = googletag.defineOutOfPageSlot(
+        '/23272458704/Nasrev.com/Anchor',
+        googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+      );
+      
+      if (anchorSlot) {
+        anchorSlot.addService(googletag.pubads());
+        window.nasrevAds.slots.oop.push(anchorSlot);
+        log('Anchor slot defined');
+      }
+    }
+    
+    // ==================== INTERSTITIAL WITH TRIGGERS ====================
+    // FIX #10: Store interstitial separately for explicit display
+    const interstitialSlot = googletag.defineOutOfPageSlot(
+      '/23272458704/Nasrev.com/Interstitial',
+      googletag.enums.OutOfPageFormat.INTERSTITIAL
+    );
+    
+    if (interstitialSlot) {
+      // Enable optional interstitial triggers for better fill rate
+      const enableTriggers = true;
+      
+      interstitialSlot.setConfig({
+        interstitial: {
+          triggers: {
+            navBar: enableTriggers,      // Desktop: clicks on browser nav bar
+            unhideWindow: enableTriggers  // Tab/window unhide or maximize
+          }
+        }
+      });
+      
+      interstitialSlot.addService(googletag.pubads());
+      window.nasrevAds.slots.oop.push(interstitialSlot);
+      window.nasrevAds.slots.interstitial = interstitialSlot; // Store separately
+      log('Interstitial slot defined with triggers enabled', {
+        navBar: enableTriggers,
+        unhideWindow: enableTriggers
+      });
+    }
+  }
+
+  // ==================== PHASE 4: CONFIGURE PUBADS ====================
+  
+  /**
+   * Configure publisher ads service
+   */
+  function configurePublisherAds() {
+    const pubads = googletag.pubads();
+    const config = window.universalAdConfig || {};
+    
+    log('Configuring publisher ads service');
+    
+    // Get or auto-generate PPID (always available now!)
+    const ppid = getOrGeneratePPID();
+    
+    // FIX #3: Enable Single Request Architecture properly
+    pubads.enableSingleRequest();
+    
+    // Collapse empty divs
+    pubads.collapseEmptyDivs(true);
+    
+    // Apply privacy settings from Phase 0
+    const privacy = window.nasrevAds.privacy;
+    
+    if (privacy.rdp === true) {
+      pubads.setPrivacySettings({
+        restrictedDataProcessing: true
+      });
+      log('Privacy: RDP enabled');
+    }
+    
+    if (privacy.npa === true) {
+      pubads.setPrivacySettings({
+        nonPersonalizedAds: true
+      });
+      log('Privacy: NPA enabled');
+    }
+    
+    // Set PPID (auto-generated or publisher-provided)
+    pubads.setPublisherProvidedId(ppid);
+    log('PPID set for better targeting', ppid);
+    
+    // FIX #5: OPTIMIZED lazy loading settings
+    pubads.enableLazyLoad({
+      fetchMarginPercent: 100,    // Fetch 1 viewport ahead (reduced from 200)
+      renderMarginPercent: 50,    // Render 0.5 viewport ahead (reduced from 100)
+      mobileScaling: 2.0          // 2x on mobile
+    });
+    log('Lazy loading optimized for performance');
+    
+    // FIX #9: ENHANCED key-value targeting with contextual signals
+    pubads.setTargeting('ua-script', 'v' + SCRIPT_VERSION);
+    pubads.setTargeting('domain', window.location.hostname);
+    pubads.setTargeting('page_url', window.location.pathname);
+    pubads.setTargeting('has-ppid', 'true');
+    pubads.setTargeting('ppid-type', config.ppid ? 'custom' : 'auto');
+    pubads.setTargeting('side-rails', 
+      (window.nasrevAds.slots.sideRails.left || window.nasrevAds.slots.sideRails.right) ? 'enabled' : 'disabled'
+    );
+    
+    // Add referrer if available
+    if (document.referrer) {
+      try {
+        const referrerHost = new URL(document.referrer).hostname;
+        pubads.setTargeting('referrer', referrerHost);
+      } catch (e) {
+        // Invalid URL, skip
+      }
+    }
+    
+    if (privacy.gppString) {
+      pubads.setTargeting('gpp', 'enabled');
+    }
+    
+    log('Enhanced targeting configured with contextual signals');
+    
+    // FIX #4: Setup IMPROVED refresh listeners (start on render + viewability)
+    setupAdRefreshListeners();
+    
+    // Remove placeholder on render
+    pubads.addEventListener('slotRenderEnded', function(event) {
+      const slot = event.slot;
+      const divId = slot.getSlotElementId();
+      const div = document.getElementById(divId);
+      
+      if (div) {
+        const placeholder = div.querySelector('.ua-placeholder');
+        if (placeholder) {
+          placeholder.remove();
+        }
+      }
+      
+      log('Slot rendered', {
+        divId: divId,
+        isEmpty: event.isEmpty,
+        size: event.size
+      });
+      
+      // FIX #4: Start refresh timer immediately on render (if refresh enabled)
+      if (!event.isEmpty && slot.customRefresh) {
+        startRefreshTimer(slot);
+      }
+    });
+    
+    // Enable services
+    googletag.enableServices();
+    log('GPT services enabled');
+  }
+
+  // ==================== PHASE 5: AD REFRESH LOGIC (FIXED) ====================
+  
+  /**
+   * FIX #4: Start refresh timer for a slot (checks viewability first)
+   */
+  function startRefreshTimer(slot) {
+    const config = window.universalAdConfig || {};
+    const refreshInterval = Math.max(config.refreshInterval || DEFAULT_REFRESH_INTERVAL, 30000);
+    const slotId = slot.getSlotElementId();
+    
+    // Clear any existing timer
+    if (window.nasrevAds.refreshTimers.has(slotId)) {
+      clearTimeout(window.nasrevAds.refreshTimers.get(slotId));
+    }
+    
+    log('Starting refresh timer for slot', { slotId: slotId, interval: refreshInterval + 'ms' });
+    
+    // Wait for refresh interval
+    const timer = setTimeout(function() {
+      // Check if slot is viewable before refreshing
+      if (isSlotInViewport(slotId)) {
+        log('Refreshing slot (viewable)', slotId);
+        googletag.pubads().refresh([slot]);
+        // Restart timer after refresh (creates continuous refresh cycle)
+        startRefreshTimer(slot);
+      } else {
+        log('Slot not viewable, waiting for viewability', slotId);
+        // Don't restart timer - will be restarted when slot becomes viewable
+      }
+    }, refreshInterval);
+    
+    window.nasrevAds.refreshTimers.set(slotId, timer);
+  }
+
+  /**
+   * Setup IMPROVED viewability-based refresh listeners
+   */
+  function setupAdRefreshListeners() {
+    const config = window.universalAdConfig || {};
+    const refreshInterval = Math.max(config.refreshInterval || DEFAULT_REFRESH_INTERVAL, 30000);
+    
+    log('Setting up viewability-based ad refresh', { 
+      interval: refreshInterval + 'ms (' + (refreshInterval/1000) + 's)',
+      minViewableTime: MIN_VIEWABLE_TIME + 'ms',
+      googleMinimum: '30s'
+    });
+    
+    // FIX #4: Restart timer when slot becomes viewable (for below-fold ads)
+    googletag.pubads().addEventListener('impressionViewable', function(event) {
+      const slot = event.slot;
+      
+      // Skip if refresh not enabled for this slot
+      if (!slot.customRefresh) {
+        return;
+      }
+      
+      const slotId = slot.getSlotElementId();
+      
+      log('Impression viewable - restarting refresh timer', slotId);
+      
+      // Restart refresh cycle (will check viewability before each refresh)
+      startRefreshTimer(slot);
+    });
+    
+    // Cleanup timers on page unload
+    window.addEventListener('beforeunload', function() {
+      window.nasrevAds.refreshTimers.forEach(function(timer) {
+        clearTimeout(timer);
+      });
+    });
+  }
+
+  /**
+   * Check if slot is in viewport (for refresh validation)
+   */
+  function isSlotInViewport(slotId) {
+    const element = document.getElementById(slotId);
+    if (!element) return false;
+    
+    const rect = element.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+    
+    // Check if at least 50% of ad is visible (IAB/MRC standard)
+    const verticalVisible = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
+    const horizontalVisible = Math.min(rect.right, windowWidth) - Math.max(rect.left, 0);
+    const visibleArea = Math.max(0, verticalVisible) * Math.max(0, horizontalVisible);
+    const totalArea = rect.height * rect.width;
+    const visibilityRatio = totalArea > 0 ? visibleArea / totalArea : 0;
+    
+    return visibilityRatio >= 0.5; // 50% viewability threshold
+  }
+
+  // ==================== PHASE 6: DISPLAY ADS ====================
+  
+  /**
+   * Display all defined ads
+   */
+  function displayAds() {
+    log('Displaying ads');
+    
+    // Display in-page slots FIRST (before OOP slots per Google best practice)
+    window.nasrevAds.slots.inPage.forEach(function(slot) {
+      googletag.display(slot.getSlotElementId());
+    });
+    
+    log('In-page slots displayed', window.nasrevAds.slots.inPage.length);
+    
+    // FIX #7: Display BOTH side rails separately
+    const sideRails = window.nasrevAds.slots.sideRails;
+    if (sideRails.left) {
+      googletag.display(sideRails.left);
+      log('Left side rail displayed');
+    }
+    if (sideRails.right) {
+      googletag.display(sideRails.right);
+      log('Right side rail displayed');
+    }
+    
+    // FIX #10: Display interstitial explicitly
+    if (window.nasrevAds.slots.interstitial) {
+      googletag.display(window.nasrevAds.slots.interstitial);
+      log('Interstitial displayed');
+    }
+    
+    // Display other OOP slots (anchor)
+    window.nasrevAds.slots.oop.forEach(function(slot) {
+      // Skip side rails and interstitial as they're already displayed above
+      if (slot !== sideRails.left && slot !== sideRails.right && slot !== window.nasrevAds.slots.interstitial) {
+        googletag.display(slot);
+      }
+    });
+    
+    log('All ads displayed', {
+      inPage: window.nasrevAds.slots.inPage.length,
+      oop: window.nasrevAds.slots.oop.length,
+      sideRails: {
+        left: !!sideRails.left,
+        right: !!sideRails.right
+      },
+      interstitial: !!window.nasrevAds.slots.interstitial
+    });
+  }
+
+  // ==================== ENTRY POINT ====================
+  
+  /**
+   * Main initialization
+   */
+  function init() {
+    try {
+      log('Script loaded', { 
+        version: SCRIPT_VERSION, 
+        url: window.location.href,
+        userAgent: navigator.userAgent
+      });
+      
+      // Wait for DOM to be ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', detectConsent);
+      } else {
+        detectConsent();
+      }
+      
+    } catch (error) {
+      logError('Initialization error', error);
+    }
+  }
+
+  // Start the script
+  init();
+
+})();
