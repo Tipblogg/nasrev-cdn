@@ -38,7 +38,7 @@
         "djpunjab.com.se",
         "paagalworld.com.se",
         "djmakiss.com",
-        "en.kooorazoom.net",
+        "*.kooorazoom.net",
         "*.subdomain.com"
     ]
 }
