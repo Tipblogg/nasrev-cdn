@@ -6,11 +6,12 @@
         VAST_TAG: 'https://pubads.g.doubleclick.net/gampad/ads?iu=/23272458704/Nasrev.com/Video&description_url=[placeholder]&tfcd=0&npa=0&sz=400x300%7C640x480&gdfp_req=1&unviewed_position_start=1&output=vast&env=vp&impl=s&plcmt=2&correlator=&vpmute=1&cust_params=[cust_params_placeholder]',
         SELLER_JSON_URL: 'https://nasrev.com/sellers.json',
         MAX_REDIRECTS: 10, VAST_LOAD_TIMEOUT: 8000, VIDEO_LOAD_TIMEOUT: 15000,
-        MAX_RETRIES: 3, INITIAL_BACKOFF: 1000, MAX_BACKOFF: 10000,
+        MAX_RETRIES: 3, INITIAL_BACKOFF: 5000, MAX_BACKOFF: 30000,
         MIN_REFRESH_INTERVAL: 30000, MAX_REFRESHES: 50,
         FLOATING_WIDTH: 300, FLOATING_HEIGHT: 169,
         BG_VIDEOS: ['https://github.com/Tipblogg/nasrev-cdn/raw/refs/heads/main/nas.mp4'],
         ENABLE_DEBUG_LOGGING: true,
+        VISIBILITY_CHECK_INTERVAL: 1000,
     };
 
     // ========== UTILITIES ==========
@@ -108,6 +109,9 @@
             this.retryCount = 0; this.backoffMs = CONFIG.INITIAL_BACKOFF; this.refreshCount = 0;
             this.resizeObserver = null;
             this.isInViewport = false;
+            this.resizeTimeout = null;
+            this.refreshTimeout = null;
+            this.visibilityCheckInterval = null;
             this.init();
         }
 
@@ -317,8 +321,9 @@
                 }
                 .nasvideo-player.floating { 
                     position: fixed !important; 
-                    bottom: 20px !important; 
-                    right: 20px !important; 
+                    top: 50% !important; 
+                    left: 20px !important; 
+                    transform: translateY(-50%) !important;
                     width: ${CONFIG.FLOATING_WIDTH}px !important; 
                     height: ${CONFIG.FLOATING_HEIGHT}px !important; 
                     z-index: 999999 !important; 
@@ -326,6 +331,8 @@
                     cursor: default !important; 
                     max-width: none !important;
                     border-radius: 12px !important;
+                    bottom: auto !important;
+                    right: auto !important;
                 }
                 .nasvideo-player.floating .nv-close { 
                     display: block !important; 
@@ -339,8 +346,8 @@
                     .nasvideo-player.floating {
                         width: 180px !important;
                         height: 101px !important;
-                        bottom: 60px !important;
-                        right: 10px !important;
+                        top: 50% !important;
+                        left: 10px !important;
                     }
                 }
             `;
@@ -356,14 +363,9 @@
 
             this.resizeHandler = () => {
                 if (this.resizeTimeout) clearTimeout(this.resizeTimeout);
-                this.resizeTimeout = setTimeout(() => this.handleResize(), 200);
+                this.resizeTimeout = setTimeout(() => this.handleResize(), 100);
             };
             window.addEventListener('resize', this.resizeHandler, { passive: true });
-
-            if (typeof ResizeObserver !== 'undefined') {
-                this.resizeObserver = new ResizeObserver(() => this.handleResize());
-                this.resizeObserver.observe(this.container);
-            }
 
             document.addEventListener('fullscreenchange', () => this.handleFullscreenChange());
 
@@ -388,6 +390,18 @@
                     log('warn', 'Error resuming ad:', e);
                 }
             }
+        }
+
+        isPlayerVisible() {
+            const rect = this.wrapper.getBoundingClientRect();
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+            const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+            
+            const verticalVisible = rect.top < windowHeight && rect.bottom > 0;
+            const horizontalVisible = rect.left < windowWidth && rect.right > 0;
+            const hasArea = rect.width > 0 && rect.height > 0;
+            
+            return verticalVisible && horizontalVisible && hasArea;
         }
 
         handleResize() {
@@ -423,12 +437,13 @@
             if (this.isDestroyed || !this.isAdPlaying) return;
 
             const wrapperRect = this.wrapper.getBoundingClientRect();
-            const shouldFloat = !this.isFloating && (wrapperRect.bottom < 0 || wrapperRect.top < -100);
-            const shouldUnfloat = this.isFloating && (wrapperRect.top >= -50 && wrapperRect.bottom > 100);
-
-            if (shouldFloat) {
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+            
+            const isOutOfView = wrapperRect.bottom < 0 || wrapperRect.top > windowHeight;
+            
+            if (isOutOfView && !this.isFloating) {
                 this.enterFloating();
-            } else if (shouldUnfloat) {
+            } else if (!isOutOfView && this.isFloating) {
                 this.exitFloating();
             }
         }
@@ -494,13 +509,13 @@
             this.adsLoader = new google.ima.AdsLoader(this.adDisplayContainer);
             this.adsLoader.getSettings().setNumRedirects(CONFIG.MAX_REDIRECTS);
             this.adsLoader.getSettings().setDisableCustomPlaybackForIOS10Plus(true);
-            this.adsLoader.getSettings().setVpaidMode(google.ima.ImaSdkSettings.VpaidMode.ENABLED);
+            this.adsLoader.getSettings().setVpaidMode(google.ima.ImaSdkSettings.VpaidMode.INSECURE);
             this.adsLoader.getSettings().setAutoPlayAdBreaks(true);
 
             this.adsLoader.addEventListener(google.ima.AdsManagerLoadedEvent.Type.ADS_MANAGER_LOADED, e => this.onAdsManagerLoaded(e), false);
             this.adsLoader.addEventListener(google.ima.AdErrorEvent.Type.AD_ERROR, e => this.onAdError(e), false);
 
-            log('info', 'IMA SDK ready. Initializing ads immediately.');
+            log('info', 'IMA SDK ready with VPAID INSECURE mode.');
             try {
                 this.adDisplayContainer.initialize();
                 this.isInitialized = true;
@@ -511,7 +526,12 @@
         }
 
         async requestAds() {
-            if (this.isDestroyed || !this.isInitialized || this.retryCount >= CONFIG.MAX_RETRIES) return;
+            if (this.isDestroyed || !this.isInitialized || this.retryCount >= CONFIG.MAX_RETRIES) {
+                if (this.retryCount >= CONFIG.MAX_RETRIES) {
+                    log('warn', `Max retries (${CONFIG.MAX_RETRIES}) reached. Will schedule refresh.`);
+                }
+                return;
+            }
             const rect = this.container.getBoundingClientRect();
             if (rect.width < 1) { setTimeout(() => this.requestAds(), 500); return; }
 
@@ -526,6 +546,8 @@
                 adsRequest.adTagUrl = vastUrl;
                 adsRequest.linearAdSlotWidth = Math.floor(rect.width);
                 adsRequest.linearAdSlotHeight = Math.floor(rect.height);
+                adsRequest.nonLinearAdSlotWidth = Math.floor(rect.width);
+                adsRequest.nonLinearAdSlotHeight = Math.floor(rect.height);
                 adsRequest.vastLoadTimeout = CONFIG.VAST_LOAD_TIMEOUT;
                 adsRequest.setAdWillAutoPlay(true);
                 adsRequest.setAdWillPlayMuted(true);
@@ -632,22 +654,53 @@
 
             this.retryCount++;
             if (this.retryCount <= CONFIG.MAX_RETRIES) {
-                log('log', `Retrying ad request (${this.retryCount}/${CONFIG.MAX_RETRIES})...`);
+                log('log', `Retrying ad request (${this.retryCount}/${CONFIG.MAX_RETRIES}) in ${this.backoffMs}ms...`);
                 setTimeout(() => this.requestAds(), this.backoffMs);
-                this.backoffMs = Math.min(this.backoffMs * 1.5, CONFIG.MAX_BACKOFF);
+                this.backoffMs = Math.min(this.backoffMs * 2, CONFIG.MAX_BACKOFF);
             } else {
-                log('error', 'Max retries reached. Scheduling a refresh.');
+                log('error', `Max retries (${CONFIG.MAX_RETRIES}) reached. Scheduling refresh.`);
                 this.scheduleRefresh();
             }
         }
 
         scheduleRefresh() {
-            if (this.isDestroyed || this.refreshCount >= CONFIG.MAX_REFRESHES) return;
-            log('log', `Scheduling next ad in ${CONFIG.MIN_REFRESH_INTERVAL / 1000}s.`);
-            setTimeout(() => {
-                this.refreshCount++; this.retryCount = 0; this.backoffMs = CONFIG.INITIAL_BACKOFF;
-                this.requestAds();
-            }, CONFIG.MIN_REFRESH_INTERVAL);
+            if (this.isDestroyed || this.refreshCount >= CONFIG.MAX_REFRESHES) {
+                log('warn', 'Max refreshes reached or player destroyed.');
+                return;
+            }
+
+            if (this.refreshTimeout) {
+                clearTimeout(this.refreshTimeout);
+                this.refreshTimeout = null;
+            }
+
+            if (this.visibilityCheckInterval) {
+                clearInterval(this.visibilityCheckInterval);
+                this.visibilityCheckInterval = null;
+            }
+
+            log('log', `Ad refresh scheduled. Waiting for player visibility check...`);
+
+            this.visibilityCheckInterval = setInterval(() => {
+                if (this.isPlayerVisible()) {
+                    log('info', `✓ Player is visible. Refreshing ad in ${CONFIG.MIN_REFRESH_INTERVAL / 1000}s...`);
+                    
+                    if (this.visibilityCheckInterval) {
+                        clearInterval(this.visibilityCheckInterval);
+                        this.visibilityCheckInterval = null;
+                    }
+
+                    this.refreshTimeout = setTimeout(() => {
+                        this.refreshCount++;
+                        this.retryCount = 0;
+                        this.backoffMs = CONFIG.INITIAL_BACKOFF;
+                        log('info', `Requesting new ad (refresh ${this.refreshCount}/${CONFIG.MAX_REFRESHES})`);
+                        this.requestAds();
+                    }, CONFIG.MIN_REFRESH_INTERVAL);
+                } else {
+                    log('log', 'Player not visible, waiting...');
+                }
+            }, CONFIG.VISIBILITY_CHECK_INTERVAL);
         }
 
         togglePlay() {
@@ -710,6 +763,14 @@
 
             if (this.resizeTimeout) {
                 clearTimeout(this.resizeTimeout);
+            }
+
+            if (this.refreshTimeout) {
+                clearTimeout(this.refreshTimeout);
+            }
+
+            if (this.visibilityCheckInterval) {
+                clearInterval(this.visibilityCheckInterval);
             }
 
             if (this.adsManager) {
