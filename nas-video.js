@@ -3,7 +3,7 @@
 
     // ========== FULL-FEATURED CONFIGURATION ==========
     const CONFIG = {
-        VAST_TAG: 'https://pubads.g.doubleclick.net/gampad/ads?iu=/23272458704/Nasrev.com/Video&description_url=[placeholder]&tfcd=0&npa=0&sz=400x300%7C640x480&ciu_szs=300x250%2C336x280%2C728x90&gdfp_req=1&unviewed_position_start=1&output=vast&env=vp&impl=s&correlator=&vpmute=1&cust_params=[cust_params_placeholder]',
+        VAST_TAG: 'https://pubads.g.doubleclick.net/gampad/ads?iu=/23272458704/Nasrev.com/Video&description_url=[placeholder]&tfcd=0&npa=0&sz=400x300%7C640x480&gdfp_req=1&unviewed_position_start=1&output=vast&env=vp&impl=s&correlator=&vpmute=1&cust_params=[cust_params_placeholder]',
         SELLER_JSON_URL: 'https://nasrev.com/sellers.json',
         MAX_REDIRECTS: 10, VAST_LOAD_TIMEOUT: 8000, VIDEO_LOAD_TIMEOUT: 15000,
         MAX_RETRIES: 3, INITIAL_BACKOFF: 1000, MAX_BACKOFF: 10000,
