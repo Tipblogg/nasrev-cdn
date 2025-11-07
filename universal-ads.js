@@ -2,13 +2,13 @@
   'use strict';
 
   // ==================== CONSTANTS ====================
-  const SCRIPT_VERSION = '4.2.0'; // FIXED: Low fill rates + performance issues
-  const CONSENT_TIMEOUT = 1000; // 1 second timeout for CMP detection
+  const SCRIPT_VERSION = '4.3.1'; // FIXED: GPT warnings + refresh for all slots
+  const CONSENT_TIMEOUT = 1000;
   const GPT_LIBRARY_URL = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
   const GA_LIBRARY_URL = 'https://www.googletagmanager.com/gtag/js?id=G-Z0B4ZBF7XH';
-  const GAM_NETWORK_ID = '23272458704'; // Hardcoded for all publishers
-  const DEFAULT_REFRESH_INTERVAL = 30000; // 30 seconds - Google minimum recommendation
-  const MIN_VIEWABLE_TIME = 1000; // 1 second - IAB/MRC viewability standard
+  const GAM_NETWORK_ID = '23272458704';
+  const DEFAULT_REFRESH_INTERVAL = 30000;
+  const MIN_VIEWABLE_TIME = 1000;
   
   // ==================== GLOBAL STATE ====================
   window.nasrevAds = window.nasrevAds || {
@@ -16,10 +16,10 @@
     initialized: false,
     privacy: {
       hasConsent: false,
-      npa: false, // Non-Personalized Ads (TCF)
-      rdp: false, // Restricted Data Processing (US Privacy)
-      gppSid: [], // GPP Section IDs
-      gppString: '' // GPP String
+      npa: false,
+      rdp: false,
+      gppSid: [],
+      gppString: ''
     },
     slots: {
       inPage: [],
@@ -30,26 +30,19 @@
       }
     },
     refreshTimers: new Map(),
-    viewabilityTimers: new Map(), // Track cumulative viewable time
+    viewabilityTimers: new Map(),
     errors: []
   };
 
   // ==================== UTILITY FUNCTIONS ====================
   
-  /**
-   * Debug logger - only logs when debugMode is enabled via URL parameter
-   */
   function log(message, data) {
-    // Check for ?debug=1 in URL
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get('debug') === '1') {
       console.log(`[Nasrev Ads v${SCRIPT_VERSION}]`, message, data || '');
     }
   }
 
-  /**
-   * Error logger - always logs errors
-   */
   function logError(message, error) {
     console.error(`[Nasrev Ads v${SCRIPT_VERSION}] ERROR:`, message, error || '');
     window.nasrevAds.errors.push({
@@ -59,9 +52,6 @@
     });
   }
 
-  /**
-   * Load external script asynchronously
-   */
   function loadScript(url, onLoad, onError) {
     const script = document.createElement('script');
     script.async = true;
@@ -77,17 +67,12 @@
 
   // ==================== GOOGLE ANALYTICS INTEGRATION ====================
   
-  /**
-   * Initialize Google Analytics for page view tracking
-   */
   function initGoogleAnalytics() {
     try {
-      // Initialize dataLayer
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       window.gtag = gtag;
       
-      // Configure GA
       gtag('js', new Date());
       gtag('config', 'G-Z0B4ZBF7XH', {
         'page_title': document.title,
@@ -101,7 +86,6 @@
         'script_version': SCRIPT_VERSION
       });
       
-      // Load GA script
       loadScript(GA_LIBRARY_URL, function() {
         log('Google Analytics loaded successfully');
       }, function() {
@@ -116,9 +100,6 @@
 
   // ==================== PHASE 0: CONSENT MANAGEMENT ====================
   
-  /**
-   * Check for GPP (Global Privacy Platform) - Latest IAB Standard
-   */
   function checkGPP() {
     log('Checking for GPP consent framework');
     
@@ -128,7 +109,6 @@
           if (success && pingData) {
             log('GPP detected', pingData);
             
-            // Get GPP string and section IDs
             window.__gpp('getGPPData', function(gppData, success) {
               if (success && gppData) {
                 window.nasrevAds.privacy.gppString = gppData.gppString || '';
@@ -136,7 +116,6 @@
                 
                 log('GPP data retrieved', gppData);
                 
-                // Check for US Privacy opt-outs
                 if (gppData.parsedSections && gppData.parsedSections.usnat) {
                   const usnat = gppData.parsedSections.usnat;
                   if (usnat.SaleOptOut === 1 || usnat.SharingOptOut === 1 || usnat.TargetedAdvertisingOptOut === 1) {
@@ -160,9 +139,6 @@
     return false;
   }
 
-  /**
-   * Check for TCF v2.2 (EU/EEA)
-   */
   function checkTCF() {
     log('Checking for TCF consent framework');
     
@@ -172,10 +148,7 @@
           log('TCF detected', tcData);
           
           if (tcData.eventStatus === 'tcloaded' || tcData.eventStatus === 'useractioncomplete') {
-            // Check for Google (Vendor ID 755) consent
             const googleConsent = tcData.vendor && tcData.vendor.consents && tcData.vendor.consents[755];
-            
-            // Check for required purposes (1: Storage, 3: Personalized Ads, 4: Content Selection)
             const purpose1 = tcData.purpose && tcData.purpose.consents && tcData.purpose.consents[1];
             const purpose3 = tcData.purpose && tcData.purpose.consents && tcData.purpose.consents[3];
             const purpose4 = tcData.purpose && tcData.purpose.consents && tcData.purpose.consents[4];
@@ -198,9 +171,6 @@
     return false;
   }
 
-  /**
-   * Check for legacy US Privacy String (CCPA/CPRA)
-   */
   function checkUSPrivacy() {
     log('Checking for US Privacy String');
     
@@ -209,9 +179,8 @@
         if (success && uspData && uspData.uspString) {
           log('US Privacy detected', uspData);
           
-          // Parse string (e.g., "1YYN" = version 1, explicit yes, explicit yes, notice given)
           const uspString = uspData.uspString;
-          if (uspString.charAt(2) === 'Y') { // User opted out
+          if (uspString.charAt(2) === 'Y') {
             window.nasrevAds.privacy.rdp = true;
             log('US Privacy: RDP enabled due to opt-out');
           }
@@ -227,53 +196,39 @@
     return false;
   }
 
-  /**
-   * Main consent detection function
-   */
   function detectConsent() {
     log('Starting consent detection');
     
-    // Priority order: GPP > TCF > US Privacy > Fallback
     if (checkGPP()) return;
     if (checkTCF()) return;
     if (checkUSPrivacy()) return;
     
-    // No CMP detected - set timeout fallback
     setTimeout(function() {
       if (!window.nasrevAds.initialized) {
         log('No CMP detected after timeout - proceeding with default consent');
-        
-        // Proceed assuming consent (non-regulated geo or publisher's responsibility)
         window.nasrevAds.privacy.hasConsent = true;
         initAdLogic();
       }
     }, CONSENT_TIMEOUT);
   }
 
-  /**
-   * Generate automatic PPID if publisher doesn't provide one
-   */
   function getOrGeneratePPID() {
     const config = window.universalAdConfig || {};
     
-    // Check if publisher provided PPID
     if (config.ppid && typeof config.ppid === 'string' && config.ppid.length > 0) {
       log('Using publisher-provided PPID', config.ppid);
       return config.ppid;
     }
     
-    // Auto-generate browser-based PPID
     try {
       let ppid = localStorage.getItem('nasrev_ppid');
       
       if (!ppid) {
-        // Generate new PPID: domain + random + timestamp
         const domain = window.location.hostname.replace(/[^a-z0-9]/gi, '_');
         const random = Math.random().toString(36).substr(2, 12);
         const timestamp = Date.now().toString(36);
         ppid = domain + '_' + random + '_' + timestamp;
         
-        // Store for future visits
         localStorage.setItem('nasrev_ppid', ppid);
         log('Auto-generated PPID (new user)', ppid);
       } else {
@@ -283,7 +238,6 @@
       return ppid;
       
     } catch (e) {
-      // Fallback if localStorage blocked
       logError('localStorage blocked, using session-only PPID', e);
       const fallback = 'session_' + Math.random().toString(36).substr(2, 15);
       return fallback;
@@ -292,12 +246,8 @@
 
   // ==================== PHASE 1: PUBLISHER VALIDATION ====================
   
-  /**
-   * Check session cache for validation status
-   */
   function checkValidationCache() {
     try {
-      // Allow cache bypass with ?nocache=1
       const urlParams = new URLSearchParams(window.location.search);
       if (urlParams.get('nocache') === '1') {
         log('Cache bypassed via ?nocache=1');
@@ -310,7 +260,6 @@
         const data = JSON.parse(cached);
         const now = Date.now();
         
-        // Cache for 24 hours
         if (now - data.timestamp < 86400000) {
           log('Using cached validation', data.valid);
           return data.valid;
@@ -324,9 +273,6 @@
     return null;
   }
 
-  /**
-   * Save validation status to cache
-   */
   function saveValidationCache(isValid) {
     try {
       sessionStorage.setItem('ua-domain-valid', JSON.stringify({
@@ -339,15 +285,11 @@
     }
   }
 
-  /**
-   * Validate publisher domain against approved list (NON-BLOCKING)
-   */
   function validatePublisherAsync() {
     const currentDomain = window.location.hostname;
     
     log('Validating publisher domain (async)', currentDomain);
     
-    // Embedded fallback list (updated: 2025-10-31)
     const fallbackDomains = [
       'apvisit.com',
       'localhost',
@@ -369,9 +311,7 @@
         throw new Error('Invalid pubs.json format');
       }
       
-      // Check if current domain is in approved list
       const isApproved = data.domains.some(function(domain) {
-        // Support both exact match and wildcard subdomain
         if (domain.startsWith('*.')) {
           const baseDomain = domain.substring(2);
           return currentDomain.endsWith(baseDomain);
@@ -390,7 +330,6 @@
     .catch(function(error) {
       logError('Validation error (falling back to embedded list)', error);
       
-      // CORS ERROR or network failure - use embedded fallback list
       const isApprovedFallback = fallbackDomains.some(function(domain) {
         if (domain.startsWith('*.')) {
           const baseDomain = domain.substring(2);
@@ -402,7 +341,6 @@
       if (isApprovedFallback) {
         log('Domain approved (from embedded fallback list)', currentDomain);
         console.warn('[Nasrev Ads] Using embedded publisher list due to CORS/network error');
-        console.warn('Fix CORS on https://raw.githubusercontent.com/Tipblogg/nasrev-cdn/refs/heads/main/pubs.json for live updates');
         saveValidationCache(true);
       } else {
         logError('Domain not in fallback list', currentDomain);
@@ -411,9 +349,6 @@
     });
   }
 
-  /**
-   * Initialize ad logic after consent is determined
-   */
   function initAdLogic() {
     if (window.nasrevAds.initialized) {
       log('Already initialized - skipping');
@@ -423,7 +358,6 @@
     log('Initializing ad logic');
     
     try {
-      // FIX #8: Check validation cache (non-blocking)
       const cachedStatus = checkValidationCache();
       
       if (cachedStatus === false) {
@@ -437,16 +371,11 @@
         return;
       }
       
-      // Mark as initialized IMMEDIATELY
       window.nasrevAds.initialized = true;
       
-      // Initialize Google Analytics
       initGoogleAnalytics();
-      
-      // FIX #8: Start ads immediately, validate in background
       proceedWithAds();
       
-      // Run validation asynchronously (won't block ads)
       if (cachedStatus !== true) {
         validatePublisherAsync();
       }
@@ -458,9 +387,6 @@
 
   // ==================== PHASE 2: AD SETUP ====================
   
-  /**
-   * Inject per-ad branding (centered below each ad)
-   */
   function injectAdBranding(slotDiv) {
     try {
       const branding = document.createElement('div');
@@ -488,23 +414,17 @@
     }
   }
 
-  /**
-   * Main ad setup function
-   */
   function proceedWithAds() {
     log('Proceeding with ad setup');
     
-    // Initialize googletag
     window.googletag = window.googletag || {cmd: []};
     
-    // Load GPT library
     loadScript(GPT_LIBRARY_URL, function() {
       log('GPT library loaded');
     }, function() {
       logError('Failed to load GPT library');
     });
     
-    // Push all setup logic to GPT command queue
     googletag.cmd.push(function() {
       try {
         setupAdSlots();
@@ -518,47 +438,175 @@
 
   // ==================== PHASE 3: SLOT DETECTION & DEFINITION ====================
   
-  /**
-   * Setup all ad slots - hardcoded configuration
-   */
   function setupAdSlots() {
-    log('Setting up ad slots with optimized configuration');
+    log('Setting up ad slots with MAXIMUM fill rate configuration');
     
-    // FIX #1: UNIQUE ad unit paths per placement
-    // FIX #2: OPTIMIZED size arrays (removed low-demand 320x100, 300x100)
+    // FIX: Enable refresh for ALL slots
     const adUnits = [
       {
         id: 'ua-placement-1',
-        path: '/23272458704/Nasrev.com/Display', // Display (main)
-        sizes: [[300, 250], [336, 280], [320, 50]],
-        refresh: true
+        path: '/23272458704/Nasrev.com/Display',
+        sizeMappingConfig: [
+          { 
+            viewport: [1024, 768], 
+            sizes: [
+              [728, 90],
+              [970, 250],
+              [970, 90],
+              [300, 250],
+              [336, 280],
+              [300, 600],
+              [160, 600],
+              [120, 600],
+              [250, 250],
+              [200, 200]
+            ] 
+          },
+          { 
+            viewport: [768, 768], 
+            sizes: [
+              [728, 90],
+              [468, 60],
+              [300, 250],
+              [336, 280],
+              [300, 600],
+              [250, 250]
+            ] 
+          },
+          { 
+            viewport: [0, 0], 
+            sizes: [
+              [320, 50],
+              [320, 100],
+              [300, 250],
+              [336, 280],
+              [250, 250]
+            ] 
+          }
+        ],
+        refresh: true // ✅ ENABLED
       },
       {
         id: 'ua-placement-2',
-        path: '/23272458704/Nasrev.com/Display2', // Display2
-        sizes: [[300, 250], [336, 280], [300, 600], [320, 50]],
-        refresh: false
+        path: '/23272458704/Nasrev.com/Display2',
+        sizeMappingConfig: [
+          { 
+            viewport: [1024, 768], 
+            sizes: [
+              [300, 600],
+              [160, 600],
+              [120, 600],
+              [300, 250],
+              [336, 280],
+              [250, 250],
+              [200, 200]
+            ] 
+          },
+          { 
+            viewport: [768, 768], 
+            sizes: [
+              [300, 600],
+              [300, 250],
+              [336, 280],
+              [250, 250]
+            ] 
+          },
+          { 
+            viewport: [0, 0], 
+            sizes: [
+              [300, 250],
+              [336, 280],
+              [320, 100],
+              [250, 250]
+            ] 
+          }
+        ],
+        refresh: true // ✅ CHANGED FROM FALSE TO TRUE
       },
       {
         id: 'ua-placement-3',
-        path: '/23272458704/Nasrev.com/Display3', // Display3
-        sizes: [[300, 250], [336, 280], [300, 600], [320, 50]],
-        refresh: true
+        path: '/23272458704/Nasrev.com/Display3',
+        sizeMappingConfig: [
+          { 
+            viewport: [1024, 768], 
+            sizes: [
+              [970, 250],
+              [970, 90],
+              [728, 90],
+              [468, 60],
+              [300, 250],
+              [336, 280],
+              [250, 250],
+              [200, 200]
+            ] 
+          },
+          { 
+            viewport: [768, 768], 
+            sizes: [
+              [728, 90],
+              [468, 60],
+              [300, 250],
+              [336, 280],
+              [250, 250]
+            ] 
+          },
+          { 
+            viewport: [0, 0], 
+            sizes: [
+              [320, 50],
+              [320, 100],
+              [300, 250],
+              [250, 250]
+            ] 
+          }
+        ],
+        refresh: true // ✅ ENABLED
       },
       {
         id: 'ua-placement-4',
-        path: '/23272458704/Nasrev.com/Display4', // Display4
-        sizes: [[300, 250], [336, 280], [300, 600], [320, 50]],
-        refresh: false
+        path: '/23272458704/Nasrev.com/Display4',
+        sizeMappingConfig: [
+          { 
+            viewport: [1024, 768], 
+            sizes: [
+              [300, 600],
+              [300, 250],
+              [336, 280],
+              [160, 600],
+              [120, 600],
+              [728, 90],
+              [250, 250],
+              [200, 200]
+            ] 
+          },
+          { 
+            viewport: [768, 768], 
+            sizes: [
+              [300, 600],
+              [300, 250],
+              [336, 280],
+              [728, 90],
+              [250, 250]
+            ] 
+          },
+          { 
+            viewport: [0, 0], 
+            sizes: [
+              [300, 250],
+              [320, 100],
+              [320, 50],
+              [250, 250]
+            ] 
+          }
+        ],
+        refresh: true // ✅ CHANGED FROM FALSE TO TRUE
       }
     ];
     
-    // Define in-page slots
     adUnits.forEach(function(unit) {
       const slotDiv = document.getElementById(unit.id);
       
       if (slotDiv) {
-        // Create wrapper container for centering everything
         const wrapper = document.createElement('div');
         wrapper.style.cssText = `
           display: flex;
@@ -569,7 +617,6 @@
           margin: 0 auto;
         `;
         
-        // Inject "Advertisement" label (BOLD) - TOP
         const label = document.createElement('div');
         label.textContent = 'Advertisement';
         label.style.cssText = `
@@ -584,19 +631,17 @@
         `;
         wrapper.appendChild(label);
         
-        // Move slotDiv into wrapper
         slotDiv.parentNode.insertBefore(wrapper, slotDiv);
         wrapper.appendChild(slotDiv);
         
-        // Style the slotDiv itself
         slotDiv.style.cssText = `
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          min-height: 50px;
         `;
         
-        // Inject placeholder
         const placeholder = document.createElement('div');
         placeholder.className = 'ua-placeholder';
         placeholder.style.cssText = `
@@ -609,29 +654,46 @@
           font-size: 14px;
           font-weight: bold;
           min-height: 50px;
+          width: 100%;
           border: 1px dashed #ddd;
           border-radius: 4px;
         `;
         placeholder.textContent = 'Loading ad...';
         slotDiv.appendChild(placeholder);
         
-        // Inject "ads by nasrev.com" branding - BOTTOM (in wrapper, not slotDiv!)
         injectAdBranding(wrapper);
         
-        // Define slot
-        const slot = googletag.defineSlot(unit.path, unit.sizes, unit.id);
+        // FIX #1: Build size mapping
+        const mapping = googletag.sizeMapping();
+        unit.sizeMappingConfig.forEach(function(config) {
+          mapping.addSize(config.viewport, config.sizes);
+        });
+        
+        // FIX #1: Pass FIRST size array (not empty array)
+        const slot = googletag.defineSlot(
+          unit.path, 
+          unit.sizeMappingConfig[0].sizes, // ✅ FIXED: Pass actual sizes
+          unit.id
+        );
         
         if (slot) {
+          slot.defineSizeMapping(mapping.build());
           slot.addService(googletag.pubads());
           slot.customRefresh = unit.refresh;
           window.nasrevAds.slots.inPage.push(slot);
-          log('In-page slot defined', unit.id);
+          
+          log('Slot defined with optimized sizes', {
+            id: unit.id,
+            refresh: unit.refresh,
+            desktopSizes: unit.sizeMappingConfig[0].sizes.length,
+            tabletSizes: unit.sizeMappingConfig[1].sizes.length,
+            mobileSizes: unit.sizeMappingConfig[2].sizes.length
+          });
         }
       }
     });
     
-    // ==================== SIDE RAIL ADS ====================
-    // FIX #7: Display both side rails separately
+    // ==================== SIDE RAILS ====================
     log('Setting up side rail ads');
     
     const leftSideRail = googletag.defineOutOfPageSlot(
@@ -644,7 +706,6 @@
       googletag.enums.OutOfPageFormat.RIGHT_SIDE_RAIL
     );
     
-    // Side rail slots return null if the page or device does not support side rails
     if (leftSideRail) {
       leftSideRail.addService(googletag.pubads());
       window.nasrevAds.slots.sideRails.left = leftSideRail;
@@ -659,16 +720,7 @@
       log('Right side rail defined');
     }
     
-    // Log side rail support status
-    if (leftSideRail && rightSideRail) {
-      log('Side rail ads: Both left and right initialized');
-    } else if (leftSideRail || rightSideRail) {
-      log('Side rail ads: Only ' + (leftSideRail ? 'left' : 'right') + ' initialized');
-    } else {
-      log('Side rail ads: Not supported on this page/device');
-    }
-    
-    // Define anchor ad (if div exists)
+    // ==================== ANCHOR AD ====================
     const anchorDiv = document.getElementById('ua-anchor');
     if (anchorDiv) {
       const anchorSlot = googletag.defineOutOfPageSlot(
@@ -683,115 +735,272 @@
       }
     }
     
-    // ==================== INTERSTITIAL WITH TRIGGERS ====================
-    // FIX #10: Store interstitial separately for explicit display
+    // ==================== INTERSTITIAL ====================
     const interstitialSlot = googletag.defineOutOfPageSlot(
       '/23272458704/Nasrev.com/Interstitial',
       googletag.enums.OutOfPageFormat.INTERSTITIAL
     );
     
     if (interstitialSlot) {
-      // Enable optional interstitial triggers for better fill rate
-      const enableTriggers = true;
-      
       interstitialSlot.setConfig({
         interstitial: {
           triggers: {
-            navBar: enableTriggers,      // Desktop: clicks on browser nav bar
-            unhideWindow: enableTriggers  // Tab/window unhide or maximize
+            navBar: true,
+            unhideWindow: true
           }
         }
       });
       
       interstitialSlot.addService(googletag.pubads());
       window.nasrevAds.slots.oop.push(interstitialSlot);
-      window.nasrevAds.slots.interstitial = interstitialSlot; // Store separately
-      log('Interstitial slot defined with triggers enabled', {
-        navBar: enableTriggers,
-        unhideWindow: enableTriggers
-      });
+      window.nasrevAds.slots.interstitial = interstitialSlot;
+      log('Interstitial defined with triggers');
     }
+    
+    log('Total slots configured', {
+      inPage: window.nasrevAds.slots.inPage.length,
+      oop: window.nasrevAds.slots.oop.length,
+      allRefreshEnabled: true // ✅ All slots now have refresh
+    });
   }
 
   // ==================== PHASE 4: CONFIGURE PUBADS ====================
   
-  /**
-   * Configure publisher ads service
-   */
   function configurePublisherAds() {
     const pubads = googletag.pubads();
     const config = window.universalAdConfig || {};
     
-    log('Configuring publisher ads service');
+    log('Configuring publisher ads with ALL Google features enabled');
     
-    // Get or auto-generate PPID (always available now!)
     const ppid = getOrGeneratePPID();
     
-    // FIX #3: Enable Single Request Architecture properly
     pubads.enableSingleRequest();
-    
-    // Collapse empty divs
     pubads.collapseEmptyDivs(true);
     
-    // Apply privacy settings from Phase 0
     const privacy = window.nasrevAds.privacy;
-    
     if (privacy.rdp === true) {
-      pubads.setPrivacySettings({
-        restrictedDataProcessing: true
-      });
+      pubads.setPrivacySettings({ restrictedDataProcessing: true });
       log('Privacy: RDP enabled');
     }
-    
     if (privacy.npa === true) {
-      pubads.setPrivacySettings({
-        nonPersonalizedAds: true
-      });
+      pubads.setPrivacySettings({ nonPersonalizedAds: true });
       log('Privacy: NPA enabled');
     }
     
-    // Set PPID (auto-generated or publisher-provided)
     pubads.setPublisherProvidedId(ppid);
-    log('PPID set for better targeting', ppid);
     
-    // FIX #5: OPTIMIZED lazy loading settings
     pubads.enableLazyLoad({
-      fetchMarginPercent: 100,    // Fetch 1 viewport ahead (reduced from 200)
-      renderMarginPercent: 50,    // Render 0.5 viewport ahead (reduced from 100)
-      mobileScaling: 2.0          // 2x on mobile
+      fetchMarginPercent: 500,
+      renderMarginPercent: 200,
+      mobileScaling: 2.0
     });
-    log('Lazy loading optimized for performance');
+    log('Aggressive lazy loading enabled');
     
-    // FIX #9: ENHANCED key-value targeting with contextual signals
-    pubads.setTargeting('ua-script', 'v' + SCRIPT_VERSION);
-    pubads.setTargeting('domain', window.location.hostname);
-    pubads.setTargeting('page_url', window.location.pathname);
-    pubads.setTargeting('has-ppid', 'true');
-    pubads.setTargeting('ppid-type', config.ppid ? 'custom' : 'auto');
-    pubads.setTargeting('side-rails', 
-      (window.nasrevAds.slots.sideRails.left || window.nasrevAds.slots.sideRails.right) ? 'enabled' : 'disabled'
+    pubads.enableVideoAds();
+    log('Video ads enabled');
+    
+    // FIX #2: Remove invalid property 'useUniqueDomain'
+    pubads.setSafeFrameConfig({
+      allowOverlayExpansion: true,
+      allowPushExpansion: true,
+      sandbox: true
+      // ✅ REMOVED: useUniqueDomain (not a valid property)
+    });
+    log('SafeFrame enabled');
+    
+    pubads.setCentering(true);
+    log('Ad centering enabled');
+    
+    // ===== ENHANCED TARGETING (ALL VALUES AS STRINGS) =====
+    
+    const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+    const isTablet = /iPad|Android(?!.*Mobile)/i.test(navigator.userAgent);
+    const deviceType = isMobile ? 'mobile' : (isTablet ? 'tablet' : 'desktop');
+    pubads.setTargeting('device', deviceType);
+    
+    // FIX #3: Convert numbers to strings
+    const screenWidth = window.screen.width;
+    const screenHeight = window.screen.height;
+    pubads.setTargeting('screen_w', (Math.floor(screenWidth / 100) * 100).toString()); // ✅ FIXED
+    pubads.setTargeting('screen_h', (Math.floor(screenHeight / 100) * 100).toString()); // ✅ FIXED
+    
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    pubads.setTargeting('viewport_w', (Math.floor(viewportWidth / 100) * 100).toString()); // ✅ FIXED
+    pubads.setTargeting('viewport_h', (Math.floor(viewportHeight / 100) * 100).toString()); // ✅ FIXED
+    
+    const dpr = window.devicePixelRatio || 1;
+    pubads.setTargeting('dpr', dpr >= 2 ? 'high' : 'standard');
+    
+    const orientation = window.innerWidth > window.innerHeight ? 'landscape' : 'portrait';
+    pubads.setTargeting('orientation', orientation);
+    
+    const now = new Date();
+    const hour = now.getHours();
+    const day = now.getDay();
+    const month = now.getMonth() + 1;
+    
+    pubads.setTargeting('hour', hour.toString());
+    pubads.setTargeting('day', day.toString());
+    pubads.setTargeting('month', month.toString());
+    pubads.setTargeting('is_weekend', (day === 0 || day === 6) ? '1' : '0');
+    pubads.setTargeting('daypart', 
+      hour >= 6 && hour < 12 ? 'morning' : 
+      hour >= 12 && hour < 17 ? 'afternoon' : 
+      hour >= 17 && hour < 21 ? 'evening' : 'night'
     );
     
-    // Add referrer if available
+    try {
+      const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      if (timezone) {
+        pubads.setTargeting('timezone', timezone.replace(/\//g, '_'));
+      }
+    } catch (e) {}
+    
+    try {
+      let visits = parseInt(localStorage.getItem('nasrev_visits') || '0') + 1;
+      localStorage.setItem('nasrev_visits', visits);
+      pubads.setTargeting('visit_count', 
+        visits === 1 ? '1' : 
+        visits <= 3 ? '2-3' : 
+        visits <= 5 ? '4-5' : 
+        visits <= 10 ? '6-10' : '11+'
+      );
+      
+      let pageDepth = parseInt(sessionStorage.getItem('nasrev_page_depth') || '0') + 1;
+      sessionStorage.setItem('nasrev_page_depth', pageDepth);
+      pubads.setTargeting('page_depth', Math.min(pageDepth, 10).toString());
+      
+      const sessionStart = parseInt(sessionStorage.getItem('nasrev_session_start') || Date.now());
+      sessionStorage.setItem('nasrev_session_start', sessionStart);
+      const sessionAge = Math.floor((Date.now() - sessionStart) / 1000);
+      pubads.setTargeting('session_age', 
+        sessionAge < 30 ? '0-30s' : 
+        sessionAge < 60 ? '30-60s' : 
+        sessionAge < 180 ? '1-3m' : 
+        sessionAge < 300 ? '3-5m' : '5m+'
+      );
+    } catch (e) {
+      log('Storage blocked, skipping engagement signals');
+    }
+    
     if (document.referrer) {
       try {
-        const referrerHost = new URL(document.referrer).hostname;
-        pubads.setTargeting('referrer', referrerHost);
+        const referrerUrl = new URL(document.referrer);
+        const referrerHost = referrerUrl.hostname;
+        
+        pubads.setTargeting('referrer', referrerHost.replace(/^www\./, ''));
+        
+        if (/google\.(com|co\.|[a-z]{2})/.test(referrerHost)) {
+          pubads.setTargeting('source', 'google');
+          pubads.setTargeting('source_type', 'search');
+        } else if (/bing\.(com|co\.|[a-z]{2})/.test(referrerHost)) {
+          pubads.setTargeting('source', 'bing');
+          pubads.setTargeting('source_type', 'search');
+        } else if (/yahoo\.(com|co\.|[a-z]{2})/.test(referrerHost)) {
+          pubads.setTargeting('source', 'yahoo');
+          pubads.setTargeting('source_type', 'search');
+        } else if (/facebook\.com|fb\.com|instagram\.com/.test(referrerHost)) {
+          pubads.setTargeting('source', 'facebook');
+          pubads.setTargeting('source_type', 'social');
+        } else if (/twitter\.com|t\.co|x\.com/.test(referrerHost)) {
+          pubads.setTargeting('source', 'twitter');
+          pubads.setTargeting('source_type', 'social');
+        } else if (/linkedin\.com/.test(referrerHost)) {
+          pubads.setTargeting('source', 'linkedin');
+          pubads.setTargeting('source_type', 'social');
+        } else if (/reddit\.com/.test(referrerHost)) {
+          pubads.setTargeting('source', 'reddit');
+          pubads.setTargeting('source_type', 'social');
+        } else if (/pinterest\.com/.test(referrerHost)) {
+          pubads.setTargeting('source', 'pinterest');
+          pubads.setTargeting('source_type', 'social');
+        } else if (/youtube\.com|youtu\.be/.test(referrerHost)) {
+          pubads.setTargeting('source', 'youtube');
+          pubads.setTargeting('source_type', 'video');
+        } else {
+          pubads.setTargeting('source', 'referral');
+          pubads.setTargeting('source_type', 'referral');
+        }
       } catch (e) {
-        // Invalid URL, skip
+        log('Invalid referrer URL');
+      }
+    } else {
+      pubads.setTargeting('source', 'direct');
+      pubads.setTargeting('source_type', 'direct');
+    }
+    
+    if ('connection' in navigator && navigator.connection) {
+      const conn = navigator.connection;
+      if (conn.effectiveType) {
+        pubads.setTargeting('connection', conn.effectiveType);
+      }
+      if (conn.saveData) {
+        pubads.setTargeting('data_saver', '1');
       }
     }
     
-    if (privacy.gppString) {
-      pubads.setTargeting('gpp', 'enabled');
+    const lang = navigator.language || navigator.userLanguage || 'en';
+    pubads.setTargeting('lang', lang.substring(0, 2).toLowerCase());
+    
+    const pageLang = document.documentElement.lang;
+    if (pageLang && pageLang !== lang) {
+      pubads.setTargeting('page_lang', pageLang.substring(0, 2).toLowerCase());
     }
     
-    log('Enhanced targeting configured with contextual signals');
+    const categoryMeta = document.querySelector('meta[property="article:section"]') || 
+                         document.querySelector('meta[name="category"]') ||
+                         document.querySelector('meta[name="news_keywords"]');
+    if (categoryMeta) {
+      const category = categoryMeta.content.toLowerCase().replace(/[^a-z0-9,]/g, '_');
+      pubads.setTargeting('category', category);
+    }
     
-    // FIX #4: Setup IMPROVED refresh listeners (start on render + viewability)
+    const articleTag = document.querySelector('article');
+    const videoTag = document.querySelector('video');
+    if (articleTag) {
+      pubads.setTargeting('content_type', 'article');
+    } else if (videoTag) {
+      pubads.setTargeting('content_type', 'video');
+    } else {
+      pubads.setTargeting('content_type', 'page');
+    }
+    
+    let maxScrollPercent = 0;
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollPercent = scrollHeight > 0 ? Math.round((scrollTop / scrollHeight) * 100) : 0;
+      
+      if (scrollPercent > maxScrollPercent) {
+        maxScrollPercent = scrollPercent;
+        
+        if (scrollPercent >= 25 && maxScrollPercent < 50) {
+          pubads.setTargeting('scroll_depth', '25');
+        } else if (scrollPercent >= 50 && maxScrollPercent < 75) {
+          pubads.setTargeting('scroll_depth', '50');
+        } else if (scrollPercent >= 75 && maxScrollPercent < 100) {
+          pubads.setTargeting('scroll_depth', '75');
+        } else if (scrollPercent >= 100) {
+          pubads.setTargeting('scroll_depth', '100');
+        }
+      }
+    });
+    
+    pubads.setTargeting('script_version', SCRIPT_VERSION);
+    pubads.setTargeting('domain', window.location.hostname);
+    pubads.setTargeting('ppid_enabled', '1');
+    pubads.setTargeting('ad_count', window.nasrevAds.slots.inPage.length.toString());
+    
+    log('Enhanced targeting configured', {
+      device: deviceType,
+      viewport: viewportWidth + 'x' + viewportHeight,
+      hour: hour,
+      source: pubads.getTargeting('source')[0]
+    });
+    
     setupAdRefreshListeners();
     
-    // Remove placeholder on render
     pubads.addEventListener('slotRenderEnded', function(event) {
       const slot = event.slot;
       const divId = slot.getSlotElementId();
@@ -807,85 +1016,70 @@
       log('Slot rendered', {
         divId: divId,
         isEmpty: event.isEmpty,
-        size: event.size
+        size: event.size,
+        advertiserId: event.advertiserId,
+        creativeId: event.creativeId
       });
-      
-      // FIX #4: Start refresh timer immediately on render (if refresh enabled)
-      if (!event.isEmpty && slot.customRefresh) {
-        startRefreshTimer(slot);
-      }
     });
     
-    // Enable services
+    pubads.addEventListener('impressionViewable', function(event) {
+      log('Impression viewable', {
+        slot: event.slot.getSlotElementId()
+      });
+    });
+    
     googletag.enableServices();
-    log('GPT services enabled');
+    log('GPT services enabled with ALL features');
   }
 
-  // ==================== PHASE 5: AD REFRESH LOGIC (FIXED) ====================
+  // ==================== PHASE 5: AD REFRESH ====================
   
-  /**
-   * FIX #4: Start refresh timer for a slot (checks viewability first)
-   */
   function startRefreshTimer(slot) {
     const config = window.universalAdConfig || {};
     const refreshInterval = Math.max(config.refreshInterval || DEFAULT_REFRESH_INTERVAL, 30000);
     const slotId = slot.getSlotElementId();
     
-    // Clear any existing timer
     if (window.nasrevAds.refreshTimers.has(slotId)) {
       clearTimeout(window.nasrevAds.refreshTimers.get(slotId));
     }
     
-    log('Starting refresh timer for slot', { slotId: slotId, interval: refreshInterval + 'ms' });
+    log('Starting refresh timer', { slotId: slotId, interval: refreshInterval + 'ms' });
     
-    // Wait for refresh interval
     const timer = setTimeout(function() {
-      // Check if slot is viewable before refreshing
       if (isSlotInViewport(slotId)) {
-        log('Refreshing slot (viewable)', slotId);
+        log('Refreshing slot', slotId);
         googletag.pubads().refresh([slot]);
-        // Restart timer after refresh (creates continuous refresh cycle)
         startRefreshTimer(slot);
       } else {
-        log('Slot not viewable, waiting for viewability', slotId);
-        // Don't restart timer - will be restarted when slot becomes viewable
+        log('Slot not viewable, stopping refresh', slotId);
       }
     }, refreshInterval);
     
     window.nasrevAds.refreshTimers.set(slotId, timer);
   }
 
-  /**
-   * Setup IMPROVED viewability-based refresh listeners
-   */
   function setupAdRefreshListeners() {
     const config = window.universalAdConfig || {};
     const refreshInterval = Math.max(config.refreshInterval || DEFAULT_REFRESH_INTERVAL, 30000);
     
-    log('Setting up viewability-based ad refresh', { 
-      interval: refreshInterval + 'ms (' + (refreshInterval/1000) + 's)',
-      minViewableTime: MIN_VIEWABLE_TIME + 'ms',
-      googleMinimum: '30s'
+    log('Setting up viewability-based refresh for ALL slots', { 
+      interval: refreshInterval + 'ms'
     });
     
-    // FIX #4: Restart timer when slot becomes viewable (for below-fold ads)
     googletag.pubads().addEventListener('impressionViewable', function(event) {
       const slot = event.slot;
       
-      // Skip if refresh not enabled for this slot
       if (!slot.customRefresh) {
+        log('Slot not eligible for refresh (should not happen)', slot.getSlotElementId());
         return;
       }
       
       const slotId = slot.getSlotElementId();
       
-      log('Impression viewable - restarting refresh timer', slotId);
-      
-      // Restart refresh cycle (will check viewability before each refresh)
+      log('Impression viewable - starting refresh cycle', slotId);
       startRefreshTimer(slot);
     });
     
-    // Cleanup timers on page unload
     window.addEventListener('beforeunload', function() {
       window.nasrevAds.refreshTimers.forEach(function(timer) {
         clearTimeout(timer);
@@ -893,9 +1087,6 @@
     });
   }
 
-  /**
-   * Check if slot is in viewport (for refresh validation)
-   */
   function isSlotInViewport(slotId) {
     const element = document.getElementById(slotId);
     if (!element) return false;
@@ -904,32 +1095,26 @@
     const windowHeight = window.innerHeight || document.documentElement.clientHeight;
     const windowWidth = window.innerWidth || document.documentElement.clientWidth;
     
-    // Check if at least 50% of ad is visible (IAB/MRC standard)
     const verticalVisible = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
     const horizontalVisible = Math.min(rect.right, windowWidth) - Math.max(rect.left, 0);
     const visibleArea = Math.max(0, verticalVisible) * Math.max(0, horizontalVisible);
     const totalArea = rect.height * rect.width;
     const visibilityRatio = totalArea > 0 ? visibleArea / totalArea : 0;
     
-    return visibilityRatio >= 0.5; // 50% viewability threshold
+    return visibilityRatio >= 0.5;
   }
 
   // ==================== PHASE 6: DISPLAY ADS ====================
   
-  /**
-   * Display all defined ads
-   */
   function displayAds() {
     log('Displaying ads');
     
-    // Display in-page slots FIRST (before OOP slots per Google best practice)
     window.nasrevAds.slots.inPage.forEach(function(slot) {
       googletag.display(slot.getSlotElementId());
     });
     
     log('In-page slots displayed', window.nasrevAds.slots.inPage.length);
     
-    // FIX #7: Display BOTH side rails separately
     const sideRails = window.nasrevAds.slots.sideRails;
     if (sideRails.left) {
       googletag.display(sideRails.left);
@@ -940,15 +1125,12 @@
       log('Right side rail displayed');
     }
     
-    // FIX #10: Display interstitial explicitly
     if (window.nasrevAds.slots.interstitial) {
       googletag.display(window.nasrevAds.slots.interstitial);
       log('Interstitial displayed');
     }
     
-    // Display other OOP slots (anchor)
     window.nasrevAds.slots.oop.forEach(function(slot) {
-      // Skip side rails and interstitial as they're already displayed above
       if (slot !== sideRails.left && slot !== sideRails.right && slot !== window.nasrevAds.slots.interstitial) {
         googletag.display(slot);
       }
@@ -957,19 +1139,12 @@
     log('All ads displayed', {
       inPage: window.nasrevAds.slots.inPage.length,
       oop: window.nasrevAds.slots.oop.length,
-      sideRails: {
-        left: !!sideRails.left,
-        right: !!sideRails.right
-      },
-      interstitial: !!window.nasrevAds.slots.interstitial
+      allRefreshEnabled: true
     });
   }
 
   // ==================== ENTRY POINT ====================
   
-  /**
-   * Main initialization
-   */
   function init() {
     try {
       log('Script loaded', { 
@@ -978,7 +1153,6 @@
         userAgent: navigator.userAgent
       });
       
-      // Wait for DOM to be ready
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', detectConsent);
       } else {
@@ -990,7 +1164,6 @@
     }
   }
 
-  // Start the script
   init();
 
 })();
