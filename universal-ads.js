@@ -1,1 +1,0 @@
-sorry our account banned by google payments will be settled in 90 days if google pays us
